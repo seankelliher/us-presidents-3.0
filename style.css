@@ -17,6 +17,30 @@ header {
     background: lightgoldenrodyellow;
 }
 
+nav#primary {
+    width: 20%;
+    margin: 0;
+    padding: 1em 2.5%;
+    flex: initial; /*flex: 0 1 auto*/
+    background: lightcyan;
+}
+
+nav#secondary {
+    width: 20%;
+    margin: 0;
+    padding: 1em 2.5%;
+    flex: initial; /*flex: 0 1 auto*/
+    background: lightgreen;
+}
+
+section {
+    width: 45%;
+    margin: 0;
+    padding: 1em 2.5%;
+    flex: initial; /*flex: 0 1 auto*/
+    background: lightblue;
+}
+
 footer {
     width: 95%;
     margin: 0;
