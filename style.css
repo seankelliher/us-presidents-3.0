@@ -1,0 +1,26 @@
+#container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start; /*main axis*/
+    align-items: flex-start; /*cross axis*/
+}
+
+header {
+    width: 95%;
+    margin: 0;
+    padding: 1em 2.5%;
+    flex: initial; /*flex: 0 1 auto*/
+    background: lightgoldenrodyellow;
+}
+
+footer {
+    width: 95%;
+    margin: 0;
+    padding: 1em 2.5%;
+    flex: initial; /*flex: 0 1 auto*/
+    background: lightgrey;
+}
