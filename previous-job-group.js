@@ -30,11 +30,11 @@ allPresidents.forEach(function (index) {
 });
 
 export {
-    military,
-    presVp,
     cabinet,
     congress,
     diplomatic,
     governor,
+    military,
+    presVp,
     privateIndustry
 };
