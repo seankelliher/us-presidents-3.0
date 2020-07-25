@@ -39,6 +39,10 @@ ul {
     list-style: none;
 }
 
+.selected {
+    color: red;
+}
+
 section {
     width: 45%;
     margin: 0;
