@@ -48,3 +48,35 @@ footer {
     flex: initial; /*flex: 0 1 auto*/
     background: lightgrey;
 }
+
+/*Fonts*/
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+/*Media queries*/
+@media all and (min-width: 300px) {
+    h1 {
+        font-size: 1.4375em; /*23 pixels*/
+    }
+}
+
+@media all and (min-width: 600px) {
+    h1 {
+        font-size: 1.5em; /*24 pixels*/
+    }
+}
+
+@media all and (min-width: 900px) {
+    h1 {
+        font-size: 1.5625em; /*25 pixels*/
+    }
+}
+
+@media all and (min-width: 1200px) {
+    h1 {
+        font-size: 1.625em; /*26 pixels*/
+    }
+}
