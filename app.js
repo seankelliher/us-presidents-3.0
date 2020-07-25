@@ -1,4 +1,4 @@
-import {createList} from "./elements.js";
+import {clearSnl, createSnl} from "./elements.js";
 import {
     birthStateList,
     partyAffiliationList,
@@ -10,19 +10,20 @@ import {
 } from "./lists.js";
 
 document.getElementById("pnl").addEventListener("click", function (event) {
+    clearSnl();
     if (event.target.id === "birth") {
-        createList.apply(birthStateList);
+        createSnl.apply(birthStateList);
     } else if (event.target.id === "party") {
-        createList.apply(partyAffiliationList);
+        createSnl.apply(partyAffiliationList);
     } else if (event.target.id === "age") {
-        createList.apply(ageInauguratedList);
+        createSnl.apply(ageInauguratedList);
     } else if (event.target.id === "marital") {
-        createList.apply(maritalStatusList);
+        createSnl.apply(maritalStatusList);
     } else if (event.target.id === "previous") {
-        createList.apply(previousJobGroupList);
+        createSnl.apply(previousJobGroupList);
     } else if (event.target.id === "months") {
-        createList.apply(monthsInOfficeList);
+        createSnl.apply(monthsInOfficeList);
     } else if (event.target.id === "departure") {
-        createList.apply(reasonDepartureList);
+        createSnl.apply(reasonDepartureList);
     }
 });
