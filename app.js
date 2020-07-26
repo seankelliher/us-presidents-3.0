@@ -27,7 +27,7 @@ document.getElementById("pnl").addEventListener("click", function (event) {
     } else if (event.target.id === "previous") {
         selectPnl(event.target);
         createSnl.apply(previousJobGroupList);
-    } else if (event.target.id === "months") {
+    } else if (event.target.id === "time") {
         selectPnl(event.target);
         createSnl.apply(timeInOfficeList);
     } else if (event.target.id === "departure") {
