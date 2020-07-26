@@ -1,4 +1,4 @@
-import {clearPnl, clearSnl, selectPnl, createSnl} from "./elements.js";
+import {clearPnl, clearSnl, selectPnl, createSnl} from "./lists-elements.js";
 import {
     birthStateList,
     partyAffiliationList,
