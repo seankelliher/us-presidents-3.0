@@ -1,10 +1,10 @@
 //"Un-highlights" any "li" items in the "primary" nav list.
 function clearPnl() {
     const pnl = document.getElementById("pnl");
-    const pnlItems = pnl.querySelectorAll("li");
-    const pnlItemsArray = Array.from(pnlItems);
+    const pnlListItems = pnl.querySelectorAll("li");
+    const pnlListItemsArray = Array.from(pnlListItems);
 
-    pnlItemsArray.forEach(function (item) {
+    pnlListItemsArray.forEach(function (item) {
         const selected = item.classList.contains("selected");
         if (selected === true) {
             item.classList.remove("selected");
@@ -22,17 +22,21 @@ function clearSnl() {
 }
 
 //"Highlights" clicked "li" item "primary" nav list.
-function selectPnl(thing) {
-        thing.classList.add("selected");
+function selectPnl(item) {
+        item.classList.add("selected");
 }
 
 //Creates and appends "li" items to the "secondary" nav list.
 function createSnl() {
     this.forEach(function (item) {
         const snl = document.getElementById("snl");
-        const litem = document.createElement("li");
-        litem.textContent = item;
-        snl.appendChild(litem);
+        const snlListItem = document.createElement("li");
+        snlListItem.textContent = item;
+        const lowerCase = item.toLowerCase();
+        const removeSpace = /\s/g;
+        const addDash = lowerCase.replace(removeSpace, "-");
+        snlListItem.id = addDash;
+        snl.appendChild(snlListItem);
     });
 }
 
