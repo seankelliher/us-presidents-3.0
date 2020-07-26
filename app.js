@@ -5,7 +5,7 @@ import {
     ageInauguratedList,
     maritalStatusList,
     previousJobGroupList,
-    monthsInOfficeList,
+    timeInOfficeList,
     reasonDepartureList
 } from "./lists.js";
 
@@ -29,7 +29,7 @@ document.getElementById("pnl").addEventListener("click", function (event) {
         createSnl.apply(previousJobGroupList);
     } else if (event.target.id === "months") {
         selectPnl(event.target);
-        createSnl.apply(monthsInOfficeList);
+        createSnl.apply(timeInOfficeList);
     } else if (event.target.id === "departure") {
         selectPnl(event.target);
         createSnl.apply(reasonDepartureList);
