@@ -33,7 +33,7 @@ function createSnl() {
         const snlListItem = document.createElement("li");
         snlListItem.textContent = item;
         const lowerCase = item.toLowerCase();
-        const removeSpace = /\s/g;
+        const removeSpace = /\s|,\s/g;
         const addDash = lowerCase.replace(removeSpace, "-");
         snlListItem.id = addDash;
         snl.appendChild(snlListItem);
