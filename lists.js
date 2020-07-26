@@ -42,7 +42,7 @@ const previousJobGroupList = [
     "Private Industry"
 ];
 
-const monthsInOfficeList = [
+const timeInOfficeList = [
     "less than 4",
     "exactly 4",
     "between 4 and 8",
@@ -65,6 +65,6 @@ export {
     ageInauguratedList,
     maritalStatusList,
     previousJobGroupList,
-    monthsInOfficeList,
+    timeInOfficeList,
     reasonDepartureList
 };
