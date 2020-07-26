@@ -43,11 +43,11 @@ const previousJobGroupList = [
 ];
 
 const monthsInOfficeList = [
-    "less than 4 years",
-    "4 years",
-    "between 4 and 8 years",
-    "8 years",
-    "more than 8 years"
+    "less than 4",
+    "exactly 4",
+    "between 4 and 8",
+    "exactly 8",
+    "more than 8"
 ];
 
 const reasonDepartureList = [
