@@ -20,10 +20,10 @@ const partyAffiliationList = [
 ];
 
 const ageInauguratedList = [
-    "40 - 49",
-    "50 - 59",
-    "60 - 69",
-    "70 - 79"
+    "Forties",
+    "Fifites",
+    "Sixties",
+    "Seventies"
 ];
 
 const maritalStatusList = [
