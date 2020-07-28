@@ -1,4 +1,4 @@
-import {clearPnl, clearSnl, selectPnl, createSnl} from "./lists-elements.js";
+import {clearPnl, clearSnl, selectPnl, createSnl} from "./nav/elements.js";
 import {
     birthStateList,
     partyAffiliationList,
@@ -7,7 +7,7 @@ import {
     previousJobGroupList,
     timeInOfficeList,
     reasonDepartureList
-} from "./lists.js";
+} from "./nav/lists.js";
 
 document.getElementById("pnl").addEventListener("click", function (event) {
     clearPnl();
