@@ -5,8 +5,6 @@ const married = [];
 const neverMarried = [];
 const widower = [];
 
-
-
 //Sort all presidents into "age inaugurated" arrays.
 allPresidents.forEach(function (index) {
     if (index.maritalStatus === "Married") {
