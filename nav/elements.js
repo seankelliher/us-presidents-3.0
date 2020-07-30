@@ -22,7 +22,7 @@ function clearSnl() {
 }
 
 //"Highlights" clicked "li" item "primary" nav list.
-function selectPnl(item) {
+function highlightPnl(item) {
         item.classList.add("selected");
 }
 
