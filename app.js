@@ -1,12 +1,21 @@
-import {clearPnl, clearSnl, selectPnl, createSnl} from "./nav/elements.js";
 import {
-    birthStateList,
-    partyAffiliationList,
-    ageInauguratedList,
-    maritalStatusList,
-    previousJobGroupList,
-    timeInOfficeList,
-    reasonDepartureList
+    lowlightPnl,
+    highlightPnl,
+    clearSnl,
+    createNavList,
+    navPnl,
+    navSnl
+} from "./nav/elements.js";
+
+import {
+    primaryNav,
+    birthplaceNav,
+    partyAffiliationNav,
+    ageWhenInauguratedNav,
+    maritalStatusNav,
+    previousJobTypeNav,
+    yearsAsPresidentNav,
+    reasonForDepartureNav
 } from "./nav/lists.js";
 
 document.getElementById("pnl").addEventListener("click", function (event) {
