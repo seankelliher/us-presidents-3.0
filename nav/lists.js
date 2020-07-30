@@ -10,7 +10,7 @@ const primaryNav = [
 ];
 
 //These arrays are used to create the "secondary navigation".
-const birthStateList = [
+const birthplaceNav = [
     "New England",
     "Mideast",
     "Great Lakes",
@@ -21,7 +21,7 @@ const birthStateList = [
     "Far West"
 ];
 
-const partyAffiliationList = [
+const partyAffiliationNav = [
     "Democratic",
     "Democratic-Republican",
     "Federalist",
@@ -30,20 +30,20 @@ const partyAffiliationList = [
     "Unaffiliated"
 ];
 
-const ageInauguratedList = [
+const ageWhenInauguratedNav = [
     "Forties",
     "Fifites",
     "Sixties",
     "Seventies"
 ];
 
-const maritalStatusList = [
+const maritalStatusNav = [
     "Married",
     "Never Married",
     "Widower"
 ];
 
-const previousJobGroupList = [
+const previousJobTypeNav = [
     "Cabinet",
     "Congress",
     "Diplomatic",
@@ -53,7 +53,7 @@ const previousJobGroupList = [
     "Private Industry"
 ];
 
-const timeInOfficeList = [
+const yearsAsPresidentNav = [
     "less than 4",
     "exactly 4",
     "between 4 and 8",
@@ -61,7 +61,7 @@ const timeInOfficeList = [
     "more than 8"
 ];
 
-const reasonDepartureList = [
+const reasonForDepartureNav = [
     "Died",
     "Lost Election",
     "Not Nominated",
@@ -71,11 +71,12 @@ const reasonDepartureList = [
 ];
 
 export {
-    birthStateList,
-    partyAffiliationList,
-    ageInauguratedList,
-    maritalStatusList,
-    previousJobGroupList,
-    timeInOfficeList,
-    reasonDepartureList
+    primaryNav,
+    birthplaceNav,
+    partyAffiliationNav,
+    ageWhenInauguratedNav,
+    maritalStatusNav,
+    previousJobTypeNav,
+    yearsAsPresidentNav,
+    reasonForDepartureNav
 };
