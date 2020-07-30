@@ -1,3 +1,14 @@
+//This array is used to create the "primary navigation".
+const primaryNav = [
+    "Birthplace",
+    "Party Affiliation",
+    "Age When Inaugurated",
+    "Marital Status",
+    "Previous Job Type",
+    "Years as President",
+    "Reason for Departure"
+];
+
 //These arrays are used to create the "secondary navigation".
 const birthStateList = [
     "New England",
