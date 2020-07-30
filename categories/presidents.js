@@ -3,31 +3,31 @@ function President(
     {
         number = "",
         name = "",
-        birthState = "",
-        birthStateRegion = "",
+        birthplace = "",
+        birthplaceRegion = "",
         partyAffiliation = "",
         yearInaugurated = "",
-        ageInaugurated = "",
+        ageWhenInaugurated = "",
         maritalStatus = "",
         previousJob = "",
-        previousJobGroup = "",
+        previousJobType = "",
         monthsInOffice = "",
-        reasonDeparture = "",
+        reasonForDeparture = "",
         notes = ""
     }
 ) {
     this.number = number;
     this.name = name;
-    this.birthState = birthState;
-    this.birthStateRegion = birthStateRegion;
+    this.birthplace = birthplace;
+    this.birthplaceRegion = birthplaceRegion;
     this.partyAffiliation = partyAffiliation;
     this.yearInaugurated = yearInaugurated;
-    this.ageInaugurated = ageInaugurated;
+    this.ageWhenInaugurated = ageWhenInaugurated;
     this.maritalStatus = maritalStatus;
     this.previousJob = previousJob;
-    this.previousJobGroup = previousJobGroup;
+    this.previousJobType = previousJobType;
     this.monthsInOffice = monthsInOffice;
-    this.reasonDeparture = reasonDeparture;
+    this.reasonForDeparture = reasonForDeparture;
     this.notes = notes;
 }
 
@@ -35,720 +35,720 @@ function President(
 const potus01 = new President({
     number: 1,
     name: "George Washington",
-    birthState: "Virginia",
-    birthStateRegion: "Southeast",
+    birthplace: "Virginia",
+    birthplaceRegion: "Southeast",
     partyAffiliation: "Unaffiliated",
     yearInaugurated: 1789,
-    ageInaugurated: 57,
+    ageWhenInaugurated: 57,
     maritalStatus: "Married",
     previousJob: "Commander in Chief, Continental Army",
-    previousJobGroup: "Military",
+    previousJobType: "Military",
     monthsInOffice: 96,
-    reasonDeparture: "Retired",
+    reasonForDeparture: "Retired",
     notes: ""
 });
 
 const potus02 = new President({
     number: 2,
     name: "John Adams",
-    birthState: "Massachusetts",
-    birthStateRegion: "New England",
+    birthplace: "Massachusetts",
+    birthplaceRegion: "New England",
     partyAffiliation: "Federalist",
     yearInaugurated: 1797,
-    ageInaugurated: 61,
+    ageWhenInaugurated: 61,
     maritalStatus: "Married",
     previousJob: "Vice President",
-    previousJobGroup: "Pres, VP",
+    previousJobType: "Pres, VP",
     monthsInOffice: 48,
-    reasonDeparture: "Lost Election",
+    reasonForDeparture: "Lost Election",
     notes: "Lost election to Thomas Jefferson."
 });
 
 const potus03 = new President({
     number: 3,
     name: "Thomas Jefferson",
-    birthState: "Virginia",
-    birthStateRegion: "Southeast",
+    birthplace: "Virginia",
+    birthplaceRegion: "Southeast",
     partyAffiliation: "Democratic-Republican",
     yearInaugurated: 1801,
-    ageInaugurated: 57,
+    ageWhenInaugurated: 57,
     maritalStatus: "Widower",
     previousJob: "Vice President",
-    previousJobGroup: "Pres, VP",
+    previousJobType: "Pres, VP",
     monthsInOffice: 96,
-    reasonDeparture: "Retired",
+    reasonForDeparture: "Retired",
     notes: ""
 });
 
 const potus04 = new President({
     number: 4,
     name: "James Madison",
-    birthState: "Virginia",
-    birthStateRegion: "Southeast",
+    birthplace: "Virginia",
+    birthplaceRegion: "Southeast",
     partyAffiliation: "Democratic-Republican",
     yearInaugurated: 1809,
-    ageInaugurated: 57,
+    ageWhenInaugurated: 57,
     maritalStatus: "Married",
     previousJob: "Secretary of State",
-    previousJobGroup: "Cabinet",
+    previousJobType: "Cabinet",
     monthsInOffice: 96,
-    reasonDeparture: "Retired",
+    reasonForDeparture: "Retired",
     notes: ""
 });
 
 const potus05 = new President({
     number: 5,
     name: "James Monroe",
-    birthState: "Virginia",
-    birthStateRegion: "Southeast",
+    birthplace: "Virginia",
+    birthplaceRegion: "Southeast",
     partyAffiliation: "Democratic-Republican",
     yearInaugurated: 1817,
-    ageInaugurated: 58,
+    ageWhenInaugurated: 58,
     maritalStatus: "Married",
     previousJob: "Secretary of State",
-    previousJobGroup: "Cabinet",
+    previousJobType: "Cabinet",
     monthsInOffice: 96,
-    reasonDeparture: "Retired",
+    reasonForDeparture: "Retired",
     notes: ""
 });
 
 const potus06 = new President({
     number: 6,
     name: "John Quincy Adams",
-    birthState: "Massachusetts",
-    birthStateRegion: "New England",
+    birthplace: "Massachusetts",
+    birthplaceRegion: "New England",
     partyAffiliation: "Democratic-Republican",
     yearInaugurated: 1825,
-    ageInaugurated: 57,
+    ageWhenInaugurated: 57,
     maritalStatus: "Married",
     previousJob: "Secretary of State",
-    previousJobGroup: "Cabinet",
+    previousJobType: "Cabinet",
     monthsInOffice: 48,
-    reasonDeparture: "Lost Election",
+    reasonForDeparture: "Lost Election",
     notes: "Lost election to Andrew Jackson."
 });
 
 const potus07 = new President({
     number: 7,
     name: "Andrew Jackson",
-    birthState: "Carolinas",
-    birthStateRegion: "Southeast",
+    birthplace: "Carolinas",
+    birthplaceRegion: "Southeast",
     partyAffiliation: "Democratic",
     yearInaugurated: 1829,
-    ageInaugurated: 61,
+    ageWhenInaugurated: 61,
     maritalStatus: "Widower",
     previousJob: "Senator, Tennessee",
-    previousJobGroup: "Congress",
+    previousJobType: "Congress",
     monthsInOffice: 96,
-    reasonDeparture: "Retired",
+    reasonForDeparture: "Retired",
     notes: ""
 });
 
 const potus08 = new President({
     number: 8,
     name: "Martin Van Buren",
-    birthState: "New York",
-    birthStateRegion: "Mideast",
+    birthplace: "New York",
+    birthplaceRegion: "Mideast",
     partyAffiliation: "Democratic",
     yearInaugurated: 1837,
-    ageInaugurated: 54,
+    ageWhenInaugurated: 54,
     maritalStatus: "Widower",
     previousJob: "Vice President",
-    previousJobGroup: "Pres, VP",
+    previousJobType: "Pres, VP",
     monthsInOffice: 48,
-    reasonDeparture: "Lost Election",
+    reasonForDeparture: "Lost Election",
     notes: "Lost election to William Henry Harrison."
 });
 
 const potus09 = new President({
     number: 9,
     name: "William Henry Harrison",
-    birthState: "Virginia",
-    birthStateRegion: "Southeast",
+    birthplace: "Virginia",
+    birthplaceRegion: "Southeast",
     partyAffiliation: "Whig",
     yearInaugurated: 1841,
-    ageInaugurated: 68,
+    ageWhenInaugurated: 68,
     maritalStatus: "Married",
     previousJob: "Minister, Colombia",
-    previousJobGroup: "Diplomatic",
+    previousJobType: "Diplomatic",
     monthsInOffice: 1,
-    reasonDeparture: "Died",
+    reasonForDeparture: "Died",
     notes: "President Harrison died of pneumonia."
 });
 
 const potus10 = new President({
     number: 10,
     name: "John Tyler",
-    birthState: "Virginia",
-    birthStateRegion: "Southeast",
+    birthplace: "Virginia",
+    birthplaceRegion: "Southeast",
     partyAffiliation: "Whig",
     yearInaugurated: 1841,
-    ageInaugurated: 51,
+    ageWhenInaugurated: 51,
     maritalStatus: "Married",
     previousJob: "Vice President",
-    previousJobGroup: "Pres, VP",
+    previousJobType: "Pres, VP",
     monthsInOffice: 47,
-    reasonDeparture: "Not Nominated",
+    reasonForDeparture: "Not Nominated",
     notes: ""
 });
 
 const potus11 = new President({
     number: 11,
     name: "James K. Polk",
-    birthState: "North Carolina",
-    birthStateRegion: "Southeast",
+    birthplace: "North Carolina",
+    birthplaceRegion: "Southeast",
     partyAffiliation: "Democratic",
     yearInaugurated: 1845,
-    ageInaugurated: 49,
+    ageWhenInaugurated: 49,
     maritalStatus: "Married",
     previousJob: "Governor, Tennessee",
-    previousJobGroup: "Governor",
+    previousJobType: "Governor",
     monthsInOffice: 48,
-    reasonDeparture: "Retired",
+    reasonForDeparture: "Retired",
     notes: ""
 });
 
 const potus12 = new President({
     number: 12,
     name: "Zachary Taylor",
-    birthState: "Virginia",
-    birthStateRegion: "Southeast",
+    birthplace: "Virginia",
+    birthplaceRegion: "Southeast",
     partyAffiliation: "Whig",
     yearInaugurated: 1849,
-    ageInaugurated: 64,
+    ageWhenInaugurated: 64,
     maritalStatus: "Married",
     previousJob: "Major General, US Army",
-    previousJobGroup: "Military",
+    previousJobType: "Military",
     monthsInOffice: 16,
-    reasonDeparture: "Died",
+    reasonForDeparture: "Died",
     notes: "President Taylor died of cholera morbus."
 });
 
 const potus13 = new President({
     number: 13,
     name: "Millard Fillmore",
-    birthState: "New York",
-    birthStateRegion: "Mideast",
+    birthplace: "New York",
+    birthplaceRegion: "Mideast",
     partyAffiliation: "Whig",
     yearInaugurated: 1850,
-    ageInaugurated: 50,
+    ageWhenInaugurated: 50,
     maritalStatus: "Married",
     previousJob: "Vice President",
-    previousJobGroup: "Pres, VP",
+    previousJobType: "Pres, VP",
     monthsInOffice: 31,
-    reasonDeparture: "Not Nominated",
+    reasonForDeparture: "Not Nominated",
     notes: ""
 });
 
 const potus14 = new President({
     number: 14,
     name: "Franklin Pierce",
-    birthState: "New Hampshire",
-    birthStateRegion: "New England",
+    birthplace: "New Hampshire",
+    birthplaceRegion: "New England",
     partyAffiliation: "Democratic",
     yearInaugurated: 1853,
-    ageInaugurated: 48,
+    ageWhenInaugurated: 48,
     maritalStatus: "Married",
     previousJob: "Brigadier General, US Army",
-    previousJobGroup: "Military",
+    previousJobType: "Military",
     monthsInOffice: 48,
-    reasonDeparture: "Not Nominated",
+    reasonForDeparture: "Not Nominated",
     notes: ""
 });
 
 const potus15 = new President({
     number: 15,
     name: "James Buchanan",
-    birthState: "Pennsylvania",
-    birthStateRegion: "Mideast",
+    birthplace: "Pennsylvania",
+    birthplaceRegion: "Mideast",
     partyAffiliation: "Democratic",
     yearInaugurated: 1857,
-    ageInaugurated: 65,
+    ageWhenInaugurated: 65,
     maritalStatus: "Never Married",
     previousJob: "Minister, Court of St James's",
-    previousJobGroup: "Diplomatic",
+    previousJobType: "Diplomatic",
     monthsInOffice: 48,
-    reasonDeparture: "Retired",
+    reasonForDeparture: "Retired",
     notes: ""
 });
 
 const potus16 = new President({
     number: 16,
     name: "Abraham Lincoln",
-    birthState: "Kentucky",
-    birthStateRegion: "Southeast",
+    birthplace: "Kentucky",
+    birthplaceRegion: "Southeast",
     partyAffiliation: "Republican",
     yearInaugurated: 1861,
-    ageInaugurated: 52,
+    ageWhenInaugurated: 52,
     maritalStatus: "Married",
     previousJob: "Representative, Illinois",
-    previousJobGroup: "Congress",
+    previousJobType: "Congress",
     monthsInOffice: 49,
-    reasonDeparture: "Died",
+    reasonForDeparture: "Died",
     notes: "President Lincoln was assassinated."
 });
 
 const potus17 = new President({
     number: 17,
     name: "Andrew Johnson",
-    birthState: "North Carolina",
-    birthStateRegion: "Southeast",
+    birthplace: "North Carolina",
+    birthplaceRegion: "Southeast",
     partyAffiliation: "Democratic",
     yearInaugurated: 1865,
-    ageInaugurated: 56,
+    ageWhenInaugurated: 56,
     maritalStatus: "Married",
     previousJob: "Vice President",
-    previousJobGroup: "Pres, VP",
+    previousJobType: "Pres, VP",
     monthsInOffice: 46,
-    reasonDeparture: "Not Nominated",
+    reasonForDeparture: "Not Nominated",
     notes: ""
 });
 
 const potus18 = new President({
     number: 18,
     name: "Ulysses S. Grant",
-    birthState: "Ohio",
-    birthStateRegion: "Great Lakes",
+    birthplace: "Ohio",
+    birthplaceRegion: "Great Lakes",
     partyAffiliation: "Republican",
     yearInaugurated: 1869,
-    ageInaugurated: 46,
+    ageWhenInaugurated: 46,
     maritalStatus: "Married",
     previousJob: "Commanding General, US Army",
-    previousJobGroup: "Military",
+    previousJobType: "Military",
     monthsInOffice: 96,
-    reasonDeparture: "Retired",
+    reasonForDeparture: "Retired",
     notes: ""
 });
 
 const potus19 = new President({
     number: 19,
     name: "Rutherford B. Hayes",
-    birthState: "Ohio",
-    birthStateRegion: "Great Lakes",
+    birthplace: "Ohio",
+    birthplaceRegion: "Great Lakes",
     partyAffiliation: "Republican",
     yearInaugurated: 1877,
-    ageInaugurated: 54,
+    ageWhenInaugurated: 54,
     maritalStatus: "Married",
     previousJob: "Governor, Ohio",
-    previousJobGroup: "Governor",
+    previousJobType: "Governor",
     monthsInOffice: 48,
-    reasonDeparture: "Retired",
+    reasonForDeparture: "Retired",
     notes: ""
 });
 
 const potus20 = new President({
     number: 20,
     name: "James A. Garfield",
-    birthState: "Ohio",
-    birthStateRegion: "Great Lakes",
+    birthplace: "Ohio",
+    birthplaceRegion: "Great Lakes",
     partyAffiliation: "Republican",
     yearInaugurated: 1881,
-    ageInaugurated: 49,
+    ageWhenInaugurated: 49,
     maritalStatus: "Married",
     previousJob: "Representative, Ohio",
-    previousJobGroup: "Congress",
+    previousJobType: "Congress",
     monthsInOffice: 6,
-    reasonDeparture: "Died",
+    reasonForDeparture: "Died",
     notes: "President Garfield was assassinated."
 });
 
 const potus21 = new President({
     number: 21,
     name: "Chester A. Arthur",
-    birthState: "Vermont",
-    birthStateRegion: "New England",
+    birthplace: "Vermont",
+    birthplaceRegion: "New England",
     partyAffiliation: "Republican",
     yearInaugurated: 1881,
-    ageInaugurated: 51,
+    ageWhenInaugurated: 51,
     maritalStatus: "Widower",
     previousJob: "Vice President",
-    previousJobGroup: "Pres, VP",
+    previousJobType: "Pres, VP",
     monthsInOffice: 41,
-    reasonDeparture: "Not Nominated",
+    reasonForDeparture: "Not Nominated",
     notes: ""
 });
 
 const potus22 = new President({
     number: 22,
     name: "Grover Cleveland",
-    birthState: "New Jersey",
-    birthStateRegion: "Mideast",
+    birthplace: "New Jersey",
+    birthplaceRegion: "Mideast",
     partyAffiliation: "Democratic",
-    ageInaugurated: 47,
+    ageWhenInaugurated: 47,
     yearInaugurated: 1885,
     maritalStatus: "Married",
     previousJob: "Governor, New York",
-    previousJobGroup: "Governor",
+    previousJobType: "Governor",
     monthsInOffice: 48,
-    reasonDeparture: "Lost Election",
+    reasonForDeparture: "Lost Election",
     notes: "Lost election to Benjamin Harrison."
 });
 
 const potus23 = new President({
     number: 23,
     name: "Benjamin Harrison",
-    birthState: "Ohio",
-    birthStateRegion: "Great Lakes",
+    birthplace: "Ohio",
+    birthplaceRegion: "Great Lakes",
     partyAffiliation: "Republican",
     yearInaugurated: 1889,
-    ageInaugurated: 55,
+    ageWhenInaugurated: 55,
     maritalStatus: "Married",
     previousJob: "Senator, Indiana",
-    previousJobGroup: "Congress",
+    previousJobType: "Congress",
     monthsInOffice: 48,
-    reasonDeparture: "Lost Election",
+    reasonForDeparture: "Lost Election",
     notes: "Lost election to Grover Cleveland"
 });
 
 const potus24 = new President({
     number: 24,
     name: "Grover Cleveland",
-    birthState: "New Jersey",
-    birthStateRegion: "Mideast",
+    birthplace: "New Jersey",
+    birthplaceRegion: "Mideast",
     partyAffiliation: "Democratic",
     yearInaugurated: 1893,
-    ageInaugurated: 55,
+    ageWhenInaugurated: 55,
     maritalStatus: "Married",
     previousJob: "President",
-    previousJobGroup: "Pres, VP",
+    previousJobType: "Pres, VP",
     monthsInOffice: 48,
-    reasonDeparture: "Retired",
+    reasonForDeparture: "Retired",
     notes: "Grover Cleveland was the 22nd and 24th President."
 });
 
 const potus25 = new President({
     number: 25,
     name: "William McKinley",
-    birthState: "Ohio",
-    birthStateRegion: "Great Lakes",
+    birthplace: "Ohio",
+    birthplaceRegion: "Great Lakes",
     partyAffiliation: "Republican",
     yearInaugurated: 1897,
-    ageInaugurated: 54,
+    ageWhenInaugurated: 54,
     maritalStatus: "Married",
     previousJob: "Governor, Ohio",
-    previousJobGroup: "Governor",
+    previousJobType: "Governor",
     monthsInOffice: 54,
-    reasonDeparture: "Died",
+    reasonForDeparture: "Died",
     notes: "President McKinley was assassinated."
 });
 
 const potus26 = new President({
     number: 26,
     name: "Theodore Roosevelt",
-    birthState: "New York",
-    birthStateRegion: "Mideast",
+    birthplace: "New York",
+    birthplaceRegion: "Mideast",
     partyAffiliation: "Republican",
     yearInaugurated: 1901,
-    ageInaugurated: 42,
+    ageWhenInaugurated: 42,
     maritalStatus: "Married",
     previousJob: "Vice President",
-    previousJobGroup: "Pres, VP",
+    previousJobType: "Pres, VP",
     monthsInOffice: 89,
-    reasonDeparture: "Retired",
+    reasonForDeparture: "Retired",
     notes: ""
 });
 
 const potus27 = new President({
     number: 27,
     name: "William Howard Taft",
-    birthState: "Ohio",
-    birthStateRegion: "Great Lakes",
+    birthplace: "Ohio",
+    birthplaceRegion: "Great Lakes",
     partyAffiliation: "Republican",
     yearInaugurated: 1909,
-    ageInaugurated: 51,
+    ageWhenInaugurated: 51,
     maritalStatus: "Married",
     previousJob: "Secretary of War",
-    previousJobGroup: "Cabinet",
+    previousJobType: "Cabinet",
     monthsInOffice: 48,
-    reasonDeparture: "Lost Election",
+    reasonForDeparture: "Lost Election",
     notes: "Lost election to Woodrow Wilson."
 });
 
 const potus28 = new President({
     number: 28,
     name: "Woodrow Wilson",
-    birthState: "Virginia",
-    birthStateRegion: "Southeast",
+    birthplace: "Virginia",
+    birthplaceRegion: "Southeast",
     partyAffiliation: "Democratic",
     yearInaugurated: 1913,
-    ageInaugurated: 56,
+    ageWhenInaugurated: 56,
     maritalStatus: "Widower",
     previousJob: "Governor, New Jersey",
-    previousJobGroup: "Governor",
+    previousJobType: "Governor",
     monthsInOffice: 96,
-    reasonDeparture: "Retired",
+    reasonForDeparture: "Retired",
     notes: ""
 });
 
 const potus29 = new President({
     number: 29,
     name: "Warren G. Harding",
-    birthState: "Ohio",
-    birthStateRegion: "Great Lakes",
+    birthplace: "Ohio",
+    birthplaceRegion: "Great Lakes",
     partyAffiliation: "Republican",
     yearInaugurated: 1921,
-    ageInaugurated: 55,
+    ageWhenInaugurated: 55,
     maritalStatus: "Married",
     previousJob: "Senator, Ohio",
-    previousJobGroup: "Congress",
+    previousJobType: "Congress",
     monthsInOffice: 28,
-    reasonDeparture: "Died",
+    reasonForDeparture: "Died",
     notes: "President McKinley died of a heart attack."
 });
 
 const potus30 = new President({
     number: 30,
     name: "Calvin Coolidge",
-    birthState: "Vermont",
-    birthStateRegion: "New England",
+    birthplace: "Vermont",
+    birthplaceRegion: "New England",
     partyAffiliation: "Republican",
     yearInaugurated: 1923,
-    ageInaugurated: 51,
+    ageWhenInaugurated: 51,
     maritalStatus: "Married",
     previousJob: "Vice President",
-    previousJobGroup: "Pres, VP",
+    previousJobType: "Pres, VP",
     monthsInOffice: 67,
-    reasonDeparture: "Retired",
+    reasonForDeparture: "Retired",
     notes: ""
 });
 
 const potus31 = new President({
     number: 31,
     name: "Herbert Hoover",
-    birthState: "Iowa",
-    birthStateRegion: "Plains",
+    birthplace: "Iowa",
+    birthplaceRegion: "Plains",
     partyAffiliation: "Republican",
     yearInaugurated: 1929,
-    ageInaugurated: 54,
+    ageWhenInaugurated: 54,
     maritalStatus: "Married",
     previousJob: "Secretary of Commerce",
-    previousJobGroup: "Cabinet",
+    previousJobType: "Cabinet",
     monthsInOffice: 48,
-    reasonDeparture: "Lost Election",
+    reasonForDeparture: "Lost Election",
     notes: "Lost election to Franklin D. Roosevelt."
 });
 
 const potus32 = new President({
     number: 32,
     name: "Franklin D. Roosevelt",
-    birthState: "New York",
-    birthStateRegion: "Mideast",
+    birthplace: "New York",
+    birthplaceRegion: "Mideast",
     partyAffiliation: "Democratic",
     yearInaugurated: 1933,
-    ageInaugurated: 51,
+    ageWhenInaugurated: 51,
     maritalStatus: "Married",
     previousJob: "Governor, New York",
-    previousJobGroup: "Governor",
+    previousJobType: "Governor",
     monthsInOffice: 145,
-    reasonDeparture: "Died",
+    reasonForDeparture: "Died",
     notes: "President Roosevelt died of a cerebral hemorrhage."
 });
 
 const potus33 = new President({
     number: 33,
     name: "Harry S. Truman",
-    birthState: "Missouri",
-    birthStateRegion: "Plains",
+    birthplace: "Missouri",
+    birthplaceRegion: "Plains",
     partyAffiliation: "Democratic",
     yearInaugurated: 1945,
-    ageInaugurated: 60,
+    ageWhenInaugurated: 60,
     maritalStatus: "Married",
     previousJob: "Vice President",
-    previousJobGroup: "Pres, VP",
+    previousJobType: "Pres, VP",
     monthsInOffice: 93,
-    reasonDeparture: "Retired",
+    reasonForDeparture: "Retired",
     notes: ""
 });
 
 const potus34 = new President({
     number: 34,
     name: "Dwight D. Eisenhower",
-    birthState: "Texas",
-    birthStateRegion: "Southwest",
+    birthplace: "Texas",
+    birthplaceRegion: "Southwest",
     partyAffiliation: "Republican",
     yearInaugurated: 1953,
-    ageInaugurated: 62,
+    ageWhenInaugurated: 62,
     maritalStatus: "Married",
     previousJob: "Supreme Allied Commander",
-    previousJobGroup: "Military",
+    previousJobType: "Military",
     monthsInOffice: 96,
-    reasonDeparture: "Term-Limited",
+    reasonForDeparture: "Term-Limited",
     notes: "First term-limited president due to new 22 Amendment."
 });
 
 const potus35 = new President({
     number: 35,
     name: "John F. Kennedy",
-    birthState: "Massachusetts",
-    birthStateRegion: "New England",
+    birthplace: "Massachusetts",
+    birthplaceRegion: "New England",
     partyAffiliation: "Democratic",
     yearInaugurated: 1961,
-    ageInaugurated: 43,
+    ageWhenInaugurated: 43,
     maritalStatus: "Married",
     previousJob: "Senator, Massachusetts",
-    previousJobGroup: "Congress",
+    previousJobType: "Congress",
     monthsInOffice: 34,
-    reasonDeparture: "Died",
+    reasonForDeparture: "Died",
     notes: "President Kennedy was assassinated."
 });
 
 const potus36 = new President({
     number: 36,
     name: "Lyndon B. Johnson",
-    birthState: "Texas",
-    birthStateRegion: "Southwest",
+    birthplace: "Texas",
+    birthplaceRegion: "Southwest",
     partyAffiliation: "Democratic",
     yearInaugurated: 1963,
-    ageInaugurated: 55,
+    ageWhenInaugurated: 55,
     maritalStatus: "Married",
     previousJob: "Vice President",
-    previousJobGroup: "Pres, VP",
+    previousJobType: "Pres, VP",
     monthsInOffice: 61,
-    reasonDeparture: "Retired",
+    reasonForDeparture: "Retired",
     notes: ""
 });
 
 const potus37 = new President({
     number: 37,
     name: "Richard Nixon",
-    birthState: "California",
-    birthStateRegion: "Far West",
+    birthplace: "California",
+    birthplaceRegion: "Far West",
     partyAffiliation: "Republican",
     yearInaugurated: 1969,
-    ageInaugurated: 56,
+    ageWhenInaugurated: 56,
     maritalStatus: "Married",
     previousJob: "Vice President",
-    previousJobGroup: "Pres, VP",
+    previousJobType: "Pres, VP",
     monthsInOffice: 66,
-    reasonDeparture: "Resigned",
+    reasonForDeparture: "Resigned",
     notes: ""
 });
 
 const potus38 = new President({
     number: 38,
     name: "Gerald Ford",
-    birthState: "Nebraska",
-    birthStateRegion: "Plains",
+    birthplace: "Nebraska",
+    birthplaceRegion: "Plains",
     partyAffiliation: "Republican",
     yearInaugurated: 1974,
-    ageInaugurated: 61,
+    ageWhenInaugurated: 61,
     maritalStatus: "Married",
     previousJob: "Vice President",
-    previousJobGroup: "Pres, VP",
+    previousJobType: "Pres, VP",
     monthsInOffice: 29,
-    reasonDeparture: "Lost Election",
+    reasonForDeparture: "Lost Election",
     notes: "Lost election to Jimmy Carter."
 });
 
 const potus39 = new President({
     number: 39,
     name: "Jimmy Carter",
-    birthState: "Georgia",
-    birthStateRegion: "Southeast",
+    birthplace: "Georgia",
+    birthplaceRegion: "Southeast",
     partyAffiliation: "Democratic",
     yearInaugurated: 1977,
-    ageInaugurated: 52,
+    ageWhenInaugurated: 52,
     maritalStatus: "Married",
     previousJob: "Governor, Georgia",
-    previousJobGroup: "Governor",
+    previousJobType: "Governor",
     monthsInOffice: 48,
-    reasonDeparture: "Lost Election",
+    reasonForDeparture: "Lost Election",
     notes: "Lost election to Ronald Reagan."
 });
 
 const potus40 = new President({
     number: 40,
     name: "Ronald Reagan",
-    birthState: "Illinois",
-    birthStateRegion: "Great Lakes",
+    birthplace: "Illinois",
+    birthplaceRegion: "Great Lakes",
     partyAffiliation: "Republican",
     yearInaugurated: 1981,
-    ageInaugurated: 69,
+    ageWhenInaugurated: 69,
     maritalStatus: "Married",
     previousJob: "Governor, California",
-    previousJobGroup: "Governor",
+    previousJobType: "Governor",
     monthsInOffice: 96,
-    reasonDeparture: "Term-limited",
+    reasonForDeparture: "Term-limited",
     notes: ""
 });
 
 const potus41 = new President({
     number: 41,
     name: "George H. W. Bush",
-    birthState: "Massachusetts",
-    birthStateRegion: "New England",
+    birthplace: "Massachusetts",
+    birthplaceRegion: "New England",
     partyAffiliation: "Republican",
     yearInaugurated: 1989,
-    ageInaugurated: 64,
+    ageWhenInaugurated: 64,
     maritalStatus: "Married",
     previousJob: "Vice President",
-    previousJobGroup: "Pres, VP",
+    previousJobType: "Pres, VP",
     monthsInOffice: 48,
-    reasonDeparture: "Lost Election",
+    reasonForDeparture: "Lost Election",
     notes: "Lost election to Bill Clinton."
 });
 
 const potus42 = new President({
     number: 42,
     name: "Bill Clinton",
-    birthState: "Arkansas",
-    birthStateRegion: "Southeast",
+    birthplace: "Arkansas",
+    birthplaceRegion: "Southeast",
     partyAffiliation: "Democratic",
     yearInaugurated: 1993,
-    ageInaugurated: 46,
+    ageWhenInaugurated: 46,
     maritalStatus: "Married",
     previousJob: "Governor, Arkansas",
-    previousJobGroup: "Governor",
+    previousJobType: "Governor",
     monthsInOffice: 96,
-    reasonDeparture: "Term-limited",
+    reasonForDeparture: "Term-limited",
     notes: ""
 });
 
 const potus43 = new President({
     number: 43,
     name: "George W. Bush",
-    birthState: "Connecticut",
-    birthStateRegion: "New England",
+    birthplace: "Connecticut",
+    birthplaceRegion: "New England",
     partyAffiliation: "Republican",
     yearInaugurated: 2001,
-    ageInaugurated: 54,
+    ageWhenInaugurated: 54,
     maritalStatus: "Married",
     previousJob: "Governor, Texas",
-    previousJobGroup: "Governor",
+    previousJobType: "Governor",
     monthsInOffice: 96,
-    reasonDeparture: "Term-limited",
+    reasonForDeparture: "Term-limited",
     notes: ""
 });
 
 const potus44 = new President({
     number: 44,
     name: "Barack Obama",
-    birthState: "Hawaii",
-    birthStateRegion: "Far West",
+    birthplace: "Hawaii",
+    birthplaceRegion: "Far West",
     partyAffiliation: "Democratic",
     yearInaugurated: 2009,
-    ageInaugurated: 47,
+    ageWhenInaugurated: 47,
     maritalStatus: "Married",
     previousJob: "Senator, Illinois",
-    previousJobGroup: "Congress",
+    previousJobType: "Congress",
     monthsInOffice: 96,
-    reasonDeparture: "Term-limited",
+    reasonForDeparture: "Term-limited",
     notes: ""
 });
 
 const potus45 = new President({
     number: 45,
     name: "Donald Trump",
-    birthState: "New York",
-    birthStateRegion: "Mideast",
+    birthplace: "New York",
+    birthplaceRegion: "Mideast",
     partyAffiliation: "Republican",
     yearInaugurated: 2017,
-    ageInaugurated: 70,
+    ageWhenInaugurated: 70,
     maritalStatus: "Married",
     previousJob: "Chair, Trump Org.",
-    previousJobGroup: "Private Industry",
+    previousJobType: "Private Industry",
     monthsInOffice: "n/a",
-    reasonDeparture: "n/a",
+    reasonForDeparture: "n/a",
     notes: ""
 });
 
@@ -802,4 +802,3 @@ const allPresidents = [
 ];
 
 export {allPresidents};
-
