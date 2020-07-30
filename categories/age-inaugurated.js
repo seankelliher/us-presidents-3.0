@@ -6,15 +6,16 @@ const fifties = [];
 const sixties = [];
 const seventies = [];
 
-//Sort all presidents into "age inaugurated" arrays.
+//Sort all presidents into "age when inaugurated" arrays.
 allPresidents.forEach(function (index) {
-    if ((index.ageInaugurated >= 40) && (index.ageInaugurated < 50)) {
+    const awi = ageWhenInaugurated;
+    if ((index.awi >= 40) && (index.awi < 50)) {
         forties.push(index.number);
-    } else if ((index.ageInaugurated >= 50) && (index.ageInaugurated < 60)) {
+    } else if ((index.awi >= 50) && (index.awi < 60)) {
         fifties.push(index.number);
-    } else if ((index.ageInaugurated >= 60) && (index.ageInaugurated < 70)) {
+    } else if ((index.awi >= 60) && (index.awi < 70)) {
         sixties.push(index.number);
-    } else if ((index.ageInaugurated >= 70) && (index.ageInaugurated < 80)) {
+    } else if ((index.awi >= 70) && (index.awi < 80)) {
         seventies.push(index.number);
     }
 });
