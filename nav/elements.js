@@ -40,4 +40,7 @@ function createNavList(navId) {
     });
 }
 
+const navPnl = ["pnl"];
+const navSnl = ["snl"];
+
 export {clearPnl, clearSnl, selectPnl, createSnl};
