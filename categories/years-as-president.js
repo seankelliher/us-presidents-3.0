@@ -9,15 +9,15 @@ const moreThan8 = [];
 
 //Sort all presidents into "age inaugurated" arrays.
 allPresidents.forEach(function (index) {
-    if (index.timeInOffice < 48) {
+    if (index.monthsInOffice < 48) {
         lessThan4.push(index.number);
-    } else if (index.timeInOffice === 48) {
+    } else if (index.monthsInOffice === 48) {
         exactly4.push(index.number);
-    } else if ((index.timeInOffice >= 49) && (index.timeInOffice < 96)) {
+    } else if ((index.monthsInOffice >= 49) && (index.monthsInOffice < 96)) {
         between4And8.push(index.number);
-    } else if (index.timeInOffice === 96) {
+    } else if (index.monthsInOffice === 96) {
         exactly8.push(index.number);
-    } else if (index.timeInOffice > 96) {
+    } else if (index.monthsInOffice > 96) {
         moreThan8.push(index.number);
     }
 });
