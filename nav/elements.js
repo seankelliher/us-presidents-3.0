@@ -12,6 +12,11 @@ function lowlightPnl() {
     });
 }
 
+//"Highlights" clicked "li" item "primary" nav list.
+function highlightPnl(item) {
+        item.classList.add("selected");
+}
+
 //Removes any "li" items from the "secondary" nav list.
 //While loop: if firstChild exists, remove lastChild. Keep going until false.
 function clearSnl() {
@@ -19,11 +24,6 @@ function clearSnl() {
     while (snl.firstChild) {
         snl.removeChild(snl.lastChild);
     }
-}
-
-//"Highlights" clicked "li" item "primary" nav list.
-function highlightPnl(item) {
-        item.classList.add("selected");
 }
 
 //Creates and appends "li" items to the "primary" or secondary" nav lists.
@@ -43,4 +43,4 @@ function createNavList(navId) {
 const navPnl = ["pnl"];
 const navSnl = ["snl"];
 
-export {clearPnl, clearSnl, selectPnl, createSnl};
+export {lowlightPnl, highlightPnl, clearSnl, createNavList, navPnl, navSnl};
