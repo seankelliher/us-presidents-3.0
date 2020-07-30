@@ -12,21 +12,21 @@ const farWest = [];
 
 //Sort all presidents into "party" arrays.
 allPresidents.forEach(function (index) {
-    if (index.birthStateRegion === "New England") {
+    if (index.birthplaceRegion === "New England") {
         newEngland.push(index.number);
-    } else if (index.birthStateRegion === "Mideast") {
+    } else if (index.birthplaceRegion === "Mideast") {
         mideast.push(index.number);
-    } else if (index.birthStateRegion === "Great Lakes") {
+    } else if (index.birthplaceRegion === "Great Lakes") {
         greatLakes.push(index.number);
-    } else if (index.birthStateRegion === "Plains") {
+    } else if (index.birthplaceRegion === "Plains") {
         plains.push(index.number);
-    } else if (index.birthStateRegion === "Southeast") {
+    } else if (index.birthplaceRegion === "Southeast") {
         southeast.push(index.number);
-    } else if (index.birthStateRegion === "Southwest") {
+    } else if (index.birthplaceRegion === "Southwest") {
         southwest.push(index.number);
-    } else if (index.birthStateRegion === "Rocky Mountain") {
+    } else if (index.birthplaceRegion === "Rocky Mountain") {
         rockyMountain.push(index.number);
-    } else if (index.birthStateRegion === "Far West") {
+    } else if (index.birthplaceRegion === "Far West") {
         farWest.push(index.number);
     }
 });
