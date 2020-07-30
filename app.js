@@ -18,29 +18,30 @@ import {
     reasonForDepartureNav
 } from "./nav/lists.js";
 
+//Create "primary" nav list.
+createNavList.apply(primaryNav, navPnl);
+
+//Create "secondary" nav list.
 document.getElementById("pnl").addEventListener("click", function (event) {
-    clearPnl();
+    lowlightPnl();
+    highlightPnl(event.target);
     clearSnl();
-    if (event.target.id === "birth") {
-        selectPnl(event.target);
-        createSnl.apply(birthStateList);
-    } else if (event.target.id === "party") {
-        selectPnl(event.target);
-        createSnl.apply(partyAffiliationList);
-    } else if (event.target.id === "age") {
-        selectPnl(event.target);
-        createSnl.apply(ageInauguratedList);
-    } else if (event.target.id === "marital") {
-        selectPnl(event.target);
-        createSnl.apply(maritalStatusList);
-    } else if (event.target.id === "previous") {
-        selectPnl(event.target);
-        createSnl.apply(previousJobGroupList);
-    } else if (event.target.id === "time") {
-        selectPnl(event.target);
-        createSnl.apply(timeInOfficeList);
-    } else if (event.target.id === "departure") {
-        selectPnl(event.target);
-        createSnl.apply(reasonDepartureList);
+
+    const etid = event.target.id;
+
+    if (etid === "birthplace") {
+        createNavList.apply(birthplaceNav, navSnl);
+    } else if (etid === "party-affiliation") {
+        createNavList.apply(partyAffiliationNav, navSnl);
+    } else if (etid === "age-when-inaugurated") {
+        createNavList.apply(ageWhenInauguratedNav, navSnl);
+    } else if (etid === "marital-status") {
+        createNavList.apply(maritalStatusNav, navSnl);
+    } else if (etid === "previous-job-type") {
+        createNavList.apply(previousJobTypeNav, navSnl);
+    } else if (etid === "years-as-president") {
+        createNavList.apply(yearsAsPresidentNav, navSnl);
+    } else if (etid === "reason-for-departure") {
+        createNavList.apply(reasonForDepartureNav, navSnl);
     }
 });
