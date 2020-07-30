@@ -10,17 +10,17 @@ const termLimited = [];
 
 //Sort all presidents into "party" arrays.
 allPresidents.forEach(function (index) {
-    if (index.reasonDeparture === "Died") {
+    if (index.reasonForDeparture === "Died") {
         died.push(index.number);
-    } else if (index.reasonDeparture === "Lost Election") {
+    } else if (index.reasonForDeparture === "Lost Election") {
         lostElection.push(index.number);
-    } else if (index.reasonDeparture === "Not Nominated") {
+    } else if (index.reasonForDeparture === "Not Nominated") {
         notNominated.push(index.number);
-    } else if (index.reasonDeparture === "Resigned") {
+    } else if (index.reasonForDeparture === "Resigned") {
         resigned.push(index.number);
-    } else if (index.reasonDeparture === "Retired") {
+    } else if (index.reasonForDeparture === "Retired") {
         retired.push(index.number);
-    } else if (index.reasonDeparture === "Term-Limited") {
+    } else if (index.reasonForDeparture === "Term-Limited") {
         termLimited.push(index.number);
     }
 });
