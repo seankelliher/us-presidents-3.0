@@ -1,5 +1,5 @@
 //"Un-highlights" any "li" items in the "primary" nav list.
-function clearPnl() {
+function lowlightPnl() {
     const pnl = document.getElementById("pnl");
     const pnlListItems = pnl.querySelectorAll("li");
     const pnlListItemsArray = Array.from(pnlListItems);
