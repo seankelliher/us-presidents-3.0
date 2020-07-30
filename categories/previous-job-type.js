@@ -12,19 +12,19 @@ const privateIndustry = [];
 
 //Sort all presidents into "age inaugurated" arrays.
 allPresidents.forEach(function (index) {
-    if (index.previousJobGroup === "Cabinet") {
+    if (index.previousJobType === "Cabinet") {
         cabinet.push(index.number);
-    } else if (index.previousJobGroup === "Congress") {
+    } else if (index.previousJobType === "Congress") {
         congress.push(index.number);
-    } else if (index.previousJobGroup === "Diplomatic") {
+    } else if (index.previousJobType === "Diplomatic") {
         diplomatic.push(index.number);
-    } else if (index.previousJobGroup === "Governor") {
+    } else if (index.previousJobType === "Governor") {
         governor.push(index.number);
-    } else if (index.previousJobGroup === "Military") {
+    } else if (index.previousJobType === "Military") {
         military.push(index.number);
-    } else if (index.previousJobGroup === "Pres, VP") {
+    } else if (index.previousJobType === "Pres, VP") {
         presVp.push(index.number);
-    } else if (index.previousJobGroup === "Private Industry") {
+    } else if (index.previousJobType === "Private Industry") {
         privateIndustry.push(index.number);
     }
 });
