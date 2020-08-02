@@ -51,6 +51,12 @@ section {
     background: lightblue;
 }
 
+#presidents {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 footer {
     width: 95%;
     margin: 0;
