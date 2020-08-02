@@ -69,7 +69,7 @@ const potus03 = new President({
     name: "Thomas Jefferson",
     birthplace: "Virginia",
     birthplaceRegion: "Southeast",
-    partyAffiliation: "Democratic-Republican",
+    partyAffiliation: "Democratic Republican",
     yearInaugurated: 1801,
     ageWhenInaugurated: 57,
     maritalStatus: "Widower",
@@ -85,7 +85,7 @@ const potus04 = new President({
     name: "James Madison",
     birthplace: "Virginia",
     birthplaceRegion: "Southeast",
-    partyAffiliation: "Democratic-Republican",
+    partyAffiliation: "Democratic Republican",
     yearInaugurated: 1809,
     ageWhenInaugurated: 57,
     maritalStatus: "Married",
@@ -101,7 +101,7 @@ const potus05 = new President({
     name: "James Monroe",
     birthplace: "Virginia",
     birthplaceRegion: "Southeast",
-    partyAffiliation: "Democratic-Republican",
+    partyAffiliation: "Democratic Republican",
     yearInaugurated: 1817,
     ageWhenInaugurated: 58,
     maritalStatus: "Married",
@@ -117,7 +117,7 @@ const potus06 = new President({
     name: "John Quincy Adams",
     birthplace: "Massachusetts",
     birthplaceRegion: "New England",
-    partyAffiliation: "Democratic-Republican",
+    partyAffiliation: "Democratic Republican",
     yearInaugurated: 1825,
     ageWhenInaugurated: 57,
     maritalStatus: "Married",
@@ -572,7 +572,7 @@ const potus34 = new President({
     previousJob: "Supreme Allied Commander",
     previousJobType: "Military",
     monthsInOffice: 96,
-    reasonForDeparture: "Term-Limited",
+    reasonForDeparture: "Term Limited",
     notes: "First term-limited president due to new 22 Amendment."
 });
 
@@ -668,7 +668,7 @@ const potus40 = new President({
     previousJob: "Governor, California",
     previousJobType: "Governor",
     monthsInOffice: 96,
-    reasonForDeparture: "Term-limited",
+    reasonForDeparture: "Term Limited",
     notes: ""
 });
 
@@ -700,7 +700,7 @@ const potus42 = new President({
     previousJob: "Governor, Arkansas",
     previousJobType: "Governor",
     monthsInOffice: 96,
-    reasonForDeparture: "Term-limited",
+    reasonForDeparture: "Term Limited",
     notes: ""
 });
 
@@ -716,7 +716,7 @@ const potus43 = new President({
     previousJob: "Governor, Texas",
     previousJobType: "Governor",
     monthsInOffice: 96,
-    reasonForDeparture: "Term-limited",
+    reasonForDeparture: "Term Limited",
     notes: ""
 });
 
@@ -732,7 +732,7 @@ const potus44 = new President({
     previousJob: "Senator, Illinois",
     previousJobType: "Congress",
     monthsInOffice: 96,
-    reasonForDeparture: "Term-limited",
+    reasonForDeparture: "Term Limited",
     notes: ""
 });
 
