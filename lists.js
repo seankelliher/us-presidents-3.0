@@ -23,7 +23,7 @@ const birthplaceNav = [
 
 const partyAffiliationNav = [
     "Democratic",
-    "Democratic-Republican",
+    "Democratic Republican",
     "Federalist",
     "Republican",
     "Whig",
@@ -67,7 +67,7 @@ const reasonForDepartureNav = [
     "Not Nominated",
     "Resigned",
     "Retired",
-    "Term-Limited"
+    "Term Limited"
 ];
 
 export {
