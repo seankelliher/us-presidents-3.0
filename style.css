@@ -60,11 +60,10 @@ ul {
 }
 
 section {
-    width: 45%;
+    width: 50%;
     margin: 0;
     padding: 1em 2.5%;
     flex: initial; /*flex: 0 1 auto*/
-    background: lightblue;
 }
 
 #presidents {
