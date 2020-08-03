@@ -1,12 +1,14 @@
-#container {
+html, body {
+    height: 100%;
+}
+
+body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start; /*main axis*/
-    align-items: flex-start; /*cross axis*/
+    flex-direction: column;
 }
 
 header {
