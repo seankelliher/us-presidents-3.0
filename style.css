@@ -19,6 +19,17 @@ header {
     border-bottom: 1px solid #EEE; /*grey 200*/
 }
 
+main {
+    width: 95%;
+    margin: 0;
+    padding: 1em 2.5%;
+    flex: 1 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;/*main axis*/
+    align-items: flex-start; /*cross axis*/
+}
+
 nav#primary {
     width: 20%;
     margin: 0;
