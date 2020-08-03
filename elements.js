@@ -147,13 +147,13 @@ function directNavLists() {
         } else if (etid === "party-affiliation") {
             createNavList.apply(partyAffiliationNav, ["snl"]);
         } else if (etid === "age-when-inaugurated") {
-            createNavList.apply(ageWhenInauguratedNav, ["snl"]);
+            createNavList.apply(ageInauguratedNav, ["snl"]);
         } else if (etid === "marital-status") {
             createNavList.apply(maritalStatusNav, ["snl"]);
         } else if (etid === "previous-job-type") {
             createNavList.apply(previousJobTypeNav, ["snl"]);
-        } else if (etid === "years-as-president") {
-            createNavList.apply(yearsAsPresidentNav, ["snl"]);
+        } else if (etid === "time-in-office") {
+            createNavList.apply(timeInOfficeNav, ["snl"]);
         } else if (etid === "reason-for-departure") {
             createNavList.apply(reasonForDepartureNav, ["snl"]);
         }
