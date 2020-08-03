@@ -16,7 +16,7 @@ header {
     margin: 0;
     padding: 1em 2.5%;
     flex: initial; /*flex: 0 1 auto*/
-    background: lightgoldenrodyellow;
+    border-bottom: 1px solid #EEE; /*grey 200*/
 }
 
 nav#primary {
