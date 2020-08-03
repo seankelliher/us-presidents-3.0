@@ -31,20 +31,23 @@ main {
 }
 
 nav#primary {
-    width: 20%;
+    width: 15%;
+    height: 40vh;
     margin: 0;
     padding: 1em 2.5%;
     flex: initial; /*flex: 0 1 auto*/
-    background: lightcyan;
+    border-right: 1px solid #EEE; /*grey 200*/
 }
 
 nav#secondary {
-    width: 20%;
+    width: 15%;
+    height: 40vh;
     margin: 0;
     padding: 1em 2.5%;
     flex: initial; /*flex: 0 1 auto*/
-    background: lightgreen;
+    border-right: 1px solid #EEE; /*grey 200*/
 }
+
 
 ul {
     margin: 0;
