@@ -30,7 +30,7 @@ const partyAffiliationNav = [
     "Unaffiliated"
 ];
 
-const ageWhenInauguratedNav = [
+const ageInauguratedNav = [
     "Forties",
     "Fifites",
     "Sixties",
@@ -53,7 +53,7 @@ const previousJobTypeNav = [
     "Private Industry"
 ];
 
-const yearsAsPresidentNav = [
+const timeInOfficeNav = [
     "less than 4",
     "exactly 4",
     "between 4 and 8",
@@ -74,9 +74,9 @@ export {
     primaryNav,
     birthplaceNav,
     partyAffiliationNav,
-    ageWhenInauguratedNav,
+    ageInauguratedNav,
     maritalStatusNav,
     previousJobTypeNav,
-    yearsAsPresidentNav,
+    timeInOfficeNav,
     reasonForDepartureNav
 };
