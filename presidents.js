@@ -8,10 +8,12 @@ function President(
         partyAffiliation = "",
         yearInaugurated = "",
         ageInaugurated = "",
+        ageInauguratedGroup = "",
         maritalStatus = "",
         previousJob = "",
         previousJobType = "",
         timeInOffice = "",
+        timeInOfficeGroup = "",
         reasonForDeparture = "",
         notes = ""
     }
@@ -22,11 +24,13 @@ function President(
     this.birthplaceRegion = birthplaceRegion;
     this.partyAffiliation = partyAffiliation;
     this.yearInaugurated = yearInaugurated;
+    this.ageInauguratedGroup = ageInauguratedGroup;
     this.ageInaugurated = ageInaugurated;
     this.maritalStatus = maritalStatus;
     this.previousJob = previousJob;
     this.previousJobType = previousJobType;
     this.timeInOffice = timeInOffice;
+    this.timeInOfficeGroup = timeInOfficeGroup;
     this.reasonForDeparture = reasonForDeparture;
     this.notes = notes;
 }
@@ -40,10 +44,12 @@ const potus01 = new President({
     partyAffiliation: "Unaffiliated",
     yearInaugurated: 1789,
     ageInaugurated: 57,
+    ageInauguratedGroup: "Fifties",
     maritalStatus: "Married",
     previousJob: "Commander in Chief, Continental Army",
     previousJobType: "Military",
-    timeInOffice: 96,
+    timeInOffice: "8 years", //96 months
+    timeInOfficeGroup: "Eight Years",
     reasonForDeparture: "Retired",
     notes: ""
 });
@@ -56,10 +62,12 @@ const potus02 = new President({
     partyAffiliation: "Federalist",
     yearInaugurated: 1797,
     ageInaugurated: 61,
+    ageInauguratedGroup: "Sixties",
     maritalStatus: "Married",
     previousJob: "Vice President",
-    previousJobType: "Pres, VP",
-    timeInOffice: 48,
+    previousJobType: "Executive Office",
+    timeInOffice: "4 years", //48 months
+    timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Lost Election",
     notes: "Lost election to Thomas Jefferson."
 });
@@ -72,10 +80,12 @@ const potus03 = new President({
     partyAffiliation: "Democratic Republican",
     yearInaugurated: 1801,
     ageInaugurated: 57,
+    ageInauguratedGroup: "Fifties",
     maritalStatus: "Widower",
     previousJob: "Vice President",
-    previousJobType: "Pres, VP",
-    timeInOffice: 96,
+    previousJobType: "Executive Office",
+    timeInOffice: "8 years", //96 months
+    timeInOfficeGroup: "Eight Years",
     reasonForDeparture: "Retired",
     notes: ""
 });
@@ -88,10 +98,12 @@ const potus04 = new President({
     partyAffiliation: "Democratic Republican",
     yearInaugurated: 1809,
     ageInaugurated: 57,
+    ageInauguratedGroup: "Fifties",
     maritalStatus: "Married",
     previousJob: "Secretary of State",
     previousJobType: "Cabinet",
-    timeInOffice: 96,
+    timeInOffice: "8 years", //96 months
+    timeInOfficeGroup: "Eight Years",
     reasonForDeparture: "Retired",
     notes: ""
 });
@@ -104,10 +116,12 @@ const potus05 = new President({
     partyAffiliation: "Democratic Republican",
     yearInaugurated: 1817,
     ageInaugurated: 58,
+    ageInauguratedGroup: "Fifties",
     maritalStatus: "Married",
     previousJob: "Secretary of State",
     previousJobType: "Cabinet",
-    timeInOffice: 96,
+    timeInOffice: "8 years", //96 months
+    timeInOfficeGroup: "Eight Years",
     reasonForDeparture: "Retired",
     notes: ""
 });
@@ -120,10 +134,12 @@ const potus06 = new President({
     partyAffiliation: "Democratic Republican",
     yearInaugurated: 1825,
     ageInaugurated: 57,
+    ageInauguratedGroup: "Fifties",
     maritalStatus: "Married",
     previousJob: "Secretary of State",
     previousJobType: "Cabinet",
-    timeInOffice: 48,
+    timeInOffice: "4 years", //48 months
+    timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Lost Election",
     notes: "Lost election to Andrew Jackson."
 });
@@ -136,10 +152,12 @@ const potus07 = new President({
     partyAffiliation: "Democratic",
     yearInaugurated: 1829,
     ageInaugurated: 61,
+    ageInauguratedGroup: "Sixties",
     maritalStatus: "Widower",
     previousJob: "Senator, Tennessee",
     previousJobType: "Congress",
-    timeInOffice: 96,
+    timeInOffice: "8 years", //96 months
+    timeInOfficeGroup: "Eight Years",
     reasonForDeparture: "Retired",
     notes: ""
 });
@@ -152,10 +170,12 @@ const potus08 = new President({
     partyAffiliation: "Democratic",
     yearInaugurated: 1837,
     ageInaugurated: 54,
+    ageInauguratedGroup: "Fifties",
     maritalStatus: "Widower",
     previousJob: "Vice President",
-    previousJobType: "Pres, VP",
-    timeInOffice: 48,
+    previousJobType: "Executive Office",
+    timeInOffice: "4 years", //48 months
+    timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Lost Election",
     notes: "Lost election to William Henry Harrison."
 });
@@ -168,10 +188,12 @@ const potus09 = new President({
     partyAffiliation: "Whig",
     yearInaugurated: 1841,
     ageInaugurated: 68,
+    ageInauguratedGroup: "Sixties",
     maritalStatus: "Married",
     previousJob: "Minister, Colombia",
     previousJobType: "Diplomatic",
-    timeInOffice: 1,
+    timeInOffice: "1 month",
+    timeInOfficeGroup: "Less Than Four Years",
     reasonForDeparture: "Died",
     notes: "President Harrison died of pneumonia."
 });
@@ -184,10 +206,12 @@ const potus10 = new President({
     partyAffiliation: "Whig",
     yearInaugurated: 1841,
     ageInaugurated: 51,
+    ageInauguratedGroup: "Fifties",
     maritalStatus: "Married",
     previousJob: "Vice President",
-    previousJobType: "Pres, VP",
-    timeInOffice: 47,
+    previousJobType: "Executive Office",
+    timeInOffice: "3 years, 11 months", //47 months
+    timeInOfficeGroup: "Less Than Four Years",
     reasonForDeparture: "Not Nominated",
     notes: ""
 });
@@ -200,10 +224,12 @@ const potus11 = new President({
     partyAffiliation: "Democratic",
     yearInaugurated: 1845,
     ageInaugurated: 49,
+    ageInauguratedGroup: "Forties",
     maritalStatus: "Married",
     previousJob: "Governor, Tennessee",
     previousJobType: "Governor",
-    timeInOffice: 48,
+    timeInOffice: "4 years", //48 months
+    timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Retired",
     notes: ""
 });
@@ -216,10 +242,12 @@ const potus12 = new President({
     partyAffiliation: "Whig",
     yearInaugurated: 1849,
     ageInaugurated: 64,
+    ageInauguratedGroup: "Sixties",
     maritalStatus: "Married",
     previousJob: "Major General, US Army",
     previousJobType: "Military",
-    timeInOffice: 16,
+    timeInOffice: "1 year, 4 months", //16 months
+    timeInOfficeGroup: "Less Than Four Years",
     reasonForDeparture: "Died",
     notes: "President Taylor died of cholera morbus."
 });
@@ -232,10 +260,12 @@ const potus13 = new President({
     partyAffiliation: "Whig",
     yearInaugurated: 1850,
     ageInaugurated: 50,
+    ageInauguratedGroup: "Fifties",
     maritalStatus: "Married",
     previousJob: "Vice President",
-    previousJobType: "Pres, VP",
-    timeInOffice: 31,
+    previousJobType: "Executive Office",
+    timeInOffice: "2 years, 7 months", //31 months
+    timeInOfficeGroup: "Less Than Four Years",
     reasonForDeparture: "Not Nominated",
     notes: ""
 });
@@ -248,10 +278,12 @@ const potus14 = new President({
     partyAffiliation: "Democratic",
     yearInaugurated: 1853,
     ageInaugurated: 48,
+    ageInauguratedGroup: "Forties",
     maritalStatus: "Married",
     previousJob: "Brigadier General, US Army",
     previousJobType: "Military",
-    timeInOffice: 48,
+    timeInOffice: "4 years", //48 months
+    timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Not Nominated",
     notes: ""
 });
@@ -264,10 +296,12 @@ const potus15 = new President({
     partyAffiliation: "Democratic",
     yearInaugurated: 1857,
     ageInaugurated: 65,
+    ageInauguratedGroup: "Sixties",
     maritalStatus: "Never Married",
     previousJob: "Minister, Court of St James's",
     previousJobType: "Diplomatic",
-    timeInOffice: 48,
+    timeInOffice: "4 years", //48 months
+    timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Retired",
     notes: ""
 });
@@ -280,10 +314,12 @@ const potus16 = new President({
     partyAffiliation: "Republican",
     yearInaugurated: 1861,
     ageInaugurated: 52,
+    ageInauguratedGroup: "Fifties",
     maritalStatus: "Married",
     previousJob: "Representative, Illinois",
     previousJobType: "Congress",
-    timeInOffice: 49,
+    timeInOffice: "4 years, 1 month", //49 months
+    timeInOfficeGroup: "Between Four And Eight Years",
     reasonForDeparture: "Died",
     notes: "President Lincoln was assassinated."
 });
@@ -296,10 +332,12 @@ const potus17 = new President({
     partyAffiliation: "Democratic",
     yearInaugurated: 1865,
     ageInaugurated: 56,
+    ageInauguratedGroup: "Fifties",
     maritalStatus: "Married",
     previousJob: "Vice President",
-    previousJobType: "Pres, VP",
-    timeInOffice: 46,
+    previousJobType: "Executive Office",
+    timeInOffice: "3 years, 10 months", //46 months
+    timeInOfficeGroup: "Less Than Four Years",
     reasonForDeparture: "Not Nominated",
     notes: ""
 });
@@ -312,10 +350,12 @@ const potus18 = new President({
     partyAffiliation: "Republican",
     yearInaugurated: 1869,
     ageInaugurated: 46,
+    ageInauguratedGroup: "Forties",
     maritalStatus: "Married",
     previousJob: "Commanding General, US Army",
     previousJobType: "Military",
-    timeInOffice: 96,
+    timeInOffice: "8 years", //96 months
+    timeInOfficeGroup: "Eight Years",
     reasonForDeparture: "Retired",
     notes: ""
 });
@@ -328,10 +368,12 @@ const potus19 = new President({
     partyAffiliation: "Republican",
     yearInaugurated: 1877,
     ageInaugurated: 54,
+    ageInauguratedGroup: "Fifties",
     maritalStatus: "Married",
     previousJob: "Governor, Ohio",
     previousJobType: "Governor",
-    timeInOffice: 48,
+    timeInOffice: "4 years", //48 months
+    timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Retired",
     notes: ""
 });
@@ -344,10 +386,12 @@ const potus20 = new President({
     partyAffiliation: "Republican",
     yearInaugurated: 1881,
     ageInaugurated: 49,
+    ageInauguratedGroup: "Forties",
     maritalStatus: "Married",
     previousJob: "Representative, Ohio",
     previousJobType: "Congress",
-    timeInOffice: 6,
+    timeInOffice: "6 months",
+    timeInOfficeGroup: "Less Than Four Years",
     reasonForDeparture: "Died",
     notes: "President Garfield was assassinated."
 });
@@ -360,10 +404,12 @@ const potus21 = new President({
     partyAffiliation: "Republican",
     yearInaugurated: 1881,
     ageInaugurated: 51,
+    ageInauguratedGroup: "Fifties",
     maritalStatus: "Widower",
     previousJob: "Vice President",
-    previousJobType: "Pres, VP",
-    timeInOffice: 41,
+    previousJobType: "Executive Office",
+    timeInOffice: "3 years, 5 months", //41 months
+    timeInOfficeGroup: "Less Than Four Years",
     reasonForDeparture: "Not Nominated",
     notes: ""
 });
@@ -376,10 +422,12 @@ const potus22 = new President({
     partyAffiliation: "Democratic",
     ageInaugurated: 47,
     yearInaugurated: 1885,
+    ageInauguratedGroup: "Forties",
     maritalStatus: "Married",
     previousJob: "Governor, New York",
     previousJobType: "Governor",
-    timeInOffice: 48,
+    timeInOffice: "4 years", //48 months
+    timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Lost Election",
     notes: "Lost election to Benjamin Harrison."
 });
@@ -392,10 +440,12 @@ const potus23 = new President({
     partyAffiliation: "Republican",
     yearInaugurated: 1889,
     ageInaugurated: 55,
+    ageInauguratedGroup: "Fifties",
     maritalStatus: "Married",
     previousJob: "Senator, Indiana",
     previousJobType: "Congress",
-    timeInOffice: 48,
+    timeInOffice: "4 years", //48 months
+    timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Lost Election",
     notes: "Lost election to Grover Cleveland"
 });
@@ -408,10 +458,12 @@ const potus24 = new President({
     partyAffiliation: "Democratic",
     yearInaugurated: 1893,
     ageInaugurated: 55,
+    ageInauguratedGroup: "Fifties",
     maritalStatus: "Married",
     previousJob: "President",
-    previousJobType: "Pres, VP",
-    timeInOffice: 48,
+    previousJobType: "Executive Office",
+    timeInOffice: "4 years", //48 months
+    timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Retired",
     notes: "Grover Cleveland was the 22nd and 24th President."
 });
@@ -424,10 +476,12 @@ const potus25 = new President({
     partyAffiliation: "Republican",
     yearInaugurated: 1897,
     ageInaugurated: 54,
+    ageInauguratedGroup: "Fifties",
     maritalStatus: "Married",
     previousJob: "Governor, Ohio",
     previousJobType: "Governor",
-    timeInOffice: 54,
+    timeInOffice: "4 years, 6 months", //54 months
+    timeInOfficeGroup: "Between Four And Eight Years",
     reasonForDeparture: "Died",
     notes: "President McKinley was assassinated."
 });
@@ -440,10 +494,12 @@ const potus26 = new President({
     partyAffiliation: "Republican",
     yearInaugurated: 1901,
     ageInaugurated: 42,
+    ageInauguratedGroup: "Forties",
     maritalStatus: "Married",
     previousJob: "Vice President",
-    previousJobType: "Pres, VP",
-    timeInOffice: 89,
+    previousJobType: "Executive Office",
+    timeInOffice: "7 years, 5 months", //89 months
+    timeInOfficeGroup: "Between Four And Eight Years",
     reasonForDeparture: "Retired",
     notes: ""
 });
@@ -456,10 +512,12 @@ const potus27 = new President({
     partyAffiliation: "Republican",
     yearInaugurated: 1909,
     ageInaugurated: 51,
+    ageInauguratedGroup: "Fifties",
     maritalStatus: "Married",
     previousJob: "Secretary of War",
     previousJobType: "Cabinet",
-    timeInOffice: 48,
+    timeInOffice: "4 years", //48 months
+    timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Lost Election",
     notes: "Lost election to Woodrow Wilson."
 });
@@ -472,10 +530,12 @@ const potus28 = new President({
     partyAffiliation: "Democratic",
     yearInaugurated: 1913,
     ageInaugurated: 56,
+    ageInauguratedGroup: "Fifties",
     maritalStatus: "Widower",
     previousJob: "Governor, New Jersey",
     previousJobType: "Governor",
-    timeInOffice: 96,
+    timeInOffice: "8 years", //96 months
+    timeInOfficeGroup: "Eight Years",
     reasonForDeparture: "Retired",
     notes: ""
 });
@@ -488,10 +548,12 @@ const potus29 = new President({
     partyAffiliation: "Republican",
     yearInaugurated: 1921,
     ageInaugurated: 55,
+    ageInauguratedGroup: "Fifties",
     maritalStatus: "Married",
     previousJob: "Senator, Ohio",
     previousJobType: "Congress",
-    timeInOffice: 28,
+    timeInOffice: "2 years, 4 months", //28 months
+    timeInOfficeGroup: "Less Than Four Years",
     reasonForDeparture: "Died",
     notes: "President McKinley died of a heart attack."
 });
@@ -504,10 +566,12 @@ const potus30 = new President({
     partyAffiliation: "Republican",
     yearInaugurated: 1923,
     ageInaugurated: 51,
+    ageInauguratedGroup: "Fifties",
     maritalStatus: "Married",
     previousJob: "Vice President",
-    previousJobType: "Pres, VP",
-    timeInOffice: 67,
+    previousJobType: "Executive Office",
+    timeInOffice: "5 years, 7 months", //67 months
+    timeInOfficeGroup: "Between Four And Eight Years",
     reasonForDeparture: "Retired",
     notes: ""
 });
@@ -520,10 +584,12 @@ const potus31 = new President({
     partyAffiliation: "Republican",
     yearInaugurated: 1929,
     ageInaugurated: 54,
+    ageInauguratedGroup: "Fifties",
     maritalStatus: "Married",
     previousJob: "Secretary of Commerce",
     previousJobType: "Cabinet",
-    timeInOffice: 48,
+    timeInOffice: "4 years", //48 months
+    timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Lost Election",
     notes: "Lost election to Franklin D. Roosevelt."
 });
@@ -536,10 +602,12 @@ const potus32 = new President({
     partyAffiliation: "Democratic",
     yearInaugurated: 1933,
     ageInaugurated: 51,
+    ageInauguratedGroup: "Fifties",
     maritalStatus: "Married",
     previousJob: "Governor, New York",
     previousJobType: "Governor",
-    timeInOffice: 145,
+    timeInOffice: "12 years, 1 month", //145 months
+    timeInOfficeGroup: "More Than Eight Years",
     reasonForDeparture: "Died",
     notes: "President Roosevelt died of a cerebral hemorrhage."
 });
@@ -552,10 +620,12 @@ const potus33 = new President({
     partyAffiliation: "Democratic",
     yearInaugurated: 1945,
     ageInaugurated: 60,
+    ageInauguratedGroup: "Sixties",
     maritalStatus: "Married",
     previousJob: "Vice President",
-    previousJobType: "Pres, VP",
-    timeInOffice: 93,
+    previousJobType: "Executive Office",
+    timeInOffice: "7 years, 9 months", //93 months
+    timeInOfficeGroup: "Between Four And Eight Years",
     reasonForDeparture: "Retired",
     notes: ""
 });
@@ -568,10 +638,12 @@ const potus34 = new President({
     partyAffiliation: "Republican",
     yearInaugurated: 1953,
     ageInaugurated: 62,
+    ageInauguratedGroup: "Sixties",
     maritalStatus: "Married",
     previousJob: "Supreme Allied Commander",
     previousJobType: "Military",
-    timeInOffice: 96,
+    timeInOffice: "8 years", //96 months
+    timeInOfficeGroup: "Eight Years",
     reasonForDeparture: "Term Limited",
     notes: "First term-limited president due to new 22 Amendment."
 });
@@ -584,10 +656,12 @@ const potus35 = new President({
     partyAffiliation: "Democratic",
     yearInaugurated: 1961,
     ageInaugurated: 43,
+    ageInauguratedGroup: "Forties",
     maritalStatus: "Married",
     previousJob: "Senator, Massachusetts",
     previousJobType: "Congress",
-    timeInOffice: 34,
+    timeInOffice: "2 years, 10 months", //34 months
+    timeInOfficeGroup: "Less Than Four Years",
     reasonForDeparture: "Died",
     notes: "President Kennedy was assassinated."
 });
@@ -600,10 +674,12 @@ const potus36 = new President({
     partyAffiliation: "Democratic",
     yearInaugurated: 1963,
     ageInaugurated: 55,
+    ageInauguratedGroup: "Fifties",
     maritalStatus: "Married",
     previousJob: "Vice President",
-    previousJobType: "Pres, VP",
-    timeInOffice: 61,
+    previousJobType: "Executive Office",
+    timeInOffice: "5 years, 1 month", //61 months
+    timeInOfficeGroup: "Between Four And Eight Years",
     reasonForDeparture: "Retired",
     notes: ""
 });
@@ -616,10 +692,12 @@ const potus37 = new President({
     partyAffiliation: "Republican",
     yearInaugurated: 1969,
     ageInaugurated: 56,
+    ageInauguratedGroup: "Fifties",
     maritalStatus: "Married",
     previousJob: "Vice President",
-    previousJobType: "Pres, VP",
-    timeInOffice: 66,
+    previousJobType: "Executive Office",
+    timeInOffice: "5 years, 6 months", //66 months
+    timeInOfficeGroup: "Between Four And Eight Years",
     reasonForDeparture: "Resigned",
     notes: ""
 });
@@ -632,10 +710,12 @@ const potus38 = new President({
     partyAffiliation: "Republican",
     yearInaugurated: 1974,
     ageInaugurated: 61,
+    ageInauguratedGroup: "Sixties",
     maritalStatus: "Married",
     previousJob: "Vice President",
-    previousJobType: "Pres, VP",
-    timeInOffice: 29,
+    previousJobType: "Executive Office",
+    timeInOffice: "2 years, 5 months", //29 years
+    timeInOfficeGroup: "Less Than Four Years",
     reasonForDeparture: "Lost Election",
     notes: "Lost election to Jimmy Carter."
 });
@@ -648,10 +728,12 @@ const potus39 = new President({
     partyAffiliation: "Democratic",
     yearInaugurated: 1977,
     ageInaugurated: 52,
+    ageInauguratedGroup: "Fifties",
     maritalStatus: "Married",
     previousJob: "Governor, Georgia",
     previousJobType: "Governor",
-    timeInOffice: 48,
+    timeInOffice: "4 years", //48 months
+    timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Lost Election",
     notes: "Lost election to Ronald Reagan."
 });
@@ -664,10 +746,12 @@ const potus40 = new President({
     partyAffiliation: "Republican",
     yearInaugurated: 1981,
     ageInaugurated: 69,
+    ageInauguratedGroup: "Sixties",
     maritalStatus: "Married",
     previousJob: "Governor, California",
     previousJobType: "Governor",
-    timeInOffice: 96,
+    timeInOffice: "8 years", //96 months
+    timeInOfficeGroup: "Eight Years",
     reasonForDeparture: "Term Limited",
     notes: ""
 });
@@ -680,10 +764,12 @@ const potus41 = new President({
     partyAffiliation: "Republican",
     yearInaugurated: 1989,
     ageInaugurated: 64,
+    ageInauguratedGroup: "Sixties",
     maritalStatus: "Married",
     previousJob: "Vice President",
-    previousJobType: "Pres, VP",
-    timeInOffice: 48,
+    previousJobType: "Executive Office",
+    timeInOffice: "4 years", //48 months
+    timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Lost Election",
     notes: "Lost election to Bill Clinton."
 });
@@ -696,10 +782,12 @@ const potus42 = new President({
     partyAffiliation: "Democratic",
     yearInaugurated: 1993,
     ageInaugurated: 46,
+    ageInauguratedGroup: "Forties",
     maritalStatus: "Married",
     previousJob: "Governor, Arkansas",
     previousJobType: "Governor",
-    timeInOffice: 96,
+    timeInOffice: "8 years", //96 months
+    timeInOfficeGroup: "Eight Years",
     reasonForDeparture: "Term Limited",
     notes: ""
 });
@@ -712,10 +800,12 @@ const potus43 = new President({
     partyAffiliation: "Republican",
     yearInaugurated: 2001,
     ageInaugurated: 54,
+    ageInauguratedGroup: "Fifties",
     maritalStatus: "Married",
     previousJob: "Governor, Texas",
     previousJobType: "Governor",
-    timeInOffice: 96,
+    timeInOffice: "8 years", //96 months
+    timeInOfficeGroup: "Eight Years",
     reasonForDeparture: "Term Limited",
     notes: ""
 });
@@ -728,10 +818,12 @@ const potus44 = new President({
     partyAffiliation: "Democratic",
     yearInaugurated: 2009,
     ageInaugurated: 47,
+    ageInauguratedGroup: "Forties",
     maritalStatus: "Married",
     previousJob: "Senator, Illinois",
     previousJobType: "Congress",
-    timeInOffice: 96,
+    timeInOffice: "8 years", //96 months
+    timeInOfficeGroup: "Eight Years",
     reasonForDeparture: "Term Limited",
     notes: ""
 });
@@ -744,10 +836,12 @@ const potus45 = new President({
     partyAffiliation: "Republican",
     yearInaugurated: 2017,
     ageInaugurated: 70,
+    ageInauguratedGroup: "Seventies",
     maritalStatus: "Married",
     previousJob: "Chair, Trump Org.",
     previousJobType: "Private Industry",
     timeInOffice: "n/a",
+    timeInOfficeGroup: "n/a",
     reasonForDeparture: "n/a",
     notes: ""
 });
