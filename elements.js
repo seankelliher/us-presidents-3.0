@@ -2,10 +2,10 @@ import {
     primaryNav,
     birthplaceNav,
     partyAffiliationNav,
-    ageWhenInauguratedNav,
+    ageInauguratedNav,
     maritalStatusNav,
     previousJobTypeNav,
-    yearsAsPresidentNav,
+    timeInOfficeNav,
     reasonForDepartureNav
 } from "./lists.js";
 
