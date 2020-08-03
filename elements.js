@@ -71,8 +71,15 @@ function createNavList(navId) {
 //Create elements in #presidents.
 function createPresidents(item) {
 
-    const replaced3 = item.replace(/^[a-z]|-([a-z])/gi, function (whole) {
+    //Regex the clicked li id to form string.
+    //For example: new-england -> New England.
+    //Search for first letter of first word, and "-" letter.
+    const propValue = item.replace(/^[a-z]|-([a-z])/gi, function (whole) {
+
+        //Make first letter each word upper case.
         const withDashes = whole.toUpperCase();
+
+        //Remove dashes. Replace with spaces. Make string.
         const removeDashes = /-/g;
         const close = withDashes.replace(removeDashes, " ");
         return close.toString();
@@ -84,20 +91,31 @@ function createPresidents(item) {
         const para1 = document.createElement("p");
         presidents.appendChild(para1);
 
-        if (index.birthplaceRegion === replaced3) {
-            para1.textContent = index.number + index.name + index.birthplace;
-        } else if (index.partyAffiliation === replaced3) {
-            para1.textContent = index.number + index.name;
-        } else if (index.ageWhenInaugurated === replaced3) {
-            para1.textContent = index.number + index.name;
-        } else if (index.maritalStatus === replaced3) {
-            para1.textContent = index.number + index.name;
-        } else if (index.previousJobType === replaced3) {
-            para1.textContent = index.number + index.name + index.previousJob;
-        } else if (index.monthsInOffice === replaced3) {
-            para1.textContent = index.number + index.name;
-        } else if (index.reasonForDeparture === replaced3) {
-            para1.textContent = index.number + index.name + index.notes;
+        //Variables to make the below if/else statements shorter.
+        const num = index.number;
+        const name = index.name;
+        const birth = index.birthplace;
+        const age = index.ageInaugurated;
+        const prev = index.previousJob;
+        const tio = index.timeInOffice;
+        const note = index.notes;
+
+        //Looping through allPresidents.
+        //If president's prop. value = regex'd clicked li id, display president.
+        if (index.birthplaceRegion === propValue) {
+            para1.textContent = `${num} ${name} ${birth}`;
+        } else if (index.partyAffiliation === propValue) {
+            para1.textContent = `${num} ${name}`;
+        } else if (index.ageInauguratedGroup === propValue) {
+            para1.textContent = `${num} ${name} ${age}`;
+        } else if (index.maritalStatus === propValue) {
+            para1.textContent = `${num} ${name}`;
+        } else if (index.previousJobType === propValue) {
+            para1.textContent = `${num} ${name} ${prev}`;
+        } else if (index.timeInOfficeGroup === propValue) {
+            para1.textContent = `${num} ${name} ${tio}`;
+        } else if (index.reasonForDeparture === propValue) {
+            para1.textContent = `${num} ${name} ${note}`;
         }
     });
 }
