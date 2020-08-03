@@ -56,8 +56,9 @@ function createNavList(navId) {
         navListItem.textContent = item;
 
         //Regex the value to form the li element's id.
+        //For example: New England -> new-england.
         const lowerCase = item.toLowerCase();
-        const removeSpace = /\s|,\s/g;
+        const removeSpace = /\s/g;
         const addDash = lowerCase.replace(removeSpace, "-");
         navListItem.id = addDash;
 
