@@ -1,12 +1,12 @@
 //This array is used to create the "primary navigation".
 const primaryNav = [
     "Birthplace",
-    "Party Affiliation",
-    "Age When Inaugurated",
-    "Marital Status",
-    "Previous Job Type",
-    "Years as President",
-    "Reason for Departure"
+    "Party affiliation",
+    "Age when inaugurated",
+    "Marital status",
+    "Previous job type",
+    "Time in office",
+    "Reason for departure"
 ];
 
 //These arrays are used to create the "secondary navigation".
@@ -32,14 +32,14 @@ const partyAffiliationNav = [
 
 const ageInauguratedNav = [
     "Forties",
-    "Fifites",
+    "Fifties",
     "Sixties",
     "Seventies"
 ];
 
 const maritalStatusNav = [
     "Married",
-    "Never Married",
+    "Never married",
     "Widower"
 ];
 
@@ -49,25 +49,25 @@ const previousJobTypeNav = [
     "Diplomatic",
     "Governor",
     "Military",
-    "Pres, VP",
-    "Private Industry"
+    "Executive Office",
+    "Private industry"
 ];
 
 const timeInOfficeNav = [
-    "less than 4",
-    "exactly 4",
-    "between 4 and 8",
-    "exactly 8",
-    "more than 8"
+    "Less than four years",
+    "Four years",
+    "Between four and eight years",
+    "Eight years",
+    "More than eight years"
 ];
 
 const reasonForDepartureNav = [
     "Died",
-    "Lost Election",
-    "Not Nominated",
+    "Lost election",
+    "Not nominated",
     "Resigned",
     "Retired",
-    "Term Limited"
+    "Term limited"
 ];
 
 export {
