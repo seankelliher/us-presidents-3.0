@@ -11,6 +11,12 @@ body {
     flex-direction: column;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 header {
     width: 95%;
     margin: 0;
@@ -73,6 +79,17 @@ section {
     width: 100%;
     margin: 0;
     padding: 0;
+}
+
+figure {
+    width: 48%;
+    margin: .5em 0;
+    padding: .5em 0%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;/*main axis*/
+    align-items: center; /*cross axis*/
+    border: 1px solid #EEE; /*grey 200*/
 }
 
 footer {
