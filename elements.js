@@ -87,8 +87,20 @@ function createPresidents(item) {
 
     allPresidents.forEach(function (index) {
 
+        //Retrive the "president" id div.
         const presidents = document.getElementById("presidents");
-        const para1 = document.createElement("p");
+
+        //Create elements for it.
+        const fig = document.createElement("figure");
+        const figcap = document.createElement("figcaption");
+        const image = document.createElement("img");
+        const span1 = document.createElement("span");
+        const span2 = document.createElement("span");
+
+        //Assign content to those elements.
+        //[needs to be done!!!]
+
+        //Append those elememts to each other.
         presidents.appendChild(para1);
 
         //Variables to make the below if/else statements shorter.
