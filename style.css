@@ -125,6 +125,16 @@ li {
     font-weight: 400;
 }
 
+figcaption {
+    font-family: 'Roboto', serif;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+span {
+    display: block;
+}
+
 /*Media queries*/
 @media all and (min-width: 300px) {
     h1 {
@@ -141,6 +151,10 @@ li {
 
     li {
         font-size: .9375em; /*15 pixels*/
+    }
+
+    figcaption {
+        font-size: .75em; /*12 pixels*/
     }
 }
 
@@ -159,6 +173,10 @@ li {
 
     li {
         font-size: 1em; /*16 pixels*/
+    }
+
+    figcaption {
+        font-size: .875em; /*14 pixels*/
     }
 }
 
