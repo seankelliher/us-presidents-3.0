@@ -26,9 +26,9 @@ header {
 }
 
 main {
-    width: 95%;
+    width: 100%;
     margin: 0;
-    padding: 1em 2.5%;
+    padding: 0;
     flex: 1 0 auto;
     display: flex;
     flex-flow: row wrap;
