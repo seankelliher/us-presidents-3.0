@@ -110,7 +110,7 @@ const potus04 = new President({
     timeInOffice: "8 years", //96 months
     timeInOfficeGroup: "Eight Years",
     reasonForDeparture: "Retired",
-    photo: "images/james-madsion.png",
+    photo: "images/james-madison.png",
     notes: ""
 });
 
