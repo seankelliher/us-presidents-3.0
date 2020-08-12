@@ -53,7 +53,7 @@ const potus01 = new President({
     timeInOffice: "8 years", //96 months
     timeInOfficeGroup: "Eight Years",
     reasonForDeparture: "Retired",
-    photo: "images/george-washington.jpg",
+    photo: "images/george-washington.png",
     notes: ""
 });
 
@@ -72,7 +72,7 @@ const potus02 = new President({
     timeInOffice: "4 years", //48 months
     timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Lost Election",
-    photo: "images/john-adams.jpg",
+    photo: "images/john-adams.png",
     notes: "Lost election to Thomas Jefferson."
 });
 
@@ -91,7 +91,7 @@ const potus03 = new President({
     timeInOffice: "8 years", //96 months
     timeInOfficeGroup: "Eight Years",
     reasonForDeparture: "Retired",
-    photo: "images/thomas-jefferson.jpg",
+    photo: "images/thomas-jefferson.png",
     notes: ""
 });
 
@@ -110,7 +110,7 @@ const potus04 = new President({
     timeInOffice: "8 years", //96 months
     timeInOfficeGroup: "Eight Years",
     reasonForDeparture: "Retired",
-    photo: "images/james-madsion.jpg",
+    photo: "images/james-madsion.png",
     notes: ""
 });
 
@@ -129,7 +129,7 @@ const potus05 = new President({
     timeInOffice: "8 years", //96 months
     timeInOfficeGroup: "Eight Years",
     reasonForDeparture: "Retired",
-    photo: "images/james-monroe.jpg",
+    photo: "images/james-monroe.png",
     notes: ""
 });
 
@@ -148,7 +148,7 @@ const potus06 = new President({
     timeInOffice: "4 years", //48 months
     timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Lost Election",
-    photo: "images/john-quincy-adams.jpg",
+    photo: "images/john-quincy-adams.png",
     notes: "Lost election to Andrew Jackson."
 });
 
@@ -167,7 +167,7 @@ const potus07 = new President({
     timeInOffice: "8 years", //96 months
     timeInOfficeGroup: "Eight Years",
     reasonForDeparture: "Retired",
-    photo: "images/andrew-jackson.jpg",
+    photo: "images/andrew-jackson.png",
     notes: ""
 });
 
@@ -186,7 +186,7 @@ const potus08 = new President({
     timeInOffice: "4 years", //48 months
     timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Lost Election",
-    photo: "images/martin-van-buren.jpg",
+    photo: "images/martin-vanburen.png",
     notes: "Lost election to William Henry Harrison."
 });
 
@@ -205,7 +205,7 @@ const potus09 = new President({
     timeInOffice: "1 month",
     timeInOfficeGroup: "Less Than Four Years",
     reasonForDeparture: "Died",
-    photo: "images/william-henry-harrison.jpg",
+    photo: "images/william-harrison.png",
     notes: "President Harrison died of pneumonia."
 });
 
@@ -224,7 +224,7 @@ const potus10 = new President({
     timeInOffice: "3 years, 11 months", //47 months
     timeInOfficeGroup: "Less Than Four Years",
     reasonForDeparture: "Not Nominated",
-    photo: "images/john-tyler.jpg",
+    photo: "images/john-tyler.png",
     notes: ""
 });
 
@@ -243,7 +243,7 @@ const potus11 = new President({
     timeInOffice: "4 years", //48 months
     timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Retired",
-    photo: "images/james-polk.jpg",
+    photo: "images/james-polk.png",
     notes: ""
 });
 
@@ -262,7 +262,7 @@ const potus12 = new President({
     timeInOffice: "1 year, 4 months", //16 months
     timeInOfficeGroup: "Less Than Four Years",
     reasonForDeparture: "Died",
-    photo: "images/zachary-taylor.jpg",
+    photo: "images/zachary-taylor.png",
     notes: "President Taylor died of cholera morbus."
 });
 
@@ -281,7 +281,7 @@ const potus13 = new President({
     timeInOffice: "2 years, 7 months", //31 months
     timeInOfficeGroup: "Less Than Four Years",
     reasonForDeparture: "Not Nominated",
-    photo: "images/millard-fillmore.jpg",
+    photo: "images/millard-fillmore.png",
     notes: ""
 });
 
@@ -300,7 +300,7 @@ const potus14 = new President({
     timeInOffice: "4 years", //48 months
     timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Not Nominated",
-    photo: "images/franklin-pierce.jpg",
+    photo: "images/franklin-pierce.png",
     notes: ""
 });
 
@@ -319,7 +319,7 @@ const potus15 = new President({
     timeInOffice: "4 years", //48 months
     timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Retired",
-    photo: "images/james-buchanan.jpg",
+    photo: "images/james-buchanan.png",
     notes: ""
 });
 
@@ -338,7 +338,7 @@ const potus16 = new President({
     timeInOffice: "4 years, 1 month", //49 months
     timeInOfficeGroup: "Between Four And Eight Years",
     reasonForDeparture: "Died",
-    photo: "images/abraham-lincoln.jpg",
+    photo: "images/abraham-lincoln.png",
     notes: "President Lincoln was assassinated."
 });
 
@@ -357,7 +357,7 @@ const potus17 = new President({
     timeInOffice: "3 years, 10 months", //46 months
     timeInOfficeGroup: "Less Than Four Years",
     reasonForDeparture: "Not Nominated",
-    photo: "images/andrew-johnson.jpg",
+    photo: "images/andrew-johnson.png",
     notes: ""
 });
 
@@ -376,7 +376,7 @@ const potus18 = new President({
     timeInOffice: "8 years", //96 months
     timeInOfficeGroup: "Eight Years",
     reasonForDeparture: "Retired",
-    photo: "images/ulysses-grant.jpg",
+    photo: "images/ulysses-grant.png",
     notes: ""
 });
 
@@ -395,7 +395,7 @@ const potus19 = new President({
     timeInOffice: "4 years", //48 months
     timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Retired",
-    photo: "images/rutherford-hayes.jpg",
+    photo: "images/rutherford-hayes.png",
     notes: ""
 });
 
@@ -414,7 +414,7 @@ const potus20 = new President({
     timeInOffice: "6 months",
     timeInOfficeGroup: "Less Than Four Years",
     reasonForDeparture: "Died",
-    photo: "images/james-garfield.jpg",
+    photo: "images/james-garfield.png",
     notes: "President Garfield was assassinated."
 });
 
@@ -433,7 +433,7 @@ const potus21 = new President({
     timeInOffice: "3 years, 5 months", //41 months
     timeInOfficeGroup: "Less Than Four Years",
     reasonForDeparture: "Not Nominated",
-    photo: "images/chester-arthur.jpg",
+    photo: "images/chester-arthur.png",
     notes: ""
 });
 
@@ -452,7 +452,7 @@ const potus22 = new President({
     timeInOffice: "4 years", //48 months
     timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Lost Election",
-    photo: "images/grover-cleveland.jpg",
+    photo: "images/grover-cleveland.png",
     notes: "Lost election to Benjamin Harrison."
 });
 
@@ -471,7 +471,7 @@ const potus23 = new President({
     timeInOffice: "4 years", //48 months
     timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Lost Election",
-    photo: "images/benjamin-harrison.jpg",
+    photo: "images/benjamin-harrison.png",
     notes: "Lost election to Grover Cleveland"
 });
 
@@ -490,7 +490,7 @@ const potus24 = new President({
     timeInOffice: "4 years", //48 months
     timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Retired",
-    photo: "images/grover-cleveland.jpg",
+    photo: "images/grover-cleveland.png",
     notes: "Grover Cleveland was the 22nd and 24th President."
 });
 
@@ -509,7 +509,7 @@ const potus25 = new President({
     timeInOffice: "4 years, 6 months", //54 months
     timeInOfficeGroup: "Between Four And Eight Years",
     reasonForDeparture: "Died",
-    photo: "images/william-mckinley.jpg",
+    photo: "images/william-mckinley.png",
     notes: "President McKinley was assassinated."
 });
 
@@ -528,7 +528,7 @@ const potus26 = new President({
     timeInOffice: "7 years, 5 months", //89 months
     timeInOfficeGroup: "Between Four And Eight Years",
     reasonForDeparture: "Retired",
-    photo: "images/theodore-roosevelt.jpg",
+    photo: "images/theodore-roosevelt.png",
     notes: ""
 });
 
@@ -547,7 +547,7 @@ const potus27 = new President({
     timeInOffice: "4 years", //48 months
     timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Lost Election",
-    photo: "images/william-howard-taft.jpg",
+    photo: "images/william-taft.png",
     notes: "Lost election to Woodrow Wilson."
 });
 
@@ -566,7 +566,7 @@ const potus28 = new President({
     timeInOffice: "8 years", //96 months
     timeInOfficeGroup: "Eight Years",
     reasonForDeparture: "Retired",
-    photo: "images/woodrow-wilson.jpg",
+    photo: "images/woodrow-wilson.png",
     notes: ""
 });
 
@@ -585,7 +585,7 @@ const potus29 = new President({
     timeInOffice: "2 years, 4 months", //28 months
     timeInOfficeGroup: "Less Than Four Years",
     reasonForDeparture: "Died",
-    photo: "images/warren-harding.jpg",
+    photo: "images/warren-harding.png",
     notes: "President Harding died of a heart attack."
 });
 
@@ -604,7 +604,7 @@ const potus30 = new President({
     timeInOffice: "5 years, 7 months", //67 months
     timeInOfficeGroup: "Between Four And Eight Years",
     reasonForDeparture: "Retired",
-    photo: "images/calvin-coolidge.jpg",
+    photo: "images/calvin-coolidge.png",
     notes: ""
 });
 
@@ -623,7 +623,7 @@ const potus31 = new President({
     timeInOffice: "4 years", //48 months
     timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Lost Election",
-    photo: "images/herbert-hoover.jpg",
+    photo: "images/herbert-hoover.png",
     notes: "Lost election to Franklin D. Roosevelt."
 });
 
@@ -642,7 +642,7 @@ const potus32 = new President({
     timeInOffice: "12 years, 1 month", //145 months
     timeInOfficeGroup: "More Than Eight Years",
     reasonForDeparture: "Died",
-    photo: "images/franklin-roosevelt.jpg",
+    photo: "images/franklin-roosevelt.png",
     notes: "President Roosevelt died of a cerebral hemorrhage."
 });
 
@@ -661,7 +661,7 @@ const potus33 = new President({
     timeInOffice: "7 years, 9 months", //93 months
     timeInOfficeGroup: "Between Four And Eight Years",
     reasonForDeparture: "Retired",
-    photo: "images/harry-truman.jpg",
+    photo: "images/harry-truman.png",
     notes: ""
 });
 
@@ -680,7 +680,7 @@ const potus34 = new President({
     timeInOffice: "8 years", //96 months
     timeInOfficeGroup: "Eight Years",
     reasonForDeparture: "Term Limited",
-    photo: "images/dwight-eisenhower.jpg",
+    photo: "images/dwight-eisenhower.png",
     notes: "First term-limited president due to new 22 Amendment."
 });
 
@@ -699,7 +699,7 @@ const potus35 = new President({
     timeInOffice: "2 years, 10 months", //34 months
     timeInOfficeGroup: "Less Than Four Years",
     reasonForDeparture: "Died",
-    photo: "images/john-kennedy.jpg",
+    photo: "images/john-kennedy.png",
     notes: "President Kennedy was assassinated."
 });
 
@@ -718,7 +718,7 @@ const potus36 = new President({
     timeInOffice: "5 years, 1 month", //61 months
     timeInOfficeGroup: "Between Four And Eight Years",
     reasonForDeparture: "Retired",
-    photo: "images/lyndon-johnson.jpg",
+    photo: "images/lyndon-johnson.png",
     notes: ""
 });
 
@@ -737,7 +737,7 @@ const potus37 = new President({
     timeInOffice: "5 years, 6 months", //66 months
     timeInOfficeGroup: "Between Four And Eight Years",
     reasonForDeparture: "Resigned",
-    photo: "images/richard-nixon.jpg",
+    photo: "images/richard-nixon.png",
     notes: ""
 });
 
@@ -756,7 +756,7 @@ const potus38 = new President({
     timeInOffice: "2 years, 5 months", //29 years
     timeInOfficeGroup: "Less Than Four Years",
     reasonForDeparture: "Lost Election",
-    photo: "images/gerald-ford.jpg",
+    photo: "images/gerald-ford.png",
     notes: "Lost election to Jimmy Carter."
 });
 
@@ -775,7 +775,7 @@ const potus39 = new President({
     timeInOffice: "4 years", //48 months
     timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Lost Election",
-    photo: "images/jimmy-carter.jpg",
+    photo: "images/jimmy-carter.png",
     notes: "Lost election to Ronald Reagan."
 });
 
@@ -794,7 +794,7 @@ const potus40 = new President({
     timeInOffice: "8 years", //96 months
     timeInOfficeGroup: "Eight Years",
     reasonForDeparture: "Term Limited",
-    photo: "images/ronald-reagan.jpg",
+    photo: "images/ronald-reagan.png",
     notes: ""
 });
 
@@ -813,7 +813,7 @@ const potus41 = new President({
     timeInOffice: "4 years", //48 months
     timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Lost Election",
-    photo: "images/george-hw-bush.jpg",
+    photo: "images/george-hw-bush.png",
     notes: "Lost election to Bill Clinton."
 });
 
@@ -832,7 +832,7 @@ const potus42 = new President({
     timeInOffice: "8 years", //96 months
     timeInOfficeGroup: "Eight Years",
     reasonForDeparture: "Term Limited",
-    photo: "images/bill-clinton.jpg",
+    photo: "images/bill-clinton.png",
     notes: ""
 });
 
@@ -851,7 +851,7 @@ const potus43 = new President({
     timeInOffice: "8 years", //96 months
     timeInOfficeGroup: "Eight Years",
     reasonForDeparture: "Term Limited",
-    photo: "images/george-w-bush.jpg",
+    photo: "images/george-w-bush.png",
     notes: ""
 });
 
@@ -870,7 +870,7 @@ const potus44 = new President({
     timeInOffice: "8 years", //96 months
     timeInOfficeGroup: "Eight Years",
     reasonForDeparture: "Term Limited",
-    photo: "images/barack-obama.jpg",
+    photo: "images/barack-obama.png",
     notes: ""
 });
 
@@ -889,7 +889,7 @@ const potus45 = new President({
     timeInOffice: "n/a",
     timeInOfficeGroup: "n/a",
     reasonForDeparture: "n/a",
-    photo: "images/donald-trump.jpg",
+    photo: "images/donald-trump.png",
     notes: ""
 });
 
