@@ -14,3 +14,38 @@ import {
 } from "./nav.js";
 
 import {createPresidentsFirst} from "./create-presidents.js";
+
+//Create items in primary nav.
+createNav.apply(primaryNav, ["pnl"]);
+
+//Event listener, primary nav.
+document.getElementById("pnl").addEventListener("click", function (event) {
+
+    //Un-highlight items in primary nav.
+    unHighlightNav(["pnl"]);
+
+    //Highlight clicked item in primary nav.
+    highlightNav(event.target);
+
+    //Remove items in secondary nav.
+    clearNav(["snl"]);
+
+    //Create items in secondary nav.
+    const etid = event.target.id;
+
+    if (etid === "birthplace") {
+        createNav.apply(birthplaceNav, ["snl"]);
+    } else if (etid === "party-affiliation") {
+        createNav.apply(partyAffiliationNav, ["snl"]);
+    } else if (etid === "age-when-inaugurated") {
+        createNav.apply(ageInauguratedNav, ["snl"]);
+    } else if (etid === "marital-status") {
+        createNav.apply(maritalStatusNav, ["snl"]);
+    } else if (etid === "previous-job-type") {
+        createNav.apply(previousJobTypeNav, ["snl"]);
+    } else if (etid === "time-in-office") {
+        createNav.apply(timeInOfficeNav, ["snl"]);
+    } else if (etid === "reason-for-departure") {
+        createNav.apply(reasonForDepartureNav, ["snl"]);
+    }
+});
