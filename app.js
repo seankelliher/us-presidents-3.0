@@ -49,3 +49,19 @@ document.getElementById("pnl").addEventListener("click", function (event) {
         createNav.apply(reasonForDepartureNav, ["snl"]);
     }
 });
+
+//Event listener, secondary nav.
+document.getElementById("snl").addEventListener("click", function (event) {
+
+    //Un-highlight items in secondary nav.
+    unHighlightNav("snl");
+
+    //Highlight clicked item in secondary nav.
+    highlightNav(event.target);
+
+    //Remove elements in #presidents div.
+    clearNav("presidents");
+
+    //Create elements in #presidents div.
+    createPresidentsFirst(event.target.id);
+});
