@@ -73,7 +73,7 @@ const potus02 = new President({
     timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Lost Election",
     photo: "images/john-adams.png",
-    notes: "Lost election to Thomas Jefferson."
+    notes: " (Thomas Jefferson)"
 });
 
 const potus03 = new President({
@@ -149,7 +149,7 @@ const potus06 = new President({
     timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Lost Election",
     photo: "images/john-quincy-adams.png",
-    notes: "Lost election to Andrew Jackson."
+    notes: " (Andrew Jackson)"
 });
 
 const potus07 = new President({
@@ -187,7 +187,7 @@ const potus08 = new President({
     timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Lost Election",
     photo: "images/martin-vanburen.png",
-    notes: "Lost election to William Henry Harrison."
+    notes: " (William Henry Harrison)"
 });
 
 const potus09 = new President({
@@ -453,7 +453,7 @@ const potus22 = new President({
     timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Lost Election",
     photo: "images/grover-cleveland.png",
-    notes: "Lost election to Benjamin Harrison."
+    notes: " (Benjamin Harrison)"
 });
 
 const potus23 = new President({
@@ -472,7 +472,7 @@ const potus23 = new President({
     timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Lost Election",
     photo: "images/benjamin-harrison.png",
-    notes: "Lost election to Grover Cleveland"
+    notes: " (Grover Cleveland)"
 });
 
 const potus24 = new President({
@@ -548,7 +548,7 @@ const potus27 = new President({
     timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Lost Election",
     photo: "images/william-taft.png",
-    notes: "Lost election to Woodrow Wilson."
+    notes: " (Woodrow Wilson)"
 });
 
 const potus28 = new President({
@@ -624,7 +624,7 @@ const potus31 = new President({
     timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Lost Election",
     photo: "images/herbert-hoover.png",
-    notes: "Lost election to Franklin D. Roosevelt."
+    notes: " (Franklin D. Roosevelt)"
 });
 
 const potus32 = new President({
@@ -757,7 +757,7 @@ const potus38 = new President({
     timeInOfficeGroup: "Less Than Four Years",
     reasonForDeparture: "Lost Election",
     photo: "images/gerald-ford.png",
-    notes: "Lost election to Jimmy Carter."
+    notes: " (Jimmy Carter)"
 });
 
 const potus39 = new President({
@@ -776,7 +776,7 @@ const potus39 = new President({
     timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Lost Election",
     photo: "images/jimmy-carter.png",
-    notes: "Lost election to Ronald Reagan."
+    notes: " (Ronald Reagan)"
 });
 
 const potus40 = new President({
@@ -814,7 +814,7 @@ const potus41 = new President({
     timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Lost Election",
     photo: "images/george-hw-bush.png",
-    notes: "Lost election to Bill Clinton."
+    notes: " (Bill Clinton)"
 });
 
 const potus42 = new President({
