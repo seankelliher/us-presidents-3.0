@@ -1,3 +1,16 @@
-import {directNavLists} from "./elements.js";
+import {
+    primaryNav,
+    birthplaceNav,
+    partyAffiliationNav,
+    ageInauguratedNav,
+    maritalStatusNav,
+    previousJobTypeNav,
+    timeInOfficeNav,
+    reasonForDepartureNav,
+    createNav,
+    clearNav,
+    unHighlightNav,
+    highlightNav
+} from "./nav.js";
 
-directNavLists();
+import {createPresidentsFirst} from "./create-presidents.js";
