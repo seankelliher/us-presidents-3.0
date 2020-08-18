@@ -79,12 +79,18 @@ section {
     width: 100%;
     margin: 0;
     padding: 0;
+    flex: initial; /*flex: 0 1 auto*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;/*main axis*/
+    align-items: flex-start; /*cross axis*/
 }
 
 figure {
     width: 48%;
     margin: .5em 0;
     padding: .5em 0%;
+    flex: initial; /*flex: 0 1 auto*/
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;/*main axis*/
