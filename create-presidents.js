@@ -3,53 +3,65 @@ import {allPresidents} from "./presidents.js";
 function createPresidentsThird(index, propValue) {
 
     //Variables to make the below if/else statements shorter.
-    const num = index.number;
     const name = index.name;
+    const num = index.number;
+    const year = index.yearInaugurated;
 
     //Retrive the "president" id div.
     const presidents = document.getElementById("presidents");
 
     //Create elements for it.
+    const pres = document.createElement("div");
+    pres.className = "president";
+    const text = document.createElement("div");
+    text.className = "text";
     const fig = document.createElement("figure");
-    const figcap = document.createElement("figcaption");
     const image = document.createElement("img");
-    const span1 = document.createElement("span");
-    const span2 = document.createElement("span");
+    const h3 = document.createElement("h3");
+    const para1 = document.createElement("p");
+    const para2 = document.createElement("p");
 
     //Assign values to elements.
     image.src = index.photo;
-    span1.textContent = `${num} ${name}`;
+    h3.textContent = `${name}`;
+    para1.textContent = `${num} president, inaugurated ${year}`;
 
     if (index.birthplaceRegion === propValue) {
         const birth = index.birthplace;
-        span2.textContent = `${birth}`;
+        para2.textContent = `Born in ${birth}`;
     } else if (index.partyAffiliation === propValue) {
         const party = index.partyAffiliation;
-        span2.textContent = `${party}`;
+        para2.textContent = `Party: ${party}`;
     } else if (index.ageInauguratedGroup === propValue) {
         const age = index.ageInaugurated;
-        span2.textContent = `${age}`;
+        para2.textContent = `${age} years old`;
     } else if (index.maritalStatus === propValue) {
         const marital = index.maritalStatus;
-        span2.textContent = `${marital}`;
+        para2.textContent = `${marital}`;
     } else if (index.previousJobType === propValue) {
         const prev = index.previousJob;
-        span2.textContent = `${prev}`;
+        para2.textContent = `Previous job: ${prev}`;
     } else if (index.timeInOfficeGroup === propValue) {
         const tio = index.timeInOffice;
-        span2.textContent = `${tio}`;
+        para2.textContent = `${tio} in office`;
     } else if (index.reasonForDeparture === propValue) {
         const depart = index.reasonForDeparture;
         const note = index.notes;
-        span2.textContent = `${depart} ${note}`;
+        if (note === "") {
+            para2.textContent = `${depart}`;
+        } else {
+            para2.textContent = `${depart} (${note})`;
+        }
     }
 
     //Append elements.
     fig.appendChild(image);
-    figcap.appendChild(span1);
-    figcap.appendChild(span2);
-    fig.appendChild(figcap);
-    presidents.appendChild(fig);
+    pres.appendChild(fig);
+    text.appendChild(h3);
+    text.appendChild(para1);
+    text.appendChild(para2);
+    pres.appendChild(text);
+    presidents.appendChild(pres);
 }
 
 function createPresidentsSecond(propValue) {
