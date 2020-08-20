@@ -169,16 +169,16 @@ li {
         font-size: 1.0625em; /*17 pixels*/
     }
 
+    h3 {
+        font-size: .6875em; /*11 pixels*/
+    }
+
     p {
         font-size: .9375em; /*15 pixels*/
     }
 
     li {
         font-size: .9375em; /*15 pixels*/
-    }
-
-    figcaption {
-        font-size: .75em; /*12 pixels*/
     }
 }
 
@@ -191,6 +191,10 @@ li {
         font-size: 1.125em; /*18 pixels*/
     }
 
+    h3 {
+        font-size: .75em; /*12 pixels*/
+    }
+
     p {
         font-size: 1em; /*16 pixels*/
     }
@@ -198,20 +202,24 @@ li {
     li {
         font-size: 1em; /*16 pixels*/
     }
-
-    figcaption {
-        font-size: .875em; /*14 pixels*/
-    }
 }
 
 @media all and (min-width: 900px) {
     h1 {
         font-size: 1.5625em; /*25 pixels*/
     }
+
+    h3 {
+        font-size: .8125em; /*13 pixels*/
+    }
 }
 
 @media all and (min-width: 1200px) {
     h1 {
         font-size: 1.625em; /*26 pixels*/
+    }
+
+    h3 {
+        font-size: .875em; /*14 pixels*/
     }
 }
