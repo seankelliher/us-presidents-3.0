@@ -86,6 +86,19 @@ section {
     align-items: flex-start; /*cross axis*/
 }
 
+.president {
+    /*width: 48%;*/
+    width: 100%;
+    margin: .5em 0;
+    padding: .5em 0;
+    flex: initial; /*flex: 0 1 auto*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;/*main axis*/
+    align-items: center; /*cross axis*/
+    border: 1px solid #EEE; /*grey 200*/
+}
+
 figure {
     width: 48%;
     margin: .5em 0;
