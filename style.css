@@ -100,15 +100,20 @@ section {
 }
 
 figure {
-    width: 48%;
-    margin: .5em 0;
-    padding: .5em 0%;
+    width: 15%;
+    margin: 0;
+    padding: 0 2.5%;
     flex: initial; /*flex: 0 1 auto*/
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;/*main axis*/
+    justify-content: center;/*main axis*/
     align-items: center; /*cross axis*/
-    border: 1px solid #EEE; /*grey 200*/
+}
+
+.text {
+    width: 75%;
+    margin: 0;
+    padding: 0 2.5%;
 }
 
 footer {
