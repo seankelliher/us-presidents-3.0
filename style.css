@@ -159,16 +159,6 @@ li {
     font-weight: 400;
 }
 
-figcaption {
-    font-family: 'Roboto', serif;
-    line-height: 1.5;
-    font-weight: 400;
-}
-
-span {
-    display: block;
-}
-
 /*Media queries*/
 @media all and (min-width: 300px) {
     h1 {
