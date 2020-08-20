@@ -61,7 +61,7 @@ ul {
 }
 
 .selected {
-    color: red;
+    color: #EF5350; /*red 400*/
 }
 
 section {
