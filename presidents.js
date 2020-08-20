@@ -39,7 +39,7 @@ function President(
 
 //Constructor function invocations.
 const potus01 = new President({
-    number: 1,
+    number: "1st",
     name: "George Washington",
     birthplace: "Virginia",
     birthplaceRegion: "Southeast",
@@ -58,7 +58,7 @@ const potus01 = new President({
 });
 
 const potus02 = new President({
-    number: 2,
+    number: "2nd",
     name: "John Adams",
     birthplace: "Massachusetts",
     birthplaceRegion: "New England",
@@ -73,11 +73,11 @@ const potus02 = new President({
     timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Lost Election",
     photo: "images/john-adams.png",
-    notes: " (Thomas Jefferson)"
+    notes: "to Thomas Jefferson"
 });
 
 const potus03 = new President({
-    number: 3,
+    number: "3rd",
     name: "Thomas Jefferson",
     birthplace: "Virginia",
     birthplaceRegion: "Southeast",
@@ -96,7 +96,7 @@ const potus03 = new President({
 });
 
 const potus04 = new President({
-    number: 4,
+    number: "4th",
     name: "James Madison",
     birthplace: "Virginia",
     birthplaceRegion: "Southeast",
@@ -115,7 +115,7 @@ const potus04 = new President({
 });
 
 const potus05 = new President({
-    number: 5,
+    number: "5th",
     name: "James Monroe",
     birthplace: "Virginia",
     birthplaceRegion: "Southeast",
@@ -134,7 +134,7 @@ const potus05 = new President({
 });
 
 const potus06 = new President({
-    number: 6,
+    number: "6th",
     name: "John Quincy Adams",
     birthplace: "Massachusetts",
     birthplaceRegion: "New England",
@@ -149,11 +149,11 @@ const potus06 = new President({
     timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Lost Election",
     photo: "images/john-quincy-adams.png",
-    notes: " (Andrew Jackson)"
+    notes: "to Andrew Jackson"
 });
 
 const potus07 = new President({
-    number: 7,
+    number: "7th",
     name: "Andrew Jackson",
     birthplace: "Carolinas",
     birthplaceRegion: "Southeast",
@@ -172,7 +172,7 @@ const potus07 = new President({
 });
 
 const potus08 = new President({
-    number: 8,
+    number: "8th",
     name: "Martin Van Buren",
     birthplace: "New York",
     birthplaceRegion: "Mideast",
@@ -187,11 +187,11 @@ const potus08 = new President({
     timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Lost Election",
     photo: "images/martin-vanburen.png",
-    notes: " (William Henry Harrison)"
+    notes: "to William Henry Harrison"
 });
 
 const potus09 = new President({
-    number: 9,
+    number: "9th",
     name: "William Henry Harrison",
     birthplace: "Virginia",
     birthplaceRegion: "Southeast",
@@ -206,11 +206,11 @@ const potus09 = new President({
     timeInOfficeGroup: "Less Than Four Years",
     reasonForDeparture: "Died",
     photo: "images/william-harrison.png",
-    notes: "President Harrison died of pneumonia."
+    notes: "pneumonia"
 });
 
 const potus10 = new President({
-    number: 10,
+    number: "10th",
     name: "John Tyler",
     birthplace: "Virginia",
     birthplaceRegion: "Southeast",
@@ -229,7 +229,7 @@ const potus10 = new President({
 });
 
 const potus11 = new President({
-    number: 11,
+    number: "11th",
     name: "James K. Polk",
     birthplace: "North Carolina",
     birthplaceRegion: "Southeast",
@@ -248,7 +248,7 @@ const potus11 = new President({
 });
 
 const potus12 = new President({
-    number: 12,
+    number: "12th",
     name: "Zachary Taylor",
     birthplace: "Virginia",
     birthplaceRegion: "Southeast",
@@ -263,11 +263,11 @@ const potus12 = new President({
     timeInOfficeGroup: "Less Than Four Years",
     reasonForDeparture: "Died",
     photo: "images/zachary-taylor.png",
-    notes: "President Taylor died of cholera morbus."
+    notes: "cholera morbus"
 });
 
 const potus13 = new President({
-    number: 13,
+    number: "13th",
     name: "Millard Fillmore",
     birthplace: "New York",
     birthplaceRegion: "Mideast",
@@ -286,7 +286,7 @@ const potus13 = new President({
 });
 
 const potus14 = new President({
-    number: 14,
+    number: "14th",
     name: "Franklin Pierce",
     birthplace: "New Hampshire",
     birthplaceRegion: "New England",
@@ -305,7 +305,7 @@ const potus14 = new President({
 });
 
 const potus15 = new President({
-    number: 15,
+    number: "15th",
     name: "James Buchanan",
     birthplace: "Pennsylvania",
     birthplaceRegion: "Mideast",
@@ -324,7 +324,7 @@ const potus15 = new President({
 });
 
 const potus16 = new President({
-    number: 16,
+    number: "16th",
     name: "Abraham Lincoln",
     birthplace: "Kentucky",
     birthplaceRegion: "Southeast",
@@ -339,11 +339,11 @@ const potus16 = new President({
     timeInOfficeGroup: "Between Four And Eight Years",
     reasonForDeparture: "Died",
     photo: "images/abraham-lincoln.png",
-    notes: "President Lincoln was assassinated."
+    notes: "assassinated"
 });
 
 const potus17 = new President({
-    number: 17,
+    number: "17th",
     name: "Andrew Johnson",
     birthplace: "North Carolina",
     birthplaceRegion: "Southeast",
@@ -362,7 +362,7 @@ const potus17 = new President({
 });
 
 const potus18 = new President({
-    number: 18,
+    number: "18th",
     name: "Ulysses S. Grant",
     birthplace: "Ohio",
     birthplaceRegion: "Great Lakes",
@@ -381,7 +381,7 @@ const potus18 = new President({
 });
 
 const potus19 = new President({
-    number: 19,
+    number: "19th",
     name: "Rutherford B. Hayes",
     birthplace: "Ohio",
     birthplaceRegion: "Great Lakes",
@@ -400,7 +400,7 @@ const potus19 = new President({
 });
 
 const potus20 = new President({
-    number: 20,
+    number: "20th",
     name: "James A. Garfield",
     birthplace: "Ohio",
     birthplaceRegion: "Great Lakes",
@@ -415,11 +415,11 @@ const potus20 = new President({
     timeInOfficeGroup: "Less Than Four Years",
     reasonForDeparture: "Died",
     photo: "images/james-garfield.png",
-    notes: "President Garfield was assassinated."
+    notes: "assassinated"
 });
 
 const potus21 = new President({
-    number: 21,
+    number: "21st",
     name: "Chester A. Arthur",
     birthplace: "Vermont",
     birthplaceRegion: "New England",
@@ -438,7 +438,7 @@ const potus21 = new President({
 });
 
 const potus22 = new President({
-    number: 22,
+    number: "22nd",
     name: "Grover Cleveland",
     birthplace: "New Jersey",
     birthplaceRegion: "Mideast",
@@ -453,11 +453,11 @@ const potus22 = new President({
     timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Lost Election",
     photo: "images/grover-cleveland.png",
-    notes: " (Benjamin Harrison)"
+    notes: "to Benjamin Harrison"
 });
 
 const potus23 = new President({
-    number: 23,
+    number: "23rd",
     name: "Benjamin Harrison",
     birthplace: "Ohio",
     birthplaceRegion: "Great Lakes",
@@ -472,11 +472,11 @@ const potus23 = new President({
     timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Lost Election",
     photo: "images/benjamin-harrison.png",
-    notes: " (Grover Cleveland)"
+    notes: "to Grover Cleveland"
 });
 
 const potus24 = new President({
-    number: 24,
+    number: "24th",
     name: "Grover Cleveland",
     birthplace: "New Jersey",
     birthplaceRegion: "Mideast",
@@ -495,7 +495,7 @@ const potus24 = new President({
 });
 
 const potus25 = new President({
-    number: 25,
+    number: "25th",
     name: "William McKinley",
     birthplace: "Ohio",
     birthplaceRegion: "Great Lakes",
@@ -510,11 +510,11 @@ const potus25 = new President({
     timeInOfficeGroup: "Between Four And Eight Years",
     reasonForDeparture: "Died",
     photo: "images/william-mckinley.png",
-    notes: "President McKinley was assassinated."
+    notes: "assassinated"
 });
 
 const potus26 = new President({
-    number: 26,
+    number: "26th",
     name: "Theodore Roosevelt",
     birthplace: "New York",
     birthplaceRegion: "Mideast",
@@ -533,7 +533,7 @@ const potus26 = new President({
 });
 
 const potus27 = new President({
-    number: 27,
+    number: "27th",
     name: "William Howard Taft",
     birthplace: "Ohio",
     birthplaceRegion: "Great Lakes",
@@ -548,11 +548,11 @@ const potus27 = new President({
     timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Lost Election",
     photo: "images/william-taft.png",
-    notes: " (Woodrow Wilson)"
+    notes: "to Woodrow Wilson"
 });
 
 const potus28 = new President({
-    number: 28,
+    number: "28th",
     name: "Woodrow Wilson",
     birthplace: "Virginia",
     birthplaceRegion: "Southeast",
@@ -571,7 +571,7 @@ const potus28 = new President({
 });
 
 const potus29 = new President({
-    number: 29,
+    number: "29th",
     name: "Warren G. Harding",
     birthplace: "Ohio",
     birthplaceRegion: "Great Lakes",
@@ -586,11 +586,11 @@ const potus29 = new President({
     timeInOfficeGroup: "Less Than Four Years",
     reasonForDeparture: "Died",
     photo: "images/warren-harding.png",
-    notes: "President Harding died of a heart attack."
+    notes: "heart attack"
 });
 
 const potus30 = new President({
-    number: 30,
+    number: "30th",
     name: "Calvin Coolidge",
     birthplace: "Vermont",
     birthplaceRegion: "New England",
@@ -609,7 +609,7 @@ const potus30 = new President({
 });
 
 const potus31 = new President({
-    number: 31,
+    number: "31st",
     name: "Herbert Hoover",
     birthplace: "Iowa",
     birthplaceRegion: "Plains",
@@ -624,11 +624,11 @@ const potus31 = new President({
     timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Lost Election",
     photo: "images/herbert-hoover.png",
-    notes: " (Franklin D. Roosevelt)"
+    notes: "to Franklin D. Roosevelt"
 });
 
 const potus32 = new President({
-    number: 32,
+    number: "32nd",
     name: "Franklin D. Roosevelt",
     birthplace: "New York",
     birthplaceRegion: "Mideast",
@@ -643,11 +643,11 @@ const potus32 = new President({
     timeInOfficeGroup: "More Than Eight Years",
     reasonForDeparture: "Died",
     photo: "images/franklin-roosevelt.png",
-    notes: "President Roosevelt died of a cerebral hemorrhage."
+    notes: "cerebral hemorrhage"
 });
 
 const potus33 = new President({
-    number: 33,
+    number: "33rd",
     name: "Harry S. Truman",
     birthplace: "Missouri",
     birthplaceRegion: "Plains",
@@ -666,7 +666,7 @@ const potus33 = new President({
 });
 
 const potus34 = new President({
-    number: 34,
+    number: "34th",
     name: "Dwight D. Eisenhower",
     birthplace: "Texas",
     birthplaceRegion: "Southwest",
@@ -685,7 +685,7 @@ const potus34 = new President({
 });
 
 const potus35 = new President({
-    number: 35,
+    number: "35th",
     name: "John F. Kennedy",
     birthplace: "Massachusetts",
     birthplaceRegion: "New England",
@@ -700,11 +700,11 @@ const potus35 = new President({
     timeInOfficeGroup: "Less Than Four Years",
     reasonForDeparture: "Died",
     photo: "images/john-kennedy.png",
-    notes: "President Kennedy was assassinated."
+    notes: "assassinated"
 });
 
 const potus36 = new President({
-    number: 36,
+    number: "36th",
     name: "Lyndon B. Johnson",
     birthplace: "Texas",
     birthplaceRegion: "Southwest",
@@ -723,7 +723,7 @@ const potus36 = new President({
 });
 
 const potus37 = new President({
-    number: 37,
+    number: "37th",
     name: "Richard Nixon",
     birthplace: "California",
     birthplaceRegion: "Far West",
@@ -742,7 +742,7 @@ const potus37 = new President({
 });
 
 const potus38 = new President({
-    number: 38,
+    number: "38th",
     name: "Gerald Ford",
     birthplace: "Nebraska",
     birthplaceRegion: "Plains",
@@ -757,11 +757,11 @@ const potus38 = new President({
     timeInOfficeGroup: "Less Than Four Years",
     reasonForDeparture: "Lost Election",
     photo: "images/gerald-ford.png",
-    notes: " (Jimmy Carter)"
+    notes: "to Jimmy Carter"
 });
 
 const potus39 = new President({
-    number: 39,
+    number: "39th",
     name: "Jimmy Carter",
     birthplace: "Georgia",
     birthplaceRegion: "Southeast",
@@ -776,11 +776,11 @@ const potus39 = new President({
     timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Lost Election",
     photo: "images/jimmy-carter.png",
-    notes: " (Ronald Reagan)"
+    notes: "to Ronald Reagan"
 });
 
 const potus40 = new President({
-    number: 40,
+    number: "40th",
     name: "Ronald Reagan",
     birthplace: "Illinois",
     birthplaceRegion: "Great Lakes",
@@ -799,7 +799,7 @@ const potus40 = new President({
 });
 
 const potus41 = new President({
-    number: 41,
+    number: "41st",
     name: "George H. W. Bush",
     birthplace: "Massachusetts",
     birthplaceRegion: "New England",
@@ -814,11 +814,11 @@ const potus41 = new President({
     timeInOfficeGroup: "Four Years",
     reasonForDeparture: "Lost Election",
     photo: "images/george-hw-bush.png",
-    notes: " (Bill Clinton)"
+    notes: "to Bill Clinton"
 });
 
 const potus42 = new President({
-    number: 42,
+    number: "42nd",
     name: "Bill Clinton",
     birthplace: "Arkansas",
     birthplaceRegion: "Southeast",
@@ -837,7 +837,7 @@ const potus42 = new President({
 });
 
 const potus43 = new President({
-    number: 43,
+    number: "43rd",
     name: "George W. Bush",
     birthplace: "Connecticut",
     birthplaceRegion: "New England",
@@ -856,7 +856,7 @@ const potus43 = new President({
 });
 
 const potus44 = new President({
-    number: 44,
+    number: "44th",
     name: "Barack Obama",
     birthplace: "Hawaii",
     birthplaceRegion: "Far West",
@@ -875,7 +875,7 @@ const potus44 = new President({
 });
 
 const potus45 = new President({
-    number: 45,
+    number: "45th",
     name: "Donald Trump",
     birthplace: "New York",
     birthplaceRegion: "Mideast",
