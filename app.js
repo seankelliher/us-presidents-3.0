@@ -60,6 +60,8 @@ document.getElementById("pnl").addEventListener("click", function (event) {
 //Event listener, secondary nav.
 document.getElementById("snl").addEventListener("click", function (event) {
 
+    const etid = event.target.id;
+
     //Un-highlight items in secondary nav.
     unHighlightNav("snl");
 
@@ -70,5 +72,5 @@ document.getElementById("snl").addEventListener("click", function (event) {
     clearNav("presidents");
 
     //Create elements in #presidents div.
-    createPresidentsFirst(event.target.id);
+    badgesFiltered1(etid);
 });
