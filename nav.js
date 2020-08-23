@@ -54,11 +54,11 @@ const previousJobTypeNav = [
 ];
 
 const timeInOfficeNav = [
-    "Less than four years",
-    "Four years",
-    "Between four and eight years",
-    "Eight years",
-    "More than eight years"
+    "Less than one term",
+    "One term",
+    "Between one and two terms",
+    "Two terms",
+    "More than two terms"
 ];
 
 const reasonForDepartureNav = [
