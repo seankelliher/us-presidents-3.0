@@ -31,8 +31,14 @@ document.getElementById("pnl").addEventListener("click", function (event) {
     //Remove items in secondary nav.
     clearNav(["snl"]);
 
+    //Remove elements in #presidents div.
+    clearNav("presidents");
+
     //Create items in secondary nav.
     const etid = event.target.id;
+
+    //Create elements in #presidents div.
+    badgesFull(etid);
 
     if (etid === "birthplace") {
         createNav.apply(birthplaceNav, ["snl"]);
