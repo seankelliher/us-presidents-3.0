@@ -51,7 +51,7 @@ const potus01 = new President({
     previousJob: "Commander in Chief, Continental Army",
     previousJobType: "Military",
     timeInOffice: "8 years", //96 months
-    timeInOfficeGroup: "Eight Years",
+    timeInOfficeGroup: "Two Terms",
     reasonForDeparture: "Retired",
     photo: "images/george-washington.png",
     notes: ""
@@ -70,7 +70,7 @@ const potus02 = new President({
     previousJob: "Vice President",
     previousJobType: "Executive Office",
     timeInOffice: "4 years", //48 months
-    timeInOfficeGroup: "Four Years",
+    timeInOfficeGroup: "One Term",
     reasonForDeparture: "Lost Election",
     photo: "images/john-adams.png",
     notes: "to Thomas Jefferson"
@@ -89,7 +89,7 @@ const potus03 = new President({
     previousJob: "Vice President",
     previousJobType: "Executive Office",
     timeInOffice: "8 years", //96 months
-    timeInOfficeGroup: "Eight Years",
+    timeInOfficeGroup: "Two Terms",
     reasonForDeparture: "Retired",
     photo: "images/thomas-jefferson.png",
     notes: ""
@@ -108,7 +108,7 @@ const potus04 = new President({
     previousJob: "Secretary of State",
     previousJobType: "Cabinet",
     timeInOffice: "8 years", //96 months
-    timeInOfficeGroup: "Eight Years",
+    timeInOfficeGroup: "Two Terms",
     reasonForDeparture: "Retired",
     photo: "images/james-madison.png",
     notes: ""
@@ -127,7 +127,7 @@ const potus05 = new President({
     previousJob: "Secretary of State",
     previousJobType: "Cabinet",
     timeInOffice: "8 years", //96 months
-    timeInOfficeGroup: "Eight Years",
+    timeInOfficeGroup: "Two Terms",
     reasonForDeparture: "Retired",
     photo: "images/james-monroe.png",
     notes: ""
@@ -146,7 +146,7 @@ const potus06 = new President({
     previousJob: "Secretary of State",
     previousJobType: "Cabinet",
     timeInOffice: "4 years", //48 months
-    timeInOfficeGroup: "Four Years",
+    timeInOfficeGroup: "One Term",
     reasonForDeparture: "Lost Election",
     photo: "images/john-quincy-adams.png",
     notes: "to Andrew Jackson"
@@ -165,7 +165,7 @@ const potus07 = new President({
     previousJob: "Senator, Tennessee",
     previousJobType: "Congress",
     timeInOffice: "8 years", //96 months
-    timeInOfficeGroup: "Eight Years",
+    timeInOfficeGroup: "Two Terms",
     reasonForDeparture: "Retired",
     photo: "images/andrew-jackson.png",
     notes: ""
@@ -184,7 +184,7 @@ const potus08 = new President({
     previousJob: "Vice President",
     previousJobType: "Executive Office",
     timeInOffice: "4 years", //48 months
-    timeInOfficeGroup: "Four Years",
+    timeInOfficeGroup: "One Term",
     reasonForDeparture: "Lost Election",
     photo: "images/martin-vanburen.png",
     notes: "to William Henry Harrison"
@@ -203,7 +203,7 @@ const potus09 = new President({
     previousJob: "Minister, Colombia",
     previousJobType: "Diplomatic",
     timeInOffice: "1 month",
-    timeInOfficeGroup: "Less Than Four Years",
+    timeInOfficeGroup: "Less Than One Term",
     reasonForDeparture: "Died",
     photo: "images/william-harrison.png",
     notes: "pneumonia"
@@ -222,7 +222,7 @@ const potus10 = new President({
     previousJob: "Vice President",
     previousJobType: "Executive Office",
     timeInOffice: "3 years, 11 months", //47 months
-    timeInOfficeGroup: "Less Than Four Years",
+    timeInOfficeGroup: "Less Than One Term",
     reasonForDeparture: "Not Nominated",
     photo: "images/john-tyler.png",
     notes: ""
@@ -241,7 +241,7 @@ const potus11 = new President({
     previousJob: "Governor, Tennessee",
     previousJobType: "Governor",
     timeInOffice: "4 years", //48 months
-    timeInOfficeGroup: "Four Years",
+    timeInOfficeGroup: "One Term",
     reasonForDeparture: "Retired",
     photo: "images/james-polk.png",
     notes: ""
@@ -260,7 +260,7 @@ const potus12 = new President({
     previousJob: "Major General, US Army",
     previousJobType: "Military",
     timeInOffice: "1 year, 4 months", //16 months
-    timeInOfficeGroup: "Less Than Four Years",
+    timeInOfficeGroup: "Less Than One Term",
     reasonForDeparture: "Died",
     photo: "images/zachary-taylor.png",
     notes: "cholera morbus"
@@ -279,7 +279,7 @@ const potus13 = new President({
     previousJob: "Vice President",
     previousJobType: "Executive Office",
     timeInOffice: "2 years, 7 months", //31 months
-    timeInOfficeGroup: "Less Than Four Years",
+    timeInOfficeGroup: "Less Than One Term",
     reasonForDeparture: "Not Nominated",
     photo: "images/millard-fillmore.png",
     notes: ""
@@ -298,7 +298,7 @@ const potus14 = new President({
     previousJob: "Brigadier General, US Army",
     previousJobType: "Military",
     timeInOffice: "4 years", //48 months
-    timeInOfficeGroup: "Four Years",
+    timeInOfficeGroup: "One Term",
     reasonForDeparture: "Not Nominated",
     photo: "images/franklin-pierce.png",
     notes: ""
@@ -317,7 +317,7 @@ const potus15 = new President({
     previousJob: "Minister, Court of St James's",
     previousJobType: "Diplomatic",
     timeInOffice: "4 years", //48 months
-    timeInOfficeGroup: "Four Years",
+    timeInOfficeGroup: "One Term",
     reasonForDeparture: "Retired",
     photo: "images/james-buchanan.png",
     notes: ""
@@ -336,7 +336,7 @@ const potus16 = new President({
     previousJob: "Representative, Illinois",
     previousJobType: "Congress",
     timeInOffice: "4 years, 1 month", //49 months
-    timeInOfficeGroup: "Between Four And Eight Years",
+    timeInOfficeGroup: "Between One And Two Terms",
     reasonForDeparture: "Died",
     photo: "images/abraham-lincoln.png",
     notes: "assassinated"
@@ -355,7 +355,7 @@ const potus17 = new President({
     previousJob: "Vice President",
     previousJobType: "Executive Office",
     timeInOffice: "3 years, 10 months", //46 months
-    timeInOfficeGroup: "Less Than Four Years",
+    timeInOfficeGroup: "Less Than One Term",
     reasonForDeparture: "Not Nominated",
     photo: "images/andrew-johnson.png",
     notes: ""
@@ -374,7 +374,7 @@ const potus18 = new President({
     previousJob: "Commanding General, US Army",
     previousJobType: "Military",
     timeInOffice: "8 years", //96 months
-    timeInOfficeGroup: "Eight Years",
+    timeInOfficeGroup: "Two Terms",
     reasonForDeparture: "Retired",
     photo: "images/ulysses-grant.png",
     notes: ""
@@ -393,7 +393,7 @@ const potus19 = new President({
     previousJob: "Governor, Ohio",
     previousJobType: "Governor",
     timeInOffice: "4 years", //48 months
-    timeInOfficeGroup: "Four Years",
+    timeInOfficeGroup: "One Term",
     reasonForDeparture: "Retired",
     photo: "images/rutherford-hayes.png",
     notes: ""
@@ -412,7 +412,7 @@ const potus20 = new President({
     previousJob: "Representative, Ohio",
     previousJobType: "Congress",
     timeInOffice: "6 months",
-    timeInOfficeGroup: "Less Than Four Years",
+    timeInOfficeGroup: "Less Than One Term",
     reasonForDeparture: "Died",
     photo: "images/james-garfield.png",
     notes: "assassinated"
@@ -431,7 +431,7 @@ const potus21 = new President({
     previousJob: "Vice President",
     previousJobType: "Executive Office",
     timeInOffice: "3 years, 5 months", //41 months
-    timeInOfficeGroup: "Less Than Four Years",
+    timeInOfficeGroup: "Less Than One Term",
     reasonForDeparture: "Not Nominated",
     photo: "images/chester-arthur.png",
     notes: ""
@@ -450,7 +450,7 @@ const potus22 = new President({
     previousJob: "Governor, New York",
     previousJobType: "Governor",
     timeInOffice: "4 years", //48 months
-    timeInOfficeGroup: "Four Years",
+    timeInOfficeGroup: "One Term",
     reasonForDeparture: "Lost Election",
     photo: "images/grover-cleveland.png",
     notes: "to Benjamin Harrison"
@@ -469,7 +469,7 @@ const potus23 = new President({
     previousJob: "Senator, Indiana",
     previousJobType: "Congress",
     timeInOffice: "4 years", //48 months
-    timeInOfficeGroup: "Four Years",
+    timeInOfficeGroup: "One Term",
     reasonForDeparture: "Lost Election",
     photo: "images/benjamin-harrison.png",
     notes: "to Grover Cleveland"
@@ -488,7 +488,7 @@ const potus24 = new President({
     previousJob: "President",
     previousJobType: "Executive Office",
     timeInOffice: "4 years", //48 months
-    timeInOfficeGroup: "Four Years",
+    timeInOfficeGroup: "One Term",
     reasonForDeparture: "Retired",
     photo: "images/grover-cleveland.png",
     notes: "Grover Cleveland was the 22nd and 24th President."
@@ -507,7 +507,7 @@ const potus25 = new President({
     previousJob: "Governor, Ohio",
     previousJobType: "Governor",
     timeInOffice: "4 years, 6 months", //54 months
-    timeInOfficeGroup: "Between Four And Eight Years",
+    timeInOfficeGroup: "Between One And Two Terms",
     reasonForDeparture: "Died",
     photo: "images/william-mckinley.png",
     notes: "assassinated"
@@ -526,7 +526,7 @@ const potus26 = new President({
     previousJob: "Vice President",
     previousJobType: "Executive Office",
     timeInOffice: "7 years, 5 months", //89 months
-    timeInOfficeGroup: "Between Four And Eight Years",
+    timeInOfficeGroup: "Between One And Two Terms",
     reasonForDeparture: "Retired",
     photo: "images/theodore-roosevelt.png",
     notes: ""
@@ -545,7 +545,7 @@ const potus27 = new President({
     previousJob: "Secretary of War",
     previousJobType: "Cabinet",
     timeInOffice: "4 years", //48 months
-    timeInOfficeGroup: "Four Years",
+    timeInOfficeGroup: "One Term",
     reasonForDeparture: "Lost Election",
     photo: "images/william-taft.png",
     notes: "to Woodrow Wilson"
@@ -564,7 +564,7 @@ const potus28 = new President({
     previousJob: "Governor, New Jersey",
     previousJobType: "Governor",
     timeInOffice: "8 years", //96 months
-    timeInOfficeGroup: "Eight Years",
+    timeInOfficeGroup: "Two Terms",
     reasonForDeparture: "Retired",
     photo: "images/woodrow-wilson.png",
     notes: ""
@@ -583,7 +583,7 @@ const potus29 = new President({
     previousJob: "Senator, Ohio",
     previousJobType: "Congress",
     timeInOffice: "2 years, 4 months", //28 months
-    timeInOfficeGroup: "Less Than Four Years",
+    timeInOfficeGroup: "Less Than One Term",
     reasonForDeparture: "Died",
     photo: "images/warren-harding.png",
     notes: "heart attack"
@@ -602,7 +602,7 @@ const potus30 = new President({
     previousJob: "Vice President",
     previousJobType: "Executive Office",
     timeInOffice: "5 years, 7 months", //67 months
-    timeInOfficeGroup: "Between Four And Eight Years",
+    timeInOfficeGroup: "Between One And Two Terms",
     reasonForDeparture: "Retired",
     photo: "images/calvin-coolidge.png",
     notes: ""
@@ -621,7 +621,7 @@ const potus31 = new President({
     previousJob: "Secretary of Commerce",
     previousJobType: "Cabinet",
     timeInOffice: "4 years", //48 months
-    timeInOfficeGroup: "Four Years",
+    timeInOfficeGroup: "One Term",
     reasonForDeparture: "Lost Election",
     photo: "images/herbert-hoover.png",
     notes: "to Franklin D. Roosevelt"
@@ -640,7 +640,7 @@ const potus32 = new President({
     previousJob: "Governor, New York",
     previousJobType: "Governor",
     timeInOffice: "12 years, 1 month", //145 months
-    timeInOfficeGroup: "More Than Eight Years",
+    timeInOfficeGroup: "More Than Two Terms",
     reasonForDeparture: "Died",
     photo: "images/franklin-roosevelt.png",
     notes: "cerebral hemorrhage"
@@ -659,7 +659,7 @@ const potus33 = new President({
     previousJob: "Vice President",
     previousJobType: "Executive Office",
     timeInOffice: "7 years, 9 months", //93 months
-    timeInOfficeGroup: "Between Four And Eight Years",
+    timeInOfficeGroup: "Between One And Two Terms",
     reasonForDeparture: "Retired",
     photo: "images/harry-truman.png",
     notes: ""
@@ -678,7 +678,7 @@ const potus34 = new President({
     previousJob: "Supreme Allied Commander",
     previousJobType: "Military",
     timeInOffice: "8 years", //96 months
-    timeInOfficeGroup: "Eight Years",
+    timeInOfficeGroup: "Two Terms",
     reasonForDeparture: "Term Limited",
     photo: "images/dwight-eisenhower.png",
     notes: "First term-limited president due to new 22 Amendment."
@@ -697,7 +697,7 @@ const potus35 = new President({
     previousJob: "Senator, Massachusetts",
     previousJobType: "Congress",
     timeInOffice: "2 years, 10 months", //34 months
-    timeInOfficeGroup: "Less Than Four Years",
+    timeInOfficeGroup: "Less Than One Term",
     reasonForDeparture: "Died",
     photo: "images/john-kennedy.png",
     notes: "assassinated"
@@ -716,7 +716,7 @@ const potus36 = new President({
     previousJob: "Vice President",
     previousJobType: "Executive Office",
     timeInOffice: "5 years, 1 month", //61 months
-    timeInOfficeGroup: "Between Four And Eight Years",
+    timeInOfficeGroup: "Between One And Two Terms",
     reasonForDeparture: "Retired",
     photo: "images/lyndon-johnson.png",
     notes: ""
@@ -735,7 +735,7 @@ const potus37 = new President({
     previousJob: "Vice President",
     previousJobType: "Executive Office",
     timeInOffice: "5 years, 6 months", //66 months
-    timeInOfficeGroup: "Between Four And Eight Years",
+    timeInOfficeGroup: "Between One And Two Terms",
     reasonForDeparture: "Resigned",
     photo: "images/richard-nixon.png",
     notes: ""
@@ -753,8 +753,8 @@ const potus38 = new President({
     maritalStatus: "Married",
     previousJob: "Vice President",
     previousJobType: "Executive Office",
-    timeInOffice: "2 years, 5 months", //29 years
-    timeInOfficeGroup: "Less Than Four Years",
+    timeInOffice: "2 years, 5 months", //29 months
+    timeInOfficeGroup: "Less Than One Term",
     reasonForDeparture: "Lost Election",
     photo: "images/gerald-ford.png",
     notes: "to Jimmy Carter"
@@ -773,7 +773,7 @@ const potus39 = new President({
     previousJob: "Governor, Georgia",
     previousJobType: "Governor",
     timeInOffice: "4 years", //48 months
-    timeInOfficeGroup: "Four Years",
+    timeInOfficeGroup: "One Term",
     reasonForDeparture: "Lost Election",
     photo: "images/jimmy-carter.png",
     notes: "to Ronald Reagan"
@@ -792,7 +792,7 @@ const potus40 = new President({
     previousJob: "Governor, California",
     previousJobType: "Governor",
     timeInOffice: "8 years", //96 months
-    timeInOfficeGroup: "Eight Years",
+    timeInOfficeGroup: "Two Terms",
     reasonForDeparture: "Term Limited",
     photo: "images/ronald-reagan.png",
     notes: ""
@@ -811,7 +811,7 @@ const potus41 = new President({
     previousJob: "Vice President",
     previousJobType: "Executive Office",
     timeInOffice: "4 years", //48 months
-    timeInOfficeGroup: "Four Years",
+    timeInOfficeGroup: "One Term",
     reasonForDeparture: "Lost Election",
     photo: "images/george-hw-bush.png",
     notes: "to Bill Clinton"
@@ -830,7 +830,7 @@ const potus42 = new President({
     previousJob: "Governor, Arkansas",
     previousJobType: "Governor",
     timeInOffice: "8 years", //96 months
-    timeInOfficeGroup: "Eight Years",
+    timeInOfficeGroup: "Two Terms",
     reasonForDeparture: "Term Limited",
     photo: "images/bill-clinton.png",
     notes: ""
@@ -849,7 +849,7 @@ const potus43 = new President({
     previousJob: "Governor, Texas",
     previousJobType: "Governor",
     timeInOffice: "8 years", //96 months
-    timeInOfficeGroup: "Eight Years",
+    timeInOfficeGroup: "Two Terms",
     reasonForDeparture: "Term Limited",
     photo: "images/george-w-bush.png",
     notes: ""
@@ -868,7 +868,7 @@ const potus44 = new President({
     previousJob: "Senator, Illinois",
     previousJobType: "Congress",
     timeInOffice: "8 years", //96 months
-    timeInOfficeGroup: "Eight Years",
+    timeInOfficeGroup: "Two Terms",
     reasonForDeparture: "Term Limited",
     photo: "images/barack-obama.png",
     notes: ""
