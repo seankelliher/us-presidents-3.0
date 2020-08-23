@@ -31,27 +31,37 @@ function badgesFull(etid) {
         h3.textContent = `${name}`;
         para1.textContent = `${num} president, inaugurated ${year}`;
 
+        //Get secondary nav heading.
+        const secondaryHeading = document.getElementById("secondary-heading");
+
         //"Specific" elements: badges get these only if a category is chosen.
         if (etid === "birthplace") {
             const birth = index.birthplace;
             para2.textContent = `Born in ${birth}`;
+            secondaryHeading.textContent = "Filter by region";
         } else if (etid === "party-affiliation") {
             const party = index.partyAffiliation;
             para2.textContent = `Party: ${party}`;
+            secondaryHeading.textContent = "Filter by party";
         } else if (etid === "age-when-inaugurated") {
             const age = index.ageInaugurated;
             para2.textContent = `${age} years old`;
+            secondaryHeading.textContent = "Filter by decade";
         } else if (etid === "marital-status") {
             const marital = index.maritalStatus;
             para2.textContent = `${marital}`;
+            secondaryHeading.textContent = "Filter by status";
         } else if (etid === "previous-job-type") {
             const prev = index.previousJob;
             para2.textContent = `Previous job: ${prev}`;
+            secondaryHeading.textContent = "Filter by experience";
         } else if (etid === "time-in-office") {
             const tio = index.timeInOffice;
             para2.textContent = `${tio} in office`;
+            secondaryHeading.textContent = "Filter by terms";
         } else if (etid === "reason-for-departure") {
             const depart = index.reasonForDeparture;
+            secondaryHeading.textContent = "Filter by reason";
             const note = index.notes;
             if (note === "") {
                 para2.textContent = `${depart}`;
