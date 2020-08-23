@@ -1,5 +1,4 @@
 import {
-    primaryNav,
     birthplaceNav,
     partyAffiliationNav,
     ageInauguratedNav,
@@ -13,10 +12,12 @@ import {
     highlightNav
 } from "./nav.js";
 
-import {createPresidentsFirst} from "./create-presidents.js";
+import {pageLoads} from "./page-loads.js";
+import {badgesFull} from "./badges-full.js";
+import {badgesFiltered1} from "./badges-filtered.js";
 
-//Create items in primary nav.
-createNav.apply(primaryNav, ["pnl"]);
+//When page loads, invoke this function.
+pageLoads();
 
 //Event listener, primary nav.
 document.getElementById("pnl").addEventListener("click", function (event) {
