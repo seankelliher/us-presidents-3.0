@@ -133,7 +133,6 @@ section {
 }
 
 .president {
-    /*width: 48%;*/
     width: 100%;
     margin: .5em 0;
     padding: .5em 0;
@@ -143,10 +142,10 @@ section {
     justify-content: flex-start;/*main axis*/
     align-items: center; /*cross axis*/
     border: 1px solid #EEE; /*grey 200*/
+    background: #FAFAFA; /*grey 50*/
 }
 
 figure {
-    width: 15%;
     margin: 0;
     padding: 0 2.5%;
     flex: initial; /*flex: 0 1 auto*/
@@ -157,9 +156,48 @@ figure {
 }
 
 .text {
-    width: 75%;
     margin: 0;
     padding: 0 2.5%;
+}
+
+@media all and (min-width: 300px) {
+    figure {
+        width: 20%;
+    }
+
+    .text {
+        width: 70%;
+    }
+}
+
+@media all and (min-width: 600px) {
+    figure {
+        width: 15%;
+    }
+
+    .text {
+        width: 75%;
+    }
+}
+
+@media all and (min-width: 900px) {
+    figure {
+        width: 20%;
+    }
+
+    .text {
+        width: 70%;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    figure {
+        width: 15%;
+    }
+
+    .text {
+        width: 75%;
+    }
 }
 
 footer {
