@@ -1,11 +1,11 @@
 import {
     birthplaceNav,
-    partyAffiliationNav,
-    ageInauguratedNav,
+    partyNav,
+    ageNav,
     maritalStatusNav,
-    previousJobTypeNav,
-    timeInOfficeNav,
-    reasonForDepartureNav,
+    previousJobGroupNav,
+    termsInOfficeNav,
+    departureNav,
     createNav,
     clearNav,
     unHighlightNav,
@@ -42,18 +42,18 @@ document.getElementById("pnl").addEventListener("click", function (event) {
 
     if (etid === "birthplace") {
         createNav.apply(birthplaceNav, ["snl"]);
-    } else if (etid === "party-affiliation") {
-        createNav.apply(partyAffiliationNav, ["snl"]);
-    } else if (etid === "age-when-inaugurated") {
-        createNav.apply(ageInauguratedNav, ["snl"]);
+    } else if (etid === "party") {
+        createNav.apply(partyNav, ["snl"]);
+    } else if (etid === "age") {
+        createNav.apply(ageNav, ["snl"]);
     } else if (etid === "marital-status") {
         createNav.apply(maritalStatusNav, ["snl"]);
-    } else if (etid === "previous-job-type") {
-        createNav.apply(previousJobTypeNav, ["snl"]);
-    } else if (etid === "time-in-office") {
-        createNav.apply(timeInOfficeNav, ["snl"]);
-    } else if (etid === "reason-for-departure") {
-        createNav.apply(reasonForDepartureNav, ["snl"]);
+    } else if (etid === "previous-job") {
+        createNav.apply(previousJobGroupNav, ["snl"]);
+    } else if (etid === "terms-in-office") {
+        createNav.apply(termsInOfficeNav, ["snl"]);
+    } else if (etid === "departure") {
+        createNav.apply(departureNav, ["snl"]);
     }
 });
 
