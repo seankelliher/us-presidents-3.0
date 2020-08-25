@@ -58,21 +58,35 @@ main {
 }
 
 nav#primary {
-    width: 15%;
-    height: 40vh;
     margin: 0;
-    padding: 1em 2.5%;
+    padding: 0;
     flex: initial; /*flex: 0 1 auto*/
-    border-right: 1px solid #EEE; /*grey 200*/
 }
 
 nav#secondary {
-    width: 15%;
-    height: 40vh;
     margin: 0;
-    padding: 1em 2.5%;
+    padding: 0;
     flex: initial; /*flex: 0 1 auto*/
-    border-right: 1px solid #EEE; /*grey 200*/
+}
+
+@media all and (min-width: 300px) {
+    nav#primary {
+        width: 50%;
+    }
+
+    nav#secondary {
+        width: 50%;
+    }
+}
+
+@media all and (min-width: 900px) {
+    nav#primary {
+        width: 25%;
+    }
+
+    nav#secondary {
+        width: 25%;
+    }
 }
 
 ul {
