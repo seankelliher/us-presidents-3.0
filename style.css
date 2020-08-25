@@ -100,14 +100,25 @@ ul {
 }
 
 section {
-    width: 50%;
     margin: 0;
-    padding: 1em 2.5%;
+    padding: 0;
     flex: initial; /*flex: 0 1 auto*/
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;/*main axis*/
     align-items: flex-start; /*cross axis*/
+}
+
+@media all and (min-width: 300px) {
+    section {
+        width: 100%;
+    }
+}
+
+@media all and (min-width: 900px) {
+    section {
+        width: 50%;
+    }
 }
 
 #presidents {
