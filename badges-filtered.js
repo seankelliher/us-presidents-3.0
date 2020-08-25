@@ -36,23 +36,23 @@ function badgesFiltered3(index, propValue) {
     if (index.birthplaceRegion === propValue) {
         const birth = index.birthplace;
         para2.textContent = `Born in ${birth}`;
-    } else if (index.partyAffiliation === propValue) {
-        const party = index.partyAffiliation;
+    } else if (index.party === propValue) {
+        const party = index.party;
         para2.textContent = `Party: ${party}`;
-    } else if (index.ageInauguratedGroup === propValue) {
-        const age = index.ageInaugurated;
+    } else if (index.ageGroup === propValue) {
+        const age = index.age;
         para2.textContent = `${age} years old`;
     } else if (index.maritalStatus === propValue) {
         const marital = index.maritalStatus;
         para2.textContent = `${marital}`;
-    } else if (index.previousJobType === propValue) {
+    } else if (index.previousJobGroup === propValue) {
         const prev = index.previousJob;
         para2.textContent = `Previous job: ${prev}`;
-    } else if (index.timeInOfficeGroup === propValue) {
-        const tio = index.timeInOffice;
+    } else if (index.termsInOfficeGroup === propValue) {
+        const tio = index.termsInOffice;
         para2.textContent = `${tio} in office`;
-    } else if (index.reasonForDeparture === propValue) {
-        const depart = index.reasonForDeparture;
+    } else if (index.departure === propValue) {
+        const depart = index.departure;
         const note = index.notes;
         if (note === "") {
             para2.textContent = `${depart}`;
@@ -80,17 +80,17 @@ function badgesFiltered2(propValue) {
         //Invoke the next function, and pass it the "index" and "propValue".
         if (index.birthplaceRegion === propValue) {
             badgesFiltered3(index, propValue);
-        } else if (index.partyAffiliation === propValue) {
+        } else if (index.party === propValue) {
             badgesFiltered3(index, propValue);
-        } else if (index.ageInauguratedGroup === propValue) {
+        } else if (index.ageGroup === propValue) {
             badgesFiltered3(index, propValue);
         } else if (index.maritalStatus === propValue) {
             badgesFiltered3(index, propValue);
-        } else if (index.previousJobType === propValue) {
+        } else if (index.previousJobGroup === propValue) {
             badgesFiltered3(index, propValue);
-        } else if (index.timeInOfficeGroup === propValue) {
+        } else if (index.termsInOfficeGroup === propValue) {
             badgesFiltered3(index, propValue);
-        } else if (index.reasonForDeparture === propValue) {
+        } else if (index.departure === propValue) {
             badgesFiltered3(index, propValue);
         }
     });
