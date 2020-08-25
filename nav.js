@@ -1,12 +1,12 @@
 //This array is used to create the "primary navigation".
 const primaryNav = [
     "Birthplace",
-    "Party affiliation",
-    "Age when inaugurated",
+    "Party",
+    "Age",
     "Marital status",
-    "Previous job type",
-    "Time in office",
-    "Reason for departure"
+    "Previous job",
+    "Terms in office",
+    "Departure"
 ];
 
 //These arrays are used to create the "secondary navigation".
@@ -21,7 +21,7 @@ const birthplaceNav = [
     "Far West"
 ];
 
-const partyAffiliationNav = [
+const partyNav = [
     "Democratic",
     "Democratic Republican",
     "Federalist",
@@ -30,7 +30,7 @@ const partyAffiliationNav = [
     "Unaffiliated"
 ];
 
-const ageInauguratedNav = [
+const ageNav = [
     "Forties",
     "Fifties",
     "Sixties",
@@ -43,7 +43,7 @@ const maritalStatusNav = [
     "Widower"
 ];
 
-const previousJobTypeNav = [
+const previousJobGroupNav = [
     "Cabinet",
     "Congress",
     "Diplomatic",
@@ -53,15 +53,15 @@ const previousJobTypeNav = [
     "Private industry"
 ];
 
-const timeInOfficeNav = [
-    "Less than one term",
-    "One term",
-    "Between one and two terms",
-    "Two terms",
-    "More than two terms"
+const termsInOfficeNav = [
+    "Less than one",
+    "One",
+    "Between one and two",
+    "Two",
+    "More than two"
 ];
 
-const reasonForDepartureNav = [
+const departureNav = [
     "Died",
     "Lost election",
     "Not nominated",
@@ -125,12 +125,12 @@ function highlightNav(item) {
 export {
     primaryNav,
     birthplaceNav,
-    partyAffiliationNav,
-    ageInauguratedNav,
+    partyNav,
+    ageNav,
     maritalStatusNav,
-    previousJobTypeNav,
-    timeInOfficeNav,
-    reasonForDepartureNav,
+    previousJobGroupNav,
+    termsInOfficeNav,
+    departureNav,
     createNav,
     clearNav,
     unHighlightNav,
