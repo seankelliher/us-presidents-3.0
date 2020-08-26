@@ -264,6 +264,11 @@ li {
     font-weight: 400;
 }
 
+li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 /*Media queries*/
 @media all and (min-width: 300px) {
     h1 {
