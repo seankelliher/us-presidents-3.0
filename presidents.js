@@ -681,7 +681,7 @@ const potus34 = new President({
     termsInOfficeGroup: "Two",
     departure: "Term Limited",
     photo: "images/dwight-eisenhower.png",
-    notes: "First term-limited president due to new 22 Amendment."
+    notes: "22nd Amendment made Eisenhower the first term-limited president."
 });
 
 const potus35 = new President({
