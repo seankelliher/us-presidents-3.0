@@ -15,6 +15,7 @@ import {
 import {pageLoads} from "./page-loads.js";
 import {badgesFull} from "./badges-full.js";
 import {badgesFiltered1} from "./badges-filtered.js";
+import {emptyCheck} from "./empty-check.js";
 
 //When page loads, invoke this function.
 pageLoads();
@@ -73,4 +74,6 @@ document.getElementById("snl").addEventListener("click", function (event) {
 
     //Create elements in #presidents div.
     badgesFiltered1(etid);
+
+    emptyCheck();
 });
