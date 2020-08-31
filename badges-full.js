@@ -51,7 +51,7 @@ function badgesFull(etid) {
             const marital = index.maritalStatus;
             para2.textContent = `${marital}`;
             secondaryHeading.textContent = "Filter by status";
-        } else if (etid === "previous-job-group") {
+        } else if (etid === "previous-job") {
             const prev = index.previousJob;
             para2.textContent = `Previous job: ${prev}`;
             secondaryHeading.textContent = "Filter by experience";
