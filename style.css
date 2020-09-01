@@ -23,7 +23,7 @@ header {
     padding: 1em 2.5%;
     flex: initial; /*flex: 0 1 auto*/
     position: relative;
-    background: #64B5F6; /*blue 300*/
+    background: #B4DFF0;
 }
 
 header::before {
@@ -33,7 +33,7 @@ header::before {
     bottom: 0;
     width: 1200px;
     left: 100%;
-    background: #64B5F6; /*blue 300*/
+    background: #B4DFF0;
 }
 
 header::after {
@@ -43,7 +43,7 @@ header::after {
     bottom: 0;
     width: 1200px;
     right: 100%;
-    background: #64B5F6; /*blue 300*/
+    background: #B4DFF0;
 }
 
 main {
