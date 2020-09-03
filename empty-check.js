@@ -10,10 +10,10 @@ function emptyCheck() {
 
     //Check length. If length is zero, create and display message.
     if (childOneArray.length === 0) {
-        const h2 = document.createElement("h2");
-        h2.textContent = "No presidents match this combination.";
-        h2.className = "selected";
-        presidents.appendChild(h2);
+        const para = document.createElement("p");
+        para.textContent = "No presidents match this combination.";
+        para.className = "selected";
+        presidents.appendChild(para);
     }
 }
 
