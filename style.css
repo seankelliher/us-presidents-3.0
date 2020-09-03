@@ -95,8 +95,12 @@ ul {
     list-style: none;
 }
 
-.selected {
-    color: #EF5350; /*red 400*/
+nav .selected {
+    color: #F20519;
+}
+
+section .selected {
+    color: #011640;
 }
 
 section {
