@@ -1,29 +1,29 @@
-# US Presidents - 3.0
+[![MIT License on GitHub](https://img.shields.io/github/license/seankelliher/us-presidents-3.0?style=flat-square)](/LICENSE.txt)
+## US Presidents - 3.0
 
-Interactive graphic that allows users to view the birthplace, political party, age, marital status, previous work experience, length of term, and reason for departure for the 45 presidents of the United States.
+Interactive component about demographics of the 45 US Presidents.
 
-## Authors
+## Project Screen Shots
 
-* **Sean Kelliher** - [seankelliher](https://github.com/seankelliher)
+![screen shot of project](/screenshots/us-presidents-3.0-screenshot1.jpg)
 
-## Deployment
+![screen shot of project](/screenshots/us-presidents-3.0-screenshot2.jpg)
 
-All you need is a web browser. Code works in a local or remote environment. However, in a local environment, you may need to modify your browser's setting for local files.
+![screen shot of project](/screenshots/us-presidents-3.0-screenshot3.jpg)
 
-## Built With
+## Installation and Setup Instructions
 
-* JavaScript
-* CSS
-* HTML
+This is a static component. All you need is a web browser. However, component uses ES6 modules. Developing locally may require disabling your browser's local file restrictions.
 
-## License
+## Reflection
 
-This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE.txt) file for details.
+I wanted to build a component that allows users to sort Presidents by demographic traits such as birthplace, political party, age, marital status, previous work experience, length of term, and reason for departure. Challenges were building so users could filter by both categories and sub-categories while keeping the page as uncluttered as possible. This required building multiple sub-navigations that would display or disappear depending on which category was selected. The category and sub-category approach allows users to see, for example, the age of all Presidents and then filter out only those inaugurated in, say, their forties.
 
 ## Acknowledgments
 
-* Readme file based on [template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2) by Billie Thompson.
 * Data about presidents from [Wikipedia](https://www.wikipedia.org).
 * All photographs are public domian.
-* Design guidance from Google's [Material Design](https://material.io/design).
+* Readme guidance from [Brenna Martenson](https://gist.github.com/martensonbj/6bf2ec2ed55f5be723415ea73c4557c4).
+* Design guidance from Google's [Material Design](https://material.io/design) and [Adobe Color](https://color.adobe.com/trends).
 * Fonts from [Google Fonts](https://fonts.google.com).
+* Shields from [Shields](https://shields.io).
