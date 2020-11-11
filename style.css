@@ -148,7 +148,8 @@ section {
     flex-flow: row wrap;
     justify-content: flex-start;/*main axis*/
     align-items: center; /*cross axis*/
-    border: 1px solid #EEE; /*grey 200*/
+    border: 2px solid #DFEDF2; /*grey 200*/
+    border-radius: 4px;
     background: #FAFAFA; /*grey 50*/
 }
 
