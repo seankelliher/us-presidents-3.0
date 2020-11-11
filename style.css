@@ -251,12 +251,14 @@ h2 {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
     font-weight: 700;
+    color: #146173;
 }
 
 h3 {
     font-family: 'Open Sans', sans-serif;
     line-height: 1;
     font-weight: 700;
+    color: #D96941;
 }
 
 p {
@@ -295,7 +297,7 @@ li:hover {
     }
 
     h3 {
-        font-size: .6875em; /*11 pixels*/
+        font-size: .8125em; /*13 pixels*/
     }
 
     p {
@@ -317,7 +319,7 @@ li:hover {
     }
 
     h3 {
-        font-size: .75em; /*12 pixels*/
+        font-size: .875em; /*14 pixels*/
     }
 
     p {
@@ -333,18 +335,10 @@ li:hover {
     h1 {
         font-size: 1.5625em; /*25 pixels*/
     }
-
-    h3 {
-        font-size: .8125em; /*13 pixels*/
-    }
 }
 
 @media all and (min-width: 1200px) {
     h1 {
         font-size: 1.625em; /*26 pixels*/
-    }
-
-    h3 {
-        font-size: .875em; /*14 pixels*/
     }
 }
