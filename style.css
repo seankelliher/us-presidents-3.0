@@ -23,27 +23,30 @@ header {
     padding: 1em 2.5%;
     flex: initial; /*flex: 0 1 auto*/
     position: relative;
-    border-bottom: 1px solid #EEE; /*grey 200*/
+    border-bottom: 2px solid #DFEDF2;
+    background: #FAFAFA; /*grey 50*/
 }
 
 header::before {
     content:  "";
     position: absolute;
     top: 0;
-    bottom: -1px;
+    bottom: -2px;
     width: 1200px;
     left: 100%;
-    border-bottom: 1px solid #EEE; /*grey 200*/
+    border-bottom: 2px solid #DFEDF2;
+    background: #FAFAFA; /*grey 50*/
 }
 
 header::after {
     content:  "";
     position: absolute;
     top: 0;
-    bottom: -1px;
+    bottom: -2px;
     width: 1200px;
     right: 100%;
-    border-bottom: 1px solid #EEE; /*grey 200*/
+    border-bottom: 2px solid #DFEDF2;
+    background: #FAFAFA; /*grey 50*/
 }
 
 main {
