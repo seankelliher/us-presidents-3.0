@@ -124,7 +124,7 @@ function chooseSecondaryNav(etid) {
 }
 
 //Un-highlight items, primary or secondary nav.
-function unHighlightNav(navId) {
+/*function unHighlightNav(navId) {
     const nav = document.getElementById(navId);
     const navListItems = nav.querySelectorAll("li");
     const navListItemsArray = Array.from(navListItems);
@@ -135,24 +135,10 @@ function unHighlightNav(navId) {
             item.classList.remove("selected");
         }
     });
-}
+}*/
 
 //Highlight clicked item in primary or secondary nav.
-function highlightNav(item) {
-    item.classList.add("selected");
-}
+/*    item.classList.add("selected");
+}*/
 
-export {
-    primaryNav,
-    birthplaceNav,
-    partyNav,
-    ageNav,
-    maritalStatusNav,
-    previousJobGroupNav,
-    termsInOfficeNav,
-    departureNav,
-    createNav,
-    clearNav,
-    unHighlightNav,
-    highlightNav
-};
+export {clearSecondaryNav, chooseSecondaryNav, createSecondaryNav};
