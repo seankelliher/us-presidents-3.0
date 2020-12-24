@@ -126,43 +126,39 @@ section {
     margin: 0;
     padding: 0;
     flex: initial; /*flex: 0 1 auto*/
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;/*main axis*/
-    align-items: flex-start; /*cross axis*/
 }
 
 .president {
     width: 100%;
     margin: .5em 0;
-    padding: .5em 0;
-    flex: initial; /*flex: 0 1 auto*/
+    padding: .5em 0 0 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;/*main axis*/
-    align-items: center; /*cross axis*/
-    border: 2px solid #DFEDF2; /*grey 200*/
+    align-items: flex-start; /*cross axis*/
     border: 1px solid #EEE; /*grey 200*/
     background: #FAFAFA; /*grey 50*/
 }
 
 figure {
-    margin: 0;
+    margin: .5em 0;
     padding: 0 5%;
     flex: initial; /*flex: 0 1 auto*/
     display: flex;
     flex-flow: row wrap;
     justify-content: center;/*main axis*/
     align-items: center; /*cross axis*/
+    background: lightcyan;
 }
 
 .left {
-    margin: 0;
+    margin: .5em 0;
     padding: 0 5%;
+    background: lightblue;
 }
 
 .right {
-    margin: 0;
+    margin: .5em 0;
     padding: 0;
     background: #001F99; /*dark magenta*/
 }
@@ -215,7 +211,8 @@ figure {
 .note {
     width: 90%;
     margin: 0;
-    padding: 0 5%;
+    padding: .5em 5%;
+    background: #F2F2F2;
 }
 
 footer {
@@ -284,8 +281,11 @@ p {
     color: #FFF;
 }
 
-footer p {
-    color: #011640;
+.note p {
+    line-height: 1.2;
+    margin-top: .25em;
+    margin-bottom: .25em;
+    font-size: .875em; /*14 pixels*/
 }
 
 li {
