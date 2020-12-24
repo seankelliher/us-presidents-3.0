@@ -60,34 +60,20 @@ main {
     align-items: flex-start; /*cross axis*/
 }
 
-nav#primary {
-    margin: 0;
-    padding: 0;
-    flex: initial; /*flex: 0 1 auto*/
-}
-
-nav#secondary {
+nav {
     margin: 0;
     padding: 0;
     flex: initial; /*flex: 0 1 auto*/
 }
 
 @media all and (min-width: 300px) {
-    nav#primary {
-        width: 50%;
-    }
-
-    nav#secondary {
+    nav {
         width: 50%;
     }
 }
 
 @media all and (min-width: 900px) {
-    nav#primary {
-        width: 25%;
-    }
-
-    nav#secondary {
+    nav {
         width: 25%;
     }
 }
@@ -99,11 +85,11 @@ ul {
 }
 
 nav .selected {
-    color: #D96941;
+    color: #D90404;
 }
 
 section .selected {
-    color: #D96941;
+    color: #D90404;
 }
 
 section {
