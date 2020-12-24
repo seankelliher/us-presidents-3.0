@@ -59,36 +59,67 @@ const departureNav = [
     "Term limited"
 ];
 
-//Create items in primary and secondary navs.
-function createNav(navId) {
-    this.forEach(function (item) {
-        //Retrieve the ul - either "pnl" or "snl".
-        const navList = document.getElementById(navId);
+//Clears list items in secondary nav.
+//While loop: if firstChild exists, remove lastChild. Keep going until false.
+function clearSecondaryNav() {
+    const secondaryList = document.getElementById("secondary-list");
+    while (secondaryList.firstChild) {
+        secondaryList.removeChild(secondaryList.lastChild);
+    }
+}
+
+//Creates list items for secondary nav.
+function createSecondaryNav(array) {
+    array.forEach(function (item) {
+        //Retrieve the ul - either "primary" or "secondary".
+        const secondaryList = document.getElementById("secondary-list");
 
         //Create the li element.
-        const navListItem = document.createElement("li");
+        const secondaryListItem = document.createElement("li");
 
         //Assign its text content from value in "primaryNav" array.
-        navListItem.textContent = item;
-
-        //Regex the value to form the li element's id.
-        //For example: New England -> new-england.
-        const lowerCase = item.toLowerCase();
-        const removeSpace = /\s/g;
-        const addDash = lowerCase.replace(removeSpace, "-");
-        navListItem.id = addDash;
+        secondaryListItem.textContent = item;
 
         //Append the li element to the ul.
-        navList.appendChild(navListItem);
+        secondaryList.appendChild(secondaryListItem);
     });
 }
 
-//Removes items in secondary nav or presidents id.
-//While loop: if firstChild exists, remove lastChild. Keep going until false.
-function clearNav(item) {
-    const toClear = document.getElementById(item);
-    while (toClear.firstChild) {
-        toClear.removeChild(toClear.lastChild);
+//Receives list item user clicked in primary nav.
+//Places heading in secondary nav.
+//Invokes (above) function to create list items in secondary nav.
+function chooseSecondaryNav(etid) {
+    "use strict";
+
+    const secondaryHeading = document.getElementById("secondary-heading");
+
+    if (etid === "birthplace") {
+        createSecondaryNav(birthplaceNav);
+        secondaryHeading.textContent = "Filter by region";
+    }
+    if (etid === "party") {
+        createSecondaryNav(partyNav);
+        secondaryHeading.textContent = "Filter by party";
+    }
+    if (etid === "age") {
+        createSecondaryNav(ageNav);
+        secondaryHeading.textContent = "Filter by decade";
+    }
+    if (etid === "marital") {
+        createSecondaryNav(maritalNav);
+        secondaryHeading.textContent = "Filter by status";
+    }
+    if (etid === "previous") {
+        createSecondaryNav(previousNav);
+        secondaryHeading.textContent = "Filter by experience";
+    }
+    if (etid === "terms") {
+        createSecondaryNav(termsNav);
+        secondaryHeading.textContent = "Filter by terms";
+    }
+    if (etid === "departure") {
+        createSecondaryNav(departureNav);
+        secondaryHeading.textContent = "Filter by reason";
     }
 }
 
