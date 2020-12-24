@@ -114,7 +114,14 @@ section {
     }
 }
 
-#presidents {
+#empty-msg {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: red;
+}
+
+#gallery {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -124,7 +131,6 @@ section {
     justify-content: space-between;/*main axis*/
     align-items: flex-start; /*cross axis*/
 }
-
 .president {
     width: 100%;
     margin: .5em 0;
