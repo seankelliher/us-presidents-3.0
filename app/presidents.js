@@ -1,897 +1,947 @@
-//Constructor function.
-function President(
-    {
-        number = "",
-        name = "",
-        birthplace = "",
-        birthplaceRegion = "",
-        party = "",
-        yearInaugurated = "",
-        age = "",
-        ageGroup = "",
-        maritalStatus = "",
-        previousJob = "",
-        previousJobGroup = "",
-        termsInOffice = "",
-        termsInOfficeGroup = "",
-        departure = "",
-        photo = "",
-        notes = ""
-    }
-) {
-    this.number = number;
-    this.name = name;
-    this.birthplace = birthplace;
-    this.birthplaceRegion = birthplaceRegion;
-    this.party = party;
-    this.yearInaugurated = yearInaugurated;
-    this.ageGroup = ageGroup;
-    this.age = age;
-    this.maritalStatus = maritalStatus;
-    this.previousJob = previousJob;
-    this.previousJobGroup = previousJobGroup;
-    this.termsInOffice = termsInOffice;
-    this.termsInOfficeGroup = termsInOfficeGroup;
-    this.departure = departure;
-    this.photo = photo;
-    this.notes = notes;
-}
-
-//Constructor function invocations.
-const potus01 = new President({
-    number: "1st",
-    name: "George Washington",
+const potus01 = {
+    id: 1,
+    birthplaceGroup: "southeast",
     birthplace: "Virginia",
-    birthplaceRegion: "Southeast",
+    partyGroup: "unaffiliated",
     party: "Unaffiliated",
-    yearInaugurated: 1789,
+    ageGroup: "fifties",
     age: 57,
-    ageGroup: "Fifties",
-    maritalStatus: "Married",
-    previousJob: "Commander in Chief, Continental Army",
-    previousJobGroup: "Military",
-    termsInOffice: "8 years", //96 months
-    termsInOfficeGroup: "Two",
-    departure: "Retired",
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "military",
+    previous: "Commander in Chief, Continental Army",
+    termsGroup: "two",
+    terms: "8 years", //96 months
+    departureGroup: "retired",
+    departure: "Retired after two terms",
+    name: "George Washington",
     photo: "images/george-washington.png",
-    notes: ""
-});
+    yearInaugurated: "April 30, 1789 – March 3, 1797"
+};
 
-const potus02 = new President({
-    number: "2nd",
-    name: "John Adams",
+const potus02 = {
+    id: 2,
+    birthplaceGroup: "new-england",
     birthplace: "Massachusetts",
-    birthplaceRegion: "New England",
+    partyGroup: "federalist",
     party: "Federalist",
-    yearInaugurated: 1797,
+    ageGroup: "sixties",
     age: 61,
-    ageGroup: "Sixties",
-    maritalStatus: "Married",
-    previousJob: "Vice President",
-    previousJobGroup: "Executive Office",
-    termsInOffice: "4 years", //48 months
-    termsInOfficeGroup: "One",
-    departure: "Lost Election",
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "executive-office",
+    previous: "Vice President",
+    termsGroup: "one",
+    terms: "4 years", //48 months
+    departureGroup: "lost-election",
+    departure: "Lost election to Thomas Jefferson",
+    name: "John Adams",
     photo: "images/john-adams.png",
-    notes: "to Thomas Jefferson"
-});
+    yearInaugurated: "March 4, 1797 – March 3, 1801"
+};
 
-const potus03 = new President({
-    number: "3rd",
+const potus03 = {
+    id: 3,
+    birthplaceGroup: "southeast",
+    birthplace: "Virginia",
+    partyGroup: "democratic-republican",
+    party: "Democratic Republican",
+    ageGroup: "fifties",
+    age: 57,
+    maritalGroup: "widower",
+    marital: "Widower",
+    previousGroup: "executive-office",
+    previous: "Vice President",
+    termsGroup: "two",
+    terms: "8 years", //96 months
+    departureGroup: "retired",
+    departure: "Retired after two terms",
     name: "Thomas Jefferson",
-    birthplace: "Virginia",
-    birthplaceRegion: "Southeast",
-    party: "Democratic Republican",
-    yearInaugurated: 1801,
-    age: 57,
-    ageGroup: "Fifties",
-    maritalStatus: "Widower",
-    previousJob: "Vice President",
-    previousJobGroup: "Executive Office",
-    termsInOffice: "8 years", //96 months
-    termsInOfficeGroup: "Two",
-    departure: "Retired",
     photo: "images/thomas-jefferson.png",
-    notes: ""
-});
+    yearInaugurated: "March 4, 1801 – March 3, 1809"
+};
 
-const potus04 = new President({
-    number: "4th",
+const potus04 = {
+    id: 4,
+    birthplaceGroup: "southeast",
+    birthplace: "Virginia",
+    partyGroup: "democratic-republican",
+    party: "Democratic Republican",
+    ageGroup: "fifties",
+    age: 57,
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "cabinet",
+    previous: "Secretary of State",
+    termsGroup: "two",
+    terms: "8 years", //96 months
+    departureGroup: "retired",
+    departure: "Retired after two terms",
     name: "James Madison",
-    birthplace: "Virginia",
-    birthplaceRegion: "Southeast",
-    party: "Democratic Republican",
-    yearInaugurated: 1809,
-    age: 57,
-    ageGroup: "Fifties",
-    maritalStatus: "Married",
-    previousJob: "Secretary of State",
-    previousJobGroup: "Cabinet",
-    termsInOffice: "8 years", //96 months
-    termsInOfficeGroup: "Two",
-    departure: "Retired",
     photo: "images/james-madison.png",
-    notes: ""
-});
+    yearInaugurated: "March 4, 1809 - March 3, 1817"
+};
 
-const potus05 = new President({
-    number: "5th",
-    name: "James Monroe",
+const potus05 = {
+    id: 5,
+    birthplaceGroup: "southeast",
     birthplace: "Virginia",
-    birthplaceRegion: "Southeast",
+    partyGroup: "democratic-republican",
     party: "Democratic Republican",
-    yearInaugurated: 1817,
+    ageGroup: "fifties",
     age: 58,
-    ageGroup: "Fifties",
-    maritalStatus: "Married",
-    previousJob: "Secretary of State",
-    previousJobGroup: "Cabinet",
-    termsInOffice: "8 years", //96 months
-    termsInOfficeGroup: "Two",
-    departure: "Retired",
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "cabinet",
+    previous: "Secretary of State",
+    termsGroup: "two",
+    terms: "8 years", //96 months
+    departureGroup: "retired",
+    departure: "Retired after two terms",
+    name: "James Monroe",
     photo: "images/james-monroe.png",
-    notes: ""
-});
+    yearInaugurated: "March 4, 1817 – March 3, 1825"
+};
 
-const potus06 = new President({
-    number: "6th",
-    name: "John Quincy Adams",
+const potus06 = {
+    id: 6,
+    birthplaceGroup: "new-england",
     birthplace: "Massachusetts",
-    birthplaceRegion: "New England",
+    partyGroup: "democratic-republican",
     party: "Democratic Republican",
-    yearInaugurated: 1825,
+    ageGroup: "fifties",
     age: 57,
-    ageGroup: "Fifties",
-    maritalStatus: "Married",
-    previousJob: "Secretary of State",
-    previousJobGroup: "Cabinet",
-    termsInOffice: "4 years", //48 months
-    termsInOfficeGroup: "One",
-    departure: "Lost Election",
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "cabinet",
+    previous: "Secretary of State",
+    termsGroup: "one",
+    terms: "4 years", //48 months
+    departureGroup: "lost-election",
+    departure: "Lost election to Andrew Jackson",
+    name: "John Quincy Adams",
     photo: "images/john-quincy-adams.png",
-    notes: "to Andrew Jackson"
-});
+    yearInaugurated: "March 4, 1825 – March 3, 1829"
+};
 
-const potus07 = new President({
-    number: "7th",
-    name: "Andrew Jackson",
+const potus07 = {
+    id: 7,
+    birthplaceGroup: "southeast",
     birthplace: "Carolinas",
-    birthplaceRegion: "Southeast",
+    partyGroup: "democratic",
     party: "Democratic",
-    yearInaugurated: 1829,
+    ageGroup: "sixties",
     age: 61,
-    ageGroup: "Sixties",
-    maritalStatus: "Widower",
-    previousJob: "Senator, Tennessee",
-    previousJobGroup: "Congress",
-    termsInOffice: "8 years", //96 months
-    termsInOfficeGroup: "Two",
-    departure: "Retired",
+    maritalGroup: "widower",
+    marital: "Widower",
+    previousGroup: "congress",
+    previous: "Senator, Tennessee",
+    termsGroup: "two",
+    terms: "8 years", //96 months
+    departureGroup: "retired",
+    departure: "Retired after two terms",
+    name: "Andrew Jackson",
     photo: "images/andrew-jackson.png",
-    notes: ""
-});
+    yearInaugurated: "March 4, 1829 – March 3, 1833"
+};
 
-const potus08 = new President({
-    number: "8th",
+const potus08 = {
+    id: 8,
+    birthplaceGroup: "mideast",
+    birthplace: "New York",
+    partyGroup: "democratic",
+    party: "Democratic",
+    ageGroup: "fifties",
+    age: 54,
+    maritalGroup: "widower",
+    marital: "Widower",
+    previousGroup: "executive-office",
+    previous: "Vice President",
+    termsGroup: "one",
+    terms: "4 years", //48 months
+    departureGroup: "lost-election",
+    departure: "Lost election to William Henry Harrison",
     name: "Martin Van Buren",
-    birthplace: "New York",
-    birthplaceRegion: "Mideast",
-    party: "Democratic",
-    yearInaugurated: 1837,
-    age: 54,
-    ageGroup: "Fifties",
-    maritalStatus: "Widower",
-    previousJob: "Vice President",
-    previousJobGroup: "Executive Office",
-    termsInOffice: "4 years", //48 months
-    termsInOfficeGroup: "One",
-    departure: "Lost Election",
     photo: "images/martin-vanburen.png",
-    notes: "to William Henry Harrison"
-});
+    yearInaugurated: "March 4, 1837 – March 3, 1841"
+};
 
-const potus09 = new President({
-    number: "9th",
-    name: "William Henry Harrison",
+const potus09 = {
+    id: 9,
+    birthplaceGroup: "southeast",
     birthplace: "Virginia",
-    birthplaceRegion: "Southeast",
+    partyGroup: "whig",
     party: "Whig",
-    yearInaugurated: 1841,
+    ageGroup: "sixties",
     age: 68,
-    ageGroup: "Sixties",
-    maritalStatus: "Married",
-    previousJob: "Minister, Colombia",
-    previousJobGroup: "Diplomatic",
-    termsInOffice: "1 month",
-    termsInOfficeGroup: "Less Than One",
-    departure: "Died",
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "diplomatic",
+    previous: "Minister, Colombia",
+    termsGroup: "under-one",
+    terms: "1 month",
+    departureGroup: "died",
+    departure: "Died of pneumonia",
+    name: "William Henry Harrison",
     photo: "images/william-harrison.png",
-    notes: "pneumonia"
-});
+    yearInaugurated: "March 4, 1841 – April 4, 1841"
+};
 
-const potus10 = new President({
-    number: "10th",
+const potus10 = {
+    id: 10,
+    birthplaceGroup: "southeast",
+    birthplace: "Virginia",
+    partyGroup: "whig",
+    party: "Whig",
+    ageGroup: "fifties",
+    age: 51,
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "executive-office",
+    previous: "Vice President",
+    termsGroup: "under-one",
+    terms: "3 years, 11 months", //47 months
+    departureGroup: "not-nominated",
+    departure: "Not Nominated",
     name: "John Tyler",
-    birthplace: "Virginia",
-    birthplaceRegion: "Southeast",
-    party: "Whig",
-    yearInaugurated: 1841,
-    age: 51,
-    ageGroup: "Fifties",
-    maritalStatus: "Married",
-    previousJob: "Vice President",
-    previousJobGroup: "Executive Office",
-    termsInOffice: "3 years, 11 months", //47 months
-    termsInOfficeGroup: "Less Than One",
-    departure: "Not Nominated",
     photo: "images/john-tyler.png",
-    notes: ""
-});
+    yearInaugurated: "April 6, 1841 – March 3, 1845"
+};
 
-const potus11 = new President({
-    number: "11th",
+const potus11 = {
+    id: 11,
+    birthplaceGroup: "southeast",
+    birthplace: "North Carolina",
+    partyGroup: "democratic",
+    party: "Democratic",
+    ageGroup: "forties",
+    age: 49,
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "governor",
+    previous: "Governor, Tennessee",
+    termsGroup: "one",
+    terms: "4 years", //48 months
+    departureGroup: "retired",
+    departure: "Retired after one term",
     name: "James K. Polk",
-    birthplace: "North Carolina",
-    birthplaceRegion: "Southeast",
-    party: "Democratic",
-    yearInaugurated: 1845,
-    age: 49,
-    ageGroup: "Forties",
-    maritalStatus: "Married",
-    previousJob: "Governor, Tennessee",
-    previousJobGroup: "Governor",
-    termsInOffice: "4 years", //48 months
-    termsInOfficeGroup: "One",
-    departure: "Retired",
     photo: "images/james-polk.png",
-    notes: ""
-});
+    yearInaugurated: "March 4, 1845 – March 3, 1849"
+};
 
-const potus12 = new President({
-    number: "12th",
+const potus12 = {
+    id: 12,
+    birthplaceGroup: "southeast",
+    birthplace: "Virginia",
+    partyGroup: "whig",
+    party: "Whig",
+    ageGroup: "sixties",
+    age: 64,
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "military",
+    previous: "Major General, US Army",
+    termsGroup: "under-one",
+    terms: "1 year, 4 months", //16 months
+    departureGroup: "died",
+    departure: "Died of cholera morbus",
     name: "Zachary Taylor",
-    birthplace: "Virginia",
-    birthplaceRegion: "Southeast",
-    party: "Whig",
-    yearInaugurated: 1849,
-    age: 64,
-    ageGroup: "Sixties",
-    maritalStatus: "Married",
-    previousJob: "Major General, US Army",
-    previousJobGroup: "Military",
-    termsInOffice: "1 year, 4 months", //16 months
-    termsInOfficeGroup: "Less Than One",
-    departure: "Died",
     photo: "images/zachary-taylor.png",
-    notes: "cholera morbus"
-});
+    yearInaugurated: "March 5, 1849 – July 9, 1850"
+};
 
-const potus13 = new President({
-    number: "13th",
-    name: "Millard Fillmore",
+const potus13 = {
+    id: 13,
+    birthplaceGroup: "mideast",
     birthplace: "New York",
-    birthplaceRegion: "Mideast",
+    partyGroup: "whig",
     party: "Whig",
-    yearInaugurated: 1850,
+    ageGroup: "fifties",
     age: 50,
-    ageGroup: "Fifties",
-    maritalStatus: "Married",
-    previousJob: "Vice President",
-    previousJobGroup: "Executive Office",
-    termsInOffice: "2 years, 7 months", //31 months
-    termsInOfficeGroup: "Less Than One",
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "executive-office",
+    previous: "Vice President",
+    termsGroup: "under-one",
+    terms: "2 years, 7 months", //31 months
+    departureGroup: "not-nominated",
     departure: "Not Nominated",
+    name: "Millard Fillmore",
     photo: "images/millard-fillmore.png",
-    notes: ""
-});
+    yearInaugurated: "July 10, 1850 – March 3, 1853"
+};
 
-const potus14 = new President({
-    number: "14th",
-    name: "Franklin Pierce",
+const potus14 = {
+    id: 14,
+    birthplaceGroup: "new-england",
     birthplace: "New Hampshire",
-    birthplaceRegion: "New England",
+    partyGroup: "democratic",
     party: "Democratic",
-    yearInaugurated: 1853,
+    ageGroup: "forties",
     age: 48,
-    ageGroup: "Forties",
-    maritalStatus: "Married",
-    previousJob: "Brigadier General, US Army",
-    previousJobGroup: "Military",
-    termsInOffice: "4 years", //48 months
-    termsInOfficeGroup: "One",
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "military",
+    previous: "Brigadier General, US Army",
+    termsGroup: "one",
+    terms: "4 years", //48 months
+    departureGroup: "not-nominated",
     departure: "Not Nominated",
+    name: "Franklin Pierce",
     photo: "images/franklin-pierce.png",
-    notes: ""
-});
+    yearInaugurated: "March 4, 1853 – March 3, 1857"
+};
 
-const potus15 = new President({
-    number: "15th",
-    name: "James Buchanan",
+const potus15 = {
+    id: 15,
+    birthplaceGroup: "mideast",
     birthplace: "Pennsylvania",
-    birthplaceRegion: "Mideast",
+    partyGroup: "democratic",
     party: "Democratic",
-    yearInaugurated: 1857,
+    ageGroup: "sixties",
     age: 65,
-    ageGroup: "Sixties",
-    maritalStatus: "Never Married",
-    previousJob: "Minister, Court of St James's",
-    previousJobGroup: "Diplomatic",
-    termsInOffice: "4 years", //48 months
-    termsInOfficeGroup: "One",
-    departure: "Retired",
+    maritalGroup: "never-married",
+    marital: "Never Married",
+    previousGroup: "diplomatic",
+    previous: "Minister, Court of St James's",
+    termsGroup: "one",
+    terms: "4 years", //48 months
+    departureGroup: "retired",
+    departure: "Retired after one term",
+    name: "James Buchanan",
     photo: "images/james-buchanan.png",
-    notes: ""
-});
+    yearInaugurated: "March 4, 1857 – March 3, 1861"
+};
 
-const potus16 = new President({
-    number: "16th",
-    name: "Abraham Lincoln",
+const potus16 = {
+    id: 16,
+    birthplaceGroup: "southeast",
     birthplace: "Kentucky",
-    birthplaceRegion: "Southeast",
+    partyGroup: "republican",
     party: "Republican",
-    yearInaugurated: 1861,
+    ageGroup: "fifties",
     age: 52,
-    ageGroup: "Fifties",
-    maritalStatus: "Married",
-    previousJob: "Representative, Illinois",
-    previousJobGroup: "Congress",
-    termsInOffice: "4 years, 1 month", //49 months
-    termsInOfficeGroup: "Between One And Two",
-    departure: "Died",
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "congress",
+    previous: "Representative, Illinois",
+    termsGroup: "one-to-two",
+    terms: "4 years, 1 month", //49 months
+    departureGroup: "died",
+    departure: "Assassinated by John Wilkes Booth",
+    name: "Abraham Lincoln",
     photo: "images/abraham-lincoln.png",
-    notes: "assassinated"
-});
+    yearInaugurated: "March 4, 1861 – April 15, 1865"
+};
 
-const potus17 = new President({
-    number: "17th",
-    name: "Andrew Johnson",
+const potus17 = {
+    id: 17,
+    birthplaceGroup: "southeast",
     birthplace: "North Carolina",
-    birthplaceRegion: "Southeast",
+    partyGroup: "democratic",
     party: "Democratic",
-    yearInaugurated: 1865,
+    ageGroup: "fifties",
     age: 56,
-    ageGroup: "Fifties",
-    maritalStatus: "Married",
-    previousJob: "Vice President",
-    previousJobGroup: "Executive Office",
-    termsInOffice: "3 years, 10 months", //46 months
-    termsInOfficeGroup: "Less Than One",
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "executive-office",
+    previous: "Vice President",
+    termsGroup: "under-one",
+    terms: "3 years, 10 months", //46 months
+    departureGroup: "not-nominated",
     departure: "Not Nominated",
+    name: "Andrew Johnson",
     photo: "images/andrew-johnson.png",
-    notes: ""
-});
+    yearInaugurated: "April 15, 1865 – March 3, 1869"
+};
 
-const potus18 = new President({
-    number: "18th",
+const potus18 = {
+    id: 18,
+    birthplaceGroup: "great-lakes",
+    birthplace: "Ohio",
+    partyGroup: "republican",
+    party: "Republican",
+    ageGroup: "forties",
+    age: 46,
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "military",
+    previous: "Commanding General, US Army",
+    termsGroup: "two",
+    terms: "8 years", //96 months
+    departureGroup: "retired",
+    departure: "Retired after two terms",
     name: "Ulysses S. Grant",
-    birthplace: "Ohio",
-    birthplaceRegion: "Great Lakes",
-    party: "Republican",
-    yearInaugurated: 1869,
-    age: 46,
-    ageGroup: "Forties",
-    maritalStatus: "Married",
-    previousJob: "Commanding General, US Army",
-    previousJobGroup: "Military",
-    termsInOffice: "8 years", //96 months
-    termsInOfficeGroup: "Two",
-    departure: "Retired",
     photo: "images/ulysses-grant.png",
-    notes: ""
-});
+    yearInaugurated: "March 4, 1869 – March 3, 1873"
+};
 
-const potus19 = new President({
-    number: "19th",
+const potus19 = {
+    id: 19,
+    birthplaceGroup: "great-lakes",
+    birthplace: "Ohio",
+    partyGroup: "republican",
+    party: "Republican",
+    ageGroup: "fifties",
+    age: 54,
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "governor",
+    previous: "Governor, Ohio",
+    termsGroup: "one",
+    terms: "4 years", //48 months
+    departureGroup: "retired",
+    departure: "Retired after one term",
     name: "Rutherford B. Hayes",
-    birthplace: "Ohio",
-    birthplaceRegion: "Great Lakes",
-    party: "Republican",
-    yearInaugurated: 1877,
-    age: 54,
-    ageGroup: "Fifties",
-    maritalStatus: "Married",
-    previousJob: "Governor, Ohio",
-    previousJobGroup: "Governor",
-    termsInOffice: "4 years", //48 months
-    termsInOfficeGroup: "One",
-    departure: "Retired",
     photo: "images/rutherford-hayes.png",
-    notes: ""
-});
+    yearInaugurated: "March 4, 1877 – March 3, 1881"
+};
 
-const potus20 = new President({
-    number: "20th",
-    name: "James A. Garfield",
+const potus20 = {
+    id: 20,
+    birthplaceGroup: "great-lakes",
     birthplace: "Ohio",
-    birthplaceRegion: "Great Lakes",
+    partyGroup: "republican",
     party: "Republican",
-    yearInaugurated: 1881,
+    ageGroup: "forties",
     age: 49,
-    ageGroup: "Forties",
-    maritalStatus: "Married",
-    previousJob: "Representative, Ohio",
-    previousJobGroup: "Congress",
-    termsInOffice: "6 months",
-    termsInOfficeGroup: "Less Than One",
-    departure: "Died",
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "congress",
+    previous: "Representative, Ohio",
+    termsGroup: "under-one",
+    terms: "6 months",
+    departureGroup: "died",
+    departure: "Assassinated by Charles J. Guiteau",
+    name: "James A. Garfield",
     photo: "images/james-garfield.png",
-    notes: "assassinated"
-});
+    yearInaugurated: "March 4, 1881 – September 19, 1881"
+};
 
-const potus21 = new President({
-    number: "21st",
-    name: "Chester A. Arthur",
+const potus21 = {
+    id: 21,
+    birthplaceGroup: "new-england",
     birthplace: "Vermont",
-    birthplaceRegion: "New England",
+    partyGroup: "republican",
     party: "Republican",
-    yearInaugurated: 1881,
+    ageGroup: "fifties",
     age: 51,
-    ageGroup: "Fifties",
-    maritalStatus: "Widower",
-    previousJob: "Vice President",
-    previousJobGroup: "Executive Office",
-    termsInOffice: "3 years, 5 months", //41 months
-    termsInOfficeGroup: "Less Than One",
+    maritalGroup: "widower",
+    marital: "Widower",
+    previousGroup: "executive-office",
+    previous: "Vice President",
+    termsGroup: "under-one",
+    terms: "3 years, 5 months", //41 months
+    departureGroup: "not-nominated",
     departure: "Not Nominated",
+    name: "Chester A. Arthur",
     photo: "images/chester-arthur.png",
-    notes: ""
-});
+    yearInaugurated: "Sept. 20, 1881 – March 3, 1885"
+};
 
-const potus22 = new President({
-    number: "22nd",
-    name: "Grover Cleveland",
+const potus22 = {
+    id: 22,
+    birthplaceGroup: "mideast",
     birthplace: "New Jersey",
-    birthplaceRegion: "Mideast",
+    partyGroup: "democratic",
     party: "Democratic",
+    ageGroup: "forties",
     age: 47,
-    yearInaugurated: 1885,
-    ageGroup: "Forties",
-    maritalStatus: "Married",
-    previousJob: "Governor, New York",
-    previousJobGroup: "Governor",
-    termsInOffice: "4 years", //48 months
-    termsInOfficeGroup: "One",
-    departure: "Lost Election",
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "governor",
+    previous: "Governor, New York",
+    termsGroup: "one",
+    terms: "4 years", //48 months
+    departureGroup: "lost-election",
+    departure: "Lost election to Benjamin Harrison, but re-elected in 1892.",
+    name: "Grover Cleveland",
     photo: "images/grover-cleveland.png",
-    notes: "to Benjamin Harrison"
-});
+    yearInaugurated: "March 4, 1885 – March 3, 1889"
+};
 
-const potus23 = new President({
-    number: "23rd",
+const potus23 = {
+    id: 23,
+    birthplaceGroup: "great-lakes",
+    birthplace: "Ohio",
+    partyGroup: "republican",
+    party: "Republican",
+    ageGroup: "fifties",
+    age: 55,
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "congress",
+    previous: "Senator, Indiana",
+    termsGroup: "one",
+    terms: "4 years", //48 months
+    departureGroup: "lost-election",
+    departure: "Lost election to Grover Cleveland",
     name: "Benjamin Harrison",
-    birthplace: "Ohio",
-    birthplaceRegion: "Great Lakes",
-    party: "Republican",
-    yearInaugurated: 1889,
-    age: 55,
-    ageGroup: "Fifties",
-    maritalStatus: "Married",
-    previousJob: "Senator, Indiana",
-    previousJobGroup: "Congress",
-    termsInOffice: "4 years", //48 months
-    termsInOfficeGroup: "One",
-    departure: "Lost Election",
     photo: "images/benjamin-harrison.png",
-    notes: "to Grover Cleveland"
-});
+    yearInaugurated: "March 4, 1889 – March 3, 1893"
+};
 
-const potus24 = new President({
-    number: "24th",
-    name: "Grover Cleveland",
+const potus24 = {
+    id: 24,
+    birthplaceGroup: "mideast",
     birthplace: "New Jersey",
-    birthplaceRegion: "Mideast",
+    partyGroup: "democratic",
     party: "Democratic",
-    yearInaugurated: 1893,
+    ageGroup: "fifties",
     age: 55,
-    ageGroup: "Fifties",
-    maritalStatus: "Married",
-    previousJob: "President",
-    previousJobGroup: "Executive Office",
-    termsInOffice: "4 years", //48 months
-    termsInOfficeGroup: "One",
-    departure: "Retired",
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "executive-office",
+    previous: "President",
+    termsGroup: "one",
+    terms: "4 years", //48 months
+    departureGroup: "retired",
+    departure: "Retired after one term",
+    name: "Grover Cleveland",
     photo: "images/grover-cleveland.png",
-    notes: "Grover Cleveland was the 22nd and 24th President."
-});
+    yearInaugurated: "March 4, 1893 – March 3, 1897"
+};
 
-const potus25 = new President({
-    number: "25th",
+const potus25 = {
+    id: 25,
+    birthplaceGroup: "great-lakes",
+    birthplace: "Ohio",
+    partyGroup: "republican",
+    party: "Republican",
+    ageGroup: "fifties",
+    age: 54,
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "governor",
+    previous: "Governor, Ohio",
+    termsGroup: "one-to-two",
+    terms: "4 years, 6 months", //54 months
+    departureGroup: "died",
+    departure: "Assassinated by Leon Czolgosz",
     name: "William McKinley",
-    birthplace: "Ohio",
-    birthplaceRegion: "Great Lakes",
-    party: "Republican",
-    yearInaugurated: 1897,
-    age: 54,
-    ageGroup: "Fifties",
-    maritalStatus: "Married",
-    previousJob: "Governor, Ohio",
-    previousJobGroup: "Governor",
-    termsInOffice: "4 years, 6 months", //54 months
-    termsInOfficeGroup: "Between One And Two",
-    departure: "Died",
     photo: "images/william-mckinley.png",
-    notes: "assassinated"
-});
+    yearInaugurated: "March 4, 1897 – September 14, 1901"
+};
 
-const potus26 = new President({
-    number: "26th",
-    name: "Theodore Roosevelt",
+const potus26 = {
+    id: 26,
+    birthplaceGroup: "mideast",
     birthplace: "New York",
-    birthplaceRegion: "Mideast",
+    partyGroup: "republican",
     party: "Republican",
-    yearInaugurated: 1901,
+    ageGroup: "forties",
     age: 42,
-    ageGroup: "Forties",
-    maritalStatus: "Married",
-    previousJob: "Vice President",
-    previousJobGroup: "Executive Office",
-    termsInOffice: "7 years, 5 months", //89 months
-    termsInOfficeGroup: "Between One And Two",
-    departure: "Retired",
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "executive-office",
+    previous: "Vice President",
+    termsGroup: "one-to-two",
+    terms: "7 years, 5 months", //89 months
+    departureGroup: "retired",
+    departure: "Retired (partial term after McKinley's death, then full term)",
+    name: "Theodore Roosevelt",
     photo: "images/theodore-roosevelt.png",
-    notes: ""
-});
+    yearInaugurated: "September 14, 1901 - March 3, 1909"
+};
 
-const potus27 = new President({
-    number: "27th",
+const potus27 = {
+    id: 27,
+    birthplaceGroup: "great-lakes",
+    birthplace: "Ohio",
+    partyGroup: "republican",
+    party: "Republican",
+    ageGroup: "fifties",
+    age: 51,
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "cabinet",
+    previous: "Secretary of War",
+    termsGroup: "one",
+    terms: "4 years", //48 months
+    departureGroup: "lost-election",
+    departure: "Lost election to Woodrow Wilson",
     name: "William Howard Taft",
-    birthplace: "Ohio",
-    birthplaceRegion: "Great Lakes",
-    party: "Republican",
-    yearInaugurated: 1909,
-    age: 51,
-    ageGroup: "Fifties",
-    maritalStatus: "Married",
-    previousJob: "Secretary of War",
-    previousJobGroup: "Cabinet",
-    termsInOffice: "4 years", //48 months
-    termsInOfficeGroup: "One",
-    departure: "Lost Election",
     photo: "images/william-taft.png",
-    notes: "to Woodrow Wilson"
-});
+    yearInaugurated: "March 4, 1909 – March 3, 1913"
+};
 
-const potus28 = new President({
-    number: "28th",
-    name: "Woodrow Wilson",
+const potus28 = {
+    id: 28,
+    birthplaceGroup: "southeast",
     birthplace: "Virginia",
-    birthplaceRegion: "Southeast",
+    partyGroup: "democratic",
     party: "Democratic",
-    yearInaugurated: 1913,
+    ageGroup: "fifties",
     age: 56,
-    ageGroup: "Fifties",
-    maritalStatus: "Widower",
-    previousJob: "Governor, New Jersey",
-    previousJobGroup: "Governor",
-    termsInOffice: "8 years", //96 months
-    termsInOfficeGroup: "Two",
-    departure: "Retired",
+    maritalGroup: "widower",
+    marital: "Widower",
+    previousGroup: "governor",
+    previous: "Governor, New Jersey",
+    termsGroup: "two",
+    terms: "8 years", //96 months
+    departureGroup: "retired",
+    departure: "Retired after two terms",
+    name: "Woodrow Wilson",
     photo: "images/woodrow-wilson.png",
-    notes: ""
-});
+    yearInaugurated: "March 4, 1913 – March 3, 1921"
+};
 
-const potus29 = new President({
-    number: "29th",
-    name: "Warren G. Harding",
+const potus29 = {
+    id: 29,
+    birthplaceGroup: "great-lakes",
     birthplace: "Ohio",
-    birthplaceRegion: "Great Lakes",
+    partyGroup: "republican",
     party: "Republican",
-    yearInaugurated: 1921,
+    ageGroup: "fifties",
     age: 55,
-    ageGroup: "Fifties",
-    maritalStatus: "Married",
-    previousJob: "Senator, Ohio",
-    previousJobGroup: "Congress",
-    termsInOffice: "2 years, 4 months", //28 months
-    termsInOfficeGroup: "Less Than One",
-    departure: "Died",
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "congress",
+    previous: "Senator, Ohio",
+    termsGroup: "under-one",
+    terms: "2 years, 4 months", //28 months
+    departureGroup: "died",
+    departure: "Died of heart attack",
+    name: "Warren G. Harding",
     photo: "images/warren-harding.png",
-    notes: "heart attack"
-});
+    yearInaugurated: "March 4, 1921 – August 2, 1923"
+};
 
-const potus30 = new President({
-    number: "30th",
-    name: "Calvin Coolidge",
+const potus30 = {
+    id: 30,
+    birthplaceGroup: "new-england",
     birthplace: "Vermont",
-    birthplaceRegion: "New England",
+    partyGroup: "republican",
     party: "Republican",
-    yearInaugurated: 1923,
+    ageGroup: "fifties",
     age: 51,
-    ageGroup: "Fifties",
-    maritalStatus: "Married",
-    previousJob: "Vice President",
-    previousJobGroup: "Executive Office",
-    termsInOffice: "5 years, 7 months", //67 months
-    termsInOfficeGroup: "Between One And Two",
-    departure: "Retired",
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "executive-office",
+    previous: "Vice President",
+    termsGroup: "one-to-two",
+    terms: "5 years, 7 months", //67 months
+    departureGroup: "retired",
+    departure: "Retired (partial term after Harding's death, then full term)",
+    name: "Calvin Coolidge",
     photo: "images/calvin-coolidge.png",
-    notes: ""
-});
+    yearInaugurated: "Aug. 3, 1923 – March 3, 1929"
+};
 
-const potus31 = new President({
-    number: "31st",
-    name: "Herbert Hoover",
+const potus31 = {
+    id: 31,
+    birthplaceGroup: "plains",
     birthplace: "Iowa",
-    birthplaceRegion: "Plains",
+    partyGroup: "republican",
     party: "Republican",
-    yearInaugurated: 1929,
+    ageGroup: "fifties",
     age: 54,
-    ageGroup: "Fifties",
-    maritalStatus: "Married",
-    previousJob: "Secretary of Commerce",
-    previousJobGroup: "Cabinet",
-    termsInOffice: "4 years", //48 months
-    termsInOfficeGroup: "One",
-    departure: "Lost Election",
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "cabinet",
+    previous: "Secretary of Commerce",
+    termsGroup: "one",
+    terms: "4 years", //48 months
+    departureGroup: "lost-election",
+    departure: "Lost election to Franklin D. Roosevelt",
+    name: "Herbert Hoover",
     photo: "images/herbert-hoover.png",
-    notes: "to Franklin D. Roosevelt"
-});
+    yearInaugurated: "March 4, 1929 – March 3, 1933"
+};
 
-const potus32 = new President({
-    number: "32nd",
-    name: "Franklin D. Roosevelt",
+const potus32 = {
+    id: 32,
+    birthplaceGroup: "mideast",
     birthplace: "New York",
-    birthplaceRegion: "Mideast",
+    partyGroup: "democratic",
     party: "Democratic",
-    yearInaugurated: 1933,
+    ageGroup: "fifties",
     age: 51,
-    ageGroup: "Fifties",
-    maritalStatus: "Married",
-    previousJob: "Governor, New York",
-    previousJobGroup: "Governor",
-    termsInOffice: "12 years, 1 month", //145 months
-    termsInOfficeGroup: "More Than Two",
-    departure: "Died",
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "governor",
+    previous: "Governor, New York",
+    termsGroup: "more-than-two",
+    terms: "12 years, 1 month", //145 months
+    departureGroup: "died",
+    departure: "Died of cerebral hemorrhage",
+    name: "Franklin D. Roosevelt",
     photo: "images/franklin-roosevelt.png",
-    notes: "cerebral hemorrhage"
-});
+    yearInaugurated: "March 4, 1933 – April 12, 1945"
+};
 
-const potus33 = new President({
-    number: "33rd",
-    name: "Harry S. Truman",
+const potus33 = {
+    id: 33,
+    birthplaceGroup: "plains",
     birthplace: "Missouri",
-    birthplaceRegion: "Plains",
+    partyGroup: "democratic",
     party: "Democratic",
-    yearInaugurated: 1945,
+    ageGroup: "sixties",
     age: 60,
-    ageGroup: "Sixties",
-    maritalStatus: "Married",
-    previousJob: "Vice President",
-    previousJobGroup: "Executive Office",
-    termsInOffice: "7 years, 9 months", //93 months
-    termsInOfficeGroup: "Between One And Two",
-    departure: "Retired",
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "executive-office",
+    previous: "Vice President",
+    termsGroup: "one-to-two",
+    terms: "7 years, 9 months", //93 months
+    departureGroup: "Retired",
+    departure: "Retired (partial term after FDR's death, then full term)",
+    name: "Harry S. Truman",
     photo: "images/harry-truman.png",
-    notes: ""
-});
+    yearInaugurated: "April 12, 1945 – January 20, 1953"
+};
 
-const potus34 = new President({
-    number: "34th",
-    name: "Dwight D. Eisenhower",
+const potus34 = {
+    id: 34,
+    birthplaceGroup: "southwest",
     birthplace: "Texas",
-    birthplaceRegion: "Southwest",
+    partyGroup: "republican",
     party: "Republican",
-    yearInaugurated: 1953,
+    ageGroup: "sixties",
     age: 62,
-    ageGroup: "Sixties",
-    maritalStatus: "Married",
-    previousJob: "Supreme Allied Commander",
-    previousJobGroup: "Military",
-    termsInOffice: "8 years", //96 months
-    termsInOfficeGroup: "Two",
-    departure: "Term Limited",
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "military",
+    previous: "Supreme Allied Commander",
+    termsGroup: "two",
+    terms: "8 years", //96 months
+    departureGroup: "term-limited",
+    departure: "Term Limited, new 22nd Amendment introduced term limits.",
+    name: "Dwight D. Eisenhower",
     photo: "images/dwight-eisenhower.png",
-    notes: "22nd Amendment made Eisenhower the first term-limited president."
-});
+    yearInaugurated: "January 20, 1953 – January 20, 1961"
+};
 
-const potus35 = new President({
-    number: "35th",
-    name: "John F. Kennedy",
+const potus35 = {
+    id: 35,
+    birthplaceGroup: "new-england",
     birthplace: "Massachusetts",
-    birthplaceRegion: "New England",
+    partyGroup: "democratic",
     party: "Democratic",
-    yearInaugurated: 1961,
+    ageGroup: "forties",
     age: 43,
-    ageGroup: "Forties",
-    maritalStatus: "Married",
-    previousJob: "Senator, Massachusetts",
-    previousJobGroup: "Congress",
-    termsInOffice: "2 years, 10 months", //34 months
-    termsInOfficeGroup: "Less Than One",
-    departure: "Died",
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "congress",
+    previous: "Senator, Massachusetts",
+    termsGroup: "under-one",
+    terms: "2 years, 10 months", //34 months
+    departureGroup: "died",
+    departure: "Assassinated by Lee Harvey Oswald",
+    name: "John F. Kennedy",
     photo: "images/john-kennedy.png",
-    notes: "assassinated"
-});
+    yearInaugurated: "January 20, 1961 – November 22, 1963"
+};
 
-const potus36 = new President({
-    number: "36th",
-    name: "Lyndon B. Johnson",
+const potus36 = {
+    id: 36,
+    birthplaceGroup: "southwest",
     birthplace: "Texas",
-    birthplaceRegion: "Southwest",
+    partyGroup: "democratic",
     party: "Democratic",
-    yearInaugurated: 1963,
+    ageGroup: "fifties",
     age: 55,
-    ageGroup: "Fifties",
-    maritalStatus: "Married",
-    previousJob: "Vice President",
-    previousJobGroup: "Executive Office",
-    termsInOffice: "5 years, 1 month", //61 months
-    termsInOfficeGroup: "Between One And Two",
-    departure: "Retired",
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "executive-office",
+    previous: "Vice President",
+    termsGroup: "one-to-two",
+    terms: "5 years, 1 month", //61 months
+    departureGroup: "retired",
+    departure: "Retired (partial term after Kennedy's death, then full term)",
+    name: "Lyndon B. Johnson",
     photo: "images/lyndon-johnson.png",
-    notes: ""
-});
+    yearInaugurated: "November 22, 1963 – January 20, 1969"
+};
 
-const potus37 = new President({
-    number: "37th",
-    name: "Richard Nixon",
+const potus37 = {
+    id: 37,
+    birthplaceGroup: "far-west",
     birthplace: "California",
-    birthplaceRegion: "Far West",
+    partyGroup: "republican",
     party: "Republican",
-    yearInaugurated: 1969,
+    ageGroup: "fifties",
     age: 56,
-    ageGroup: "Fifties",
-    maritalStatus: "Married",
-    previousJob: "Vice President",
-    previousJobGroup: "Executive Office",
-    termsInOffice: "5 years, 6 months", //66 months
-    termsInOfficeGroup: "Between One And Two",
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "executive-office",
+    previous: "Vice President",
+    termsGroup: "one-to-two",
+    terms: "5 years, 6 months", //66 months
+    departureGroup: "resigned",
     departure: "Resigned",
+    name: "Richard Nixon",
     photo: "images/richard-nixon.png",
-    notes: ""
-});
+    yearInaugurated: "January 20, 1969 - August 9, 1974"
+};
 
-const potus38 = new President({
-    number: "38th",
-    name: "Gerald Ford",
+const potus38 = {
+    id: 38,
+    birthplaceGroup: "plains",
     birthplace: "Nebraska",
-    birthplaceRegion: "Plains",
+    partyGroup: "republican",
     party: "Republican",
-    yearInaugurated: 1974,
+    ageGroup: "sixties",
     age: 61,
-    ageGroup: "Sixties",
-    maritalStatus: "Married",
-    previousJob: "Vice President",
-    previousJobGroup: "Executive Office",
-    termsInOffice: "2 years, 5 months", //29 months
-    termsInOfficeGroup: "Less Than One",
-    departure: "Lost Election",
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "executive-office",
+    previous: "Vice President",
+    termsGroup: "under-one",
+    terms: "2 years, 5 months", //29 months
+    departureGroup: "lost-election",
+    departure: "Lost election to Jimmy Carter",
+    name: "Gerald Ford",
     photo: "images/gerald-ford.png",
-    notes: "to Jimmy Carter"
-});
+    yearInaugurated: "August 9, 1974 – January 20, 1977"
+};
 
-const potus39 = new President({
-    number: "39th",
-    name: "Jimmy Carter",
+const potus39 = {
+    id: 39,
+    birthplaceGroup: "southeast",
     birthplace: "Georgia",
-    birthplaceRegion: "Southeast",
+    partyGroup: "democratic",
     party: "Democratic",
-    yearInaugurated: 1977,
+    ageGroup: "fifties",
     age: 52,
-    ageGroup: "Fifties",
-    maritalStatus: "Married",
-    previousJob: "Governor, Georgia",
-    previousJobGroup: "Governor",
-    termsInOffice: "4 years", //48 months
-    termsInOfficeGroup: "One",
-    departure: "Lost Election",
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "governor",
+    previous: "Governor, Georgia",
+    termsGroup: "one",
+    terms: "4 years", //48 months
+    departureGroup: "lost-election",
+    departure: "Lost election to Ronald Reagan",
+    name: "Jimmy Carter",
     photo: "images/jimmy-carter.png",
-    notes: "to Ronald Reagan"
-});
+    yearInaugurated: "January 20, 1977 – January 20, 1981"
+};
 
-const potus40 = new President({
-    number: "40th",
-    name: "Ronald Reagan",
+const potus40 = {
+    id: 40,
+    birthplaceGroup: "great-lakes",
     birthplace: "Illinois",
-    birthplaceRegion: "Great Lakes",
+    partyGroup: "republican",
     party: "Republican",
-    yearInaugurated: 1981,
+    ageGroup: "sixties",
     age: 69,
-    ageGroup: "Sixties",
-    maritalStatus: "Married",
-    previousJob: "Governor, California",
-    previousJobGroup: "Governor",
-    termsInOffice: "8 years", //96 months
-    termsInOfficeGroup: "Two",
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "governor",
+    previous: "Governor, California",
+    termsGroup: "two",
+    terms: "8 years", //96 months
+    departureGroup: "term-limited",
     departure: "Term Limited",
+    name: "Ronald Reagan",
     photo: "images/ronald-reagan.png",
-    notes: ""
-});
+    yearInaugurated: "January 20, 1981 – January 20, 1989"
+};
 
-const potus41 = new President({
-    number: "41st",
-    name: "George H. W. Bush",
+const potus41 = {
+    id: 41,
+    birthplaceGroup: "new-england",
     birthplace: "Massachusetts",
-    birthplaceRegion: "New England",
+    partyGroup: "republican",
     party: "Republican",
-    yearInaugurated: 1989,
+    ageGroup: "sixties",
     age: 64,
-    ageGroup: "Sixties",
-    maritalStatus: "Married",
-    previousJob: "Vice President",
-    previousJobGroup: "Executive Office",
-    termsInOffice: "4 years", //48 months
-    termsInOfficeGroup: "One",
-    departure: "Lost Election",
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "executive-office",
+    previous: "Vice President",
+    termsGroup: "one",
+    terms: "4 years", //48 months
+    departureGroup: "lost-election",
+    departure: "Lost election to Bill Clinton",
+    name: "George H. W. Bush",
     photo: "images/george-hw-bush.png",
-    notes: "to Bill Clinton"
-});
+    yearInaugurated: "January 20, 1989 – January 20, 1993"
+};
 
-const potus42 = new President({
-    number: "42nd",
-    name: "Bill Clinton",
+const potus42 = {
+    id: 42,
+    birthplaceGroup: "southeast",
     birthplace: "Arkansas",
-    birthplaceRegion: "Southeast",
+    partyGroup: "democratic",
     party: "Democratic",
-    yearInaugurated: 1993,
+    ageGroup: "forties",
     age: 46,
-    ageGroup: "Forties",
-    maritalStatus: "Married",
-    previousJob: "Governor, Arkansas",
-    previousJobGroup: "Governor",
-    termsInOffice: "8 years", //96 months
-    termsInOfficeGroup: "Two",
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "governor",
+    previous: "Governor, Arkansas",
+    termsGroup: "two",
+    terms: "8 years", //96 months
+    departureGroup: "term-limited",
     departure: "Term Limited",
+    name: "Bill Clinton",
     photo: "images/bill-clinton.png",
-    notes: ""
-});
+    yearInaugurated: "January 20, 1993 – January 20, 2001"
+};
 
-const potus43 = new President({
-    number: "43rd",
-    name: "George W. Bush",
+const potus43 = {
+    id: 43,
+    birthplaceGroup: "new-england",
     birthplace: "Connecticut",
-    birthplaceRegion: "New England",
+    partyGroup: "republican",
     party: "Republican",
-    yearInaugurated: 2001,
+    ageGroup: "fifties",
     age: 54,
-    ageGroup: "Fifties",
-    maritalStatus: "Married",
-    previousJob: "Governor, Texas",
-    previousJobGroup: "Governor",
-    termsInOffice: "8 years", //96 months
-    termsInOfficeGroup: "Two",
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "governor",
+    previous: "Governor, Texas",
+    termsGroup: "two",
+    terms: "8 years", //96 months
+    departureGroup: "term-limited",
     departure: "Term Limited",
+    name: "George W. Bush",
     photo: "images/george-w-bush.png",
-    notes: ""
-});
+    yearInaugurated: "January 20, 2001 – January 20, 2009"
+};
 
-const potus44 = new President({
-    number: "44th",
-    name: "Barack Obama",
+const potus44 = {
+    id: 44,
+    birthplaceGroup: "far-west",
     birthplace: "Hawaii",
-    birthplaceRegion: "Far West",
+    partyGroup: "democratic",
     party: "Democratic",
-    yearInaugurated: 2009,
+    ageGroup: "forties",
     age: 47,
-    ageGroup: "Forties",
-    maritalStatus: "Married",
-    previousJob: "Senator, Illinois",
-    previousJobGroup: "Congress",
-    termsInOffice: "8 years", //96 months
-    termsInOfficeGroup: "Two",
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "congress",
+    previous: "Senator, Illinois",
+    termsGroup: "two",
+    terms: "8 years", //96 months
+    departureGroup: "term-limited",
     departure: "Term Limited",
+    name: "Barack Obama",
     photo: "images/barack-obama.png",
-    notes: ""
-});
+    yearInaugurated: "January 20, 2009 – January 20, 2017"
+};
 
-const potus45 = new President({
-    number: "45th",
-    name: "Donald Trump",
+const potus45 = {
+    id: 45,
+    birthplaceGroup: "mideast",
     birthplace: "New York",
-    birthplaceRegion: "Mideast",
+    partyGroup: "republican",
     party: "Republican",
-    yearInaugurated: 2017,
+    ageGroup: "seventies",
     age: 70,
-    ageGroup: "Seventies",
-    maritalStatus: "Married",
-    previousJob: "Chair, Trump Org.",
-    previousJobGroup: "Private Industry",
-    termsInOffice: "n/a",
-    termsInOfficeGroup: "n/a",
-    departure: "n/a",
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "private-industry",
+    previous: "Chair, Trump Org.",
+    termsGroup: "one",
+    terms: "4 years", //48 months
+    departureGroup: "lost-election",
+    departure: "Lost to Joe Biden",
+    name: "Donald Trump",
     photo: "images/donald-trump.png",
-    notes: ""
-});
+    yearInaugurated: "January 20, 2017 – January 20, 2021"
+};
 
 //Gather all presidents in array.
 const allPresidents = [
@@ -941,5 +991,4 @@ const allPresidents = [
     potus44,
     potus45
 ];
-
 export {allPresidents};
