@@ -123,22 +123,25 @@ function chooseSecondaryNav(etid) {
     }
 }
 
-//Un-highlight items, primary or secondary nav.
-/*function unHighlightNav(navId) {
-    const nav = document.getElementById(navId);
-    const navListItems = nav.querySelectorAll("li");
-    const navListItemsArray = Array.from(navListItems);
+//Highlight clicked item in primary and secondary lists.
+function highlightListItem(list, clickedItem) {
+    "use strict";
+    
+    //Gather all items inside a list.
+    const listItems = list.querySelectorAll("li");
 
-    navListItemsArray.forEach(function (item) {
+    //Convert to "real" array (works without too).
+    const listItemsArray = Array.from(listItems);
+
+    //Loop through array, remove "selected" class.
+    listItemsArray.forEach(function (item) {
         const selected = item.classList.contains("selected");
         if (selected === true) {
             item.classList.remove("selected");
         }
     });
-}*/
+    //Add "selected" class to clicked item.
+    clickedItem.classList.add("selected");
+}
 
-//Highlight clicked item in primary or secondary nav.
-/*    item.classList.add("selected");
-}*/
-
-export {clearSecondaryNav, chooseSecondaryNav, createSecondaryNav};
+export {clearSecondaryNav, chooseSecondaryNav, createSecondaryNav, highlightListItem};
