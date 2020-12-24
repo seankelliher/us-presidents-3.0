@@ -1,15 +1,4 @@
-//This array is used to create the "primary navigation".
-const primaryNav = [
-    "Birthplace",
-    "Party",
-    "Age",
-    "Marital status",
-    "Previous job",
-    "Terms in office",
-    "Departure"
-];
-
-//These arrays are used to create the "secondary navigation".
+//List items for secondary Navs.
 const birthplaceNav = [
     "New England",
     "Mideast",
@@ -37,13 +26,13 @@ const ageNav = [
     "Seventies"
 ];
 
-const maritalStatusNav = [
+const maritalNav = [
     "Married",
     "Never married",
     "Widower"
 ];
 
-const previousJobGroupNav = [
+const previousNav = [
     "Cabinet",
     "Congress",
     "Diplomatic",
@@ -53,12 +42,12 @@ const previousJobGroupNav = [
     "Private industry"
 ];
 
-const termsInOfficeNav = [
-    "Less than one",
+const termsNav = [
+    "Under One",
     "One",
-    "Between one and two",
+    "One to Two",
     "Two",
-    "More than two"
+    "More Than Two"
 ];
 
 const departureNav = [
