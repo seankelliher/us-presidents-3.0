@@ -1,6 +1,6 @@
 import {checkEmpty} from "./empty.js";
 
-function filterBadges() {
+function filterGallery() {
     "use strict";
 
     const secondaryList = document.getElementById("secondary-list");
@@ -29,4 +29,4 @@ function filterBadges() {
     });
 }
 
-export {filterBadges};
+export {filterGallery};

@@ -9,7 +9,7 @@ function clearGallery() {
     }
 }
 
-function createBadges(etid) {
+function createGallery(etid) {
 
     allPresidents.forEach(function (index) {
 
@@ -64,4 +64,4 @@ function createBadges(etid) {
     });
 }
 
-export {clearGallery, createBadges};
+export {clearGallery, createGallery};

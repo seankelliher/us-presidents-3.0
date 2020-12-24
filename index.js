@@ -1,6 +1,6 @@
 import {clearSecondaryNav, chooseSecondaryNav} from "./app/nav.js";
-import {clearGallery, createBadges} from "./app/badges.js";
-import {filterBadges} from "./app/filters.js";
+import {clearGallery, createGallery} from "./app/badges.js";
+import {filterGallery} from "./app/filters.js";
 import {hideEmpty} from "./app/empty.js";
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //Loads "birthplace" as default secondary nav.
     chooseSecondaryNav("birthplace");
-    createBadges("birthplace");
-    filterBadges();
+    createGallery("birthplace");
+    filterGallery();
     hideEmpty();
 
     //Retrieve primary list.
@@ -20,6 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
         clearSecondaryNav();
         chooseSecondaryNav(event.target.id);
         clearGallery();
-        createBadges(event.target.id);
+        createGallery(event.target.id);
     });
 });
