@@ -95,7 +95,7 @@ function chooseSecondaryNav(etid) {
 
     if (etid === "birthplace") {
         createSecondaryNav(birthplaceNav);
-        secondaryHeading.textContent = "Filter by region";
+        secondaryHeading.textContent = "Filter by area";
     }
     if (etid === "party") {
         createSecondaryNav(partyNav);
@@ -103,7 +103,7 @@ function chooseSecondaryNav(etid) {
     }
     if (etid === "age") {
         createSecondaryNav(ageNav);
-        secondaryHeading.textContent = "Filter by decade";
+        secondaryHeading.textContent = "Filter by peers";
     }
     if (etid === "marital") {
         createSecondaryNav(maritalNav);
@@ -111,7 +111,7 @@ function chooseSecondaryNav(etid) {
     }
     if (etid === "previous") {
         createSecondaryNav(previousNav);
-        secondaryHeading.textContent = "Filter by experience";
+        secondaryHeading.textContent = "Filter by type";
     }
     if (etid === "terms") {
         createSecondaryNav(termsNav);
@@ -119,7 +119,7 @@ function chooseSecondaryNav(etid) {
     }
     if (etid === "departure") {
         createSecondaryNav(departureNav);
-        secondaryHeading.textContent = "Filter by reason";
+        secondaryHeading.textContent = "Filter by cause";
     }
 }
 
