@@ -21,7 +21,6 @@ header {
     width: 90%;
     margin: 0;
     padding: 1em 5%;
-    flex: initial; /*flex: 0 1 auto*/
     position: relative;
     border-bottom: 1px solid #EEE; /*grey 200*/
     background: #FAFAFA; /*grey 50*/
@@ -133,7 +132,8 @@ section {
     width: 100%;
     margin: 0;
     padding: 0;
-    color: red;
+    color: #757575;
+    flex: initial; /*flex: 0 1 auto*/
 }
 
 #gallery {
@@ -159,21 +159,19 @@ figure {
     margin: .5em 0;
     padding: 0 5%;
     flex: initial; /*flex: 0 1 auto*/
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;/*main axis*/
-    align-items: center; /*cross axis*/
 }
 
 .left {
     margin: .5em 0;
     padding: 0;
+    flex: initial; /*flex: 0 1 auto*/
 }
 
 .right {
     margin: .5em 0;
     padding: 0;
     background: #001F99; /*dark magenta*/
+    flex: initial; /*flex: 0 1 auto*/
 }
 
 @media all and (min-width: 300px) {
@@ -226,9 +224,8 @@ figure {
     margin: 0;
     padding: .5em 5%;
     background: #F2F2F2;
+    flex: initial; /*flex: 0 1 auto*/
 }
-
-/*NOTE: TEST IF SOME FLEXBOX CAN BE ELIMINATED.*/
 
 footer {
     width: 90%;
@@ -273,17 +270,12 @@ h2 {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
     font-weight: 700;
-    color: #2E40A6;
-    color: #A67D03;
-    color: #000;
 }
 
 h3 {
     font-family: 'Open Sans', sans-serif;
     line-height: 1;
     font-weight: 700;
-    color: #2E40A6;
-    color: #000;
 }
 
 p {
@@ -357,11 +349,5 @@ li:hover {
 
     li {
         font-size: 1em; /*16 pixels*/
-    }
-}
-
-@media all and (min-width: 900px) {
-    h1 {
-        font-size: 1.5625em; /*25 pixels*/
     }
 }
