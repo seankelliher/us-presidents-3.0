@@ -103,12 +103,8 @@ ul {
     list-style: none;
 }
 
-nav .selected {
-    color: #D90404;
-}
-
-section .selected {
-    color: #D90404;
+.selected {
+    color: #F23005;
 }
 
 section {
