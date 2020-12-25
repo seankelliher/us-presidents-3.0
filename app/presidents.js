@@ -202,7 +202,7 @@ const potus10 = {
     termsGroup: "under-one",
     terms: "3 years, 11 months", //47 months
     departureGroup: "not-nominated",
-    departure: "Not Nominated",
+    departure: "Not Nominated (after inheriting office when Harrison died)",
     name: "John Tyler",
     photo: "images/john-tyler.png",
     yearInaugurated: "April 6, 1841 – March 3, 1845"
@@ -265,7 +265,7 @@ const potus13 = {
     termsGroup: "under-one",
     terms: "2 years, 7 months", //31 months
     departureGroup: "not-nominated",
-    departure: "Not Nominated",
+    departure: "Not Nominated (after inheriting office when Taylor died)",
     name: "Millard Fillmore",
     photo: "images/millard-fillmore.png",
     yearInaugurated: "July 10, 1850 – March 3, 1853"
@@ -286,7 +286,7 @@ const potus14 = {
     termsGroup: "one",
     terms: "4 years", //48 months
     departureGroup: "not-nominated",
-    departure: "Not Nominated",
+    departure: "Not Nominated (after serving one term)",
     name: "Franklin Pierce",
     photo: "images/franklin-pierce.png",
     yearInaugurated: "March 4, 1853 – March 3, 1857"
@@ -349,7 +349,7 @@ const potus17 = {
     termsGroup: "under-one",
     terms: "3 years, 10 months", //46 months
     departureGroup: "not-nominated",
-    departure: "Not Nominated",
+    departure: "Not Nominated (after inheriting office when Lincoln died)",
     name: "Andrew Johnson",
     photo: "images/andrew-johnson.png",
     yearInaugurated: "April 15, 1865 – March 3, 1869"
@@ -433,7 +433,7 @@ const potus21 = {
     termsGroup: "under-one",
     terms: "3 years, 5 months", //41 months
     departureGroup: "not-nominated",
-    departure: "Not Nominated",
+    departure: "Not Nominated (after inheriting office when Garfield died)",
     name: "Chester A. Arthur",
     photo: "images/chester-arthur.png",
     yearInaugurated: "Sept. 20, 1881 – March 3, 1885"
@@ -496,7 +496,7 @@ const potus24 = {
     termsGroup: "one",
     terms: "4 years", //48 months
     departureGroup: "retired",
-    departure: "Retired after one term",
+    departure: "Retired after two (non-consecutive) terms",
     name: "Grover Cleveland",
     photo: "images/grover-cleveland.png",
     yearInaugurated: "March 4, 1893 – March 3, 1897"
@@ -937,7 +937,7 @@ const potus45 = {
     termsGroup: "one",
     terms: "4 years", //48 months
     departureGroup: "lost-election",
-    departure: "Lost to Joe Biden",
+    departure: "Lost election to Joe Biden",
     name: "Donald Trump",
     photo: "images/donald-trump.png",
     yearInaugurated: "January 20, 2017 – January 20, 2021"
