@@ -11,8 +11,8 @@ import {hideEmpty} from "./app/empty.js";
 document.addEventListener("DOMContentLoaded", function () {
     "use strict";
 
-    //Retrieve lists (inside nav elements).
-    //Retrieve the "birthplace" list item in primary list.
+    //Get lists (inside nav elements).
+    //Get the "birthplace" list item in primary list.
     const primaryList = document.getElementById("primary-list");
     const secondaryList = document.getElementById("secondary-list");
     const birthplace = document.getElementById("birthplace");

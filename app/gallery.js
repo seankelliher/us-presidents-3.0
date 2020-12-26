@@ -1,6 +1,6 @@
 import {allPresidents} from "./presidents.js";
 
-//Clears presidents from gallery.
+//Clear presidents from gallery.
 //While loop: if firstChild exists, remove lastChild. Keep going until false.
 function clearGallery() {
     "use strict";
@@ -11,8 +11,8 @@ function clearGallery() {
     }
 }
 
-//Creates presidents in gallery.
-//Receives id for list item user clicked.
+//Create presidents in gallery.
+//Receive id for list item user clicked.
 function createGallery(etid) {
     "use strict";
 

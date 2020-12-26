@@ -77,7 +77,7 @@ function createSecondaryNav(array) {
 
     array.forEach(function (item) {
 
-        //Retrieve the secondary list.
+        //Get the secondary list.
         const secondaryList = document.getElementById("secondary-list");
 
         //Create li element.

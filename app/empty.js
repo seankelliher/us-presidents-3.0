@@ -1,4 +1,4 @@
-//Hides "empty" message.
+//Hide "empty" message.
 function hideEmpty() {
     "use strict";
 
@@ -6,7 +6,7 @@ function hideEmpty() {
     emptyMsg.style.display = "none";
 }
 
-//Checks if no presidents match list items user clicks.
+//Check if no presidents match list items user clicks.
 //Displays "empty" message, if needed.
 function checkEmpty() {
     "use strict";
