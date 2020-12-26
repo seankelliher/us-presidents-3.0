@@ -1,5 +1,5 @@
-//List items for secondary Navs.
-const birthplaceNav = [
+//Items for secondary list.
+const birthplaceItems = [
     "New England",
     "Mideast",
     "Great Lakes",
@@ -10,7 +10,7 @@ const birthplaceNav = [
     "Far West"
 ];
 
-const partyNav = [
+const partyItems = [
     "Democratic",
     "Democratic Republican",
     "Federalist",
@@ -19,20 +19,20 @@ const partyNav = [
     "Unaffiliated"
 ];
 
-const ageNav = [
+const ageItems = [
     "Forties",
     "Fifties",
     "Sixties",
     "Seventies"
 ];
 
-const maritalNav = [
+const maritalItems = [
     "Married",
     "Never married",
     "Widower"
 ];
 
-const previousNav = [
+const previousItems = [
     "Cabinet",
     "Congress",
     "Diplomatic",
@@ -42,7 +42,7 @@ const previousNav = [
     "Private industry"
 ];
 
-const termsNav = [
+const termsItems = [
     "Under One",
     "One",
     "One to Two",
@@ -50,7 +50,7 @@ const termsNav = [
     "More Than Two"
 ];
 
-const departureNav = [
+const departureItems = [
     "Died",
     "Lost election",
     "Not nominated",
@@ -59,66 +59,73 @@ const departureNav = [
     "Term limited"
 ];
 
-//Clears list items in secondary nav.
+//Clear items in secondary list.
 //While loop: if firstChild exists, remove lastChild. Keep going until false.
 function clearSecondaryNav() {
+    "use strict";
+
     const secondaryList = document.getElementById("secondary-list");
     while (secondaryList.firstChild) {
         secondaryList.removeChild(secondaryList.lastChild);
     }
 }
 
-//Creates list items for secondary nav.
+//Create list items for secondary list.
+//Read below "chooseSecondaryNav" function first. Things will make more sense.
 function createSecondaryNav(array) {
+    "use strict";
+
     array.forEach(function (item) {
-        //Retrieve the ul - either "primary" or "secondary".
+
+        //Retrieve the secondary list.
         const secondaryList = document.getElementById("secondary-list");
 
-        //Create the li element.
+        //Create li element.
         const secondaryListItem = document.createElement("li");
 
-        //Assign its text content from value in "primaryNav" array.
+        //Assign its text content.
         secondaryListItem.textContent = item;
 
-        //Append the li element to the ul.
+        //Append the li element to the secondary list.
         secondaryList.appendChild(secondaryListItem);
     });
 }
 
-//Receives list item user clicked in primary nav.
-//Places heading in secondary nav.
-//Invokes (above) function to create list items in secondary nav.
+//Receive id for list item user clicked in primary list.
+//Get an "Items" array from above.
+//Send each item to "createSecondaryNav" function (above) to create list item.
+//Place <h2> heading.
 function chooseSecondaryNav(etid) {
     "use strict";
 
     const secondaryHeading = document.getElementById("secondary-heading");
 
     if (etid === "birthplace") {
-        createSecondaryNav(birthplaceNav);
+        createSecondaryNav(birthplaceItems);
         secondaryHeading.textContent = "Filter by area";
     }
     if (etid === "party") {
-        createSecondaryNav(partyNav);
+        createSecondaryNav(partyItems);
         secondaryHeading.textContent = "Filter by party";
     }
     if (etid === "age") {
-        createSecondaryNav(ageNav);
+        createSecondaryNav(ageItems);
         secondaryHeading.textContent = "Filter by peers";
     }
     if (etid === "marital") {
-        createSecondaryNav(maritalNav);
+        createSecondaryNav(maritalItems);
         secondaryHeading.textContent = "Filter by status";
     }
     if (etid === "previous") {
-        createSecondaryNav(previousNav);
+        createSecondaryNav(previousItems);
         secondaryHeading.textContent = "Filter by type";
     }
     if (etid === "terms") {
-        createSecondaryNav(termsNav);
+        createSecondaryNav(termsItems);
         secondaryHeading.textContent = "Filter by terms";
     }
     if (etid === "departure") {
-        createSecondaryNav(departureNav);
+        createSecondaryNav(departureItems);
         secondaryHeading.textContent = "Filter by cause";
     }
 }
@@ -126,7 +133,7 @@ function chooseSecondaryNav(etid) {
 //Highlight clicked item in primary and secondary lists.
 function highlightListItem(list, clickedItem) {
     "use strict";
-    
+
     //Gather all items inside a list.
     const listItems = list.querySelectorAll("li");
 
@@ -144,4 +151,9 @@ function highlightListItem(list, clickedItem) {
     clickedItem.classList.add("selected");
 }
 
-export {clearSecondaryNav, chooseSecondaryNav, createSecondaryNav, highlightListItem};
+export {
+    clearSecondaryNav,
+    chooseSecondaryNav,
+    createSecondaryNav,
+    highlightListItem
+};
