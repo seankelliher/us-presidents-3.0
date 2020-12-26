@@ -1,30 +1,39 @@
-import {clearSecondaryNav, chooseSecondaryNav, highlightListItem} from "./app/nav.js";
+import {
+    clearSecondaryNav,
+    chooseSecondaryNav,
+    highlightListItem
+} from "./app/nav.js";
 import {clearGallery, createGallery} from "./app/gallery.js";
 import {filterGallery} from "./app/filters.js";
 import {hideEmpty} from "./app/empty.js";
 
+//After DOM loads...
 document.addEventListener("DOMContentLoaded", function () {
     "use strict";
 
-    //Retrieve lists and item.
+    //Retrieve lists (inside nav elements).
+    //Retrieve the "birthplace" list item in primary list.
     const primaryList = document.getElementById("primary-list");
     const secondaryList = document.getElementById("secondary-list");
     const birthplace = document.getElementById("birthplace");
 
-    //When page loads, highlight "birthplace" in primary list.
+    //Highlight "birthplace" list item in primary list.
     highlightListItem(primaryList, birthplace);
 
-    //Create "birthplace" list in secondary nav.
+    //Create "birthplace" list items in secondary list.
     chooseSecondaryNav("birthplace");
 
     //Create "birthplace" items in gallery.
     createGallery("birthplace");
 
-    //Invoke event listeners functions.
+    //Watch secondary list for clicks.
     filterGallery();
+
+    //Hide "empty" message.
+    //Appears when list items user clicks return no presidents.
     hideEmpty();
 
-    //Monitor lists for user clicks.
+    //Watch primary list for clicks.
     primaryList.addEventListener("click", function (event) {
         clearSecondaryNav();
         chooseSecondaryNav(event.target.id);
@@ -33,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
         highlightListItem(primaryList, event.target);
     });
 
+    //Highlight clicked list item in secondary list.
     secondaryList.addEventListener("click", function (event) {
         highlightListItem(secondaryList, event.target);
     });
