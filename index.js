@@ -1,5 +1,5 @@
 import {clearSecondaryNav, chooseSecondaryNav, highlightListItem} from "./app/nav.js";
-import {clearGallery, createGallery} from "./app/badges.js";
+import {clearGallery, createGallery} from "./app/gallery.js";
 import {filterGallery} from "./app/filters.js";
 import {hideEmpty} from "./app/empty.js";
 
