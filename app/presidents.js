@@ -1,3 +1,4 @@
+//Demographic information for all presidents is here.
 const potus01 = {
     id: 1,
     birthplaceGroup: "southeast",
@@ -991,4 +992,5 @@ const allPresidents = [
     potus44,
     potus45
 ];
+
 export {allPresidents};
