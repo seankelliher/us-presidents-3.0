@@ -3,15 +3,13 @@
 
 Interactive component about demographics of the 45 US Presidents.
 
-## Project Status
-
-Currently, rebuilding the JavaScript and styles.
-
 ## Project Screen Shots
 
 ![screen shot of project](/screenshots/us-presidents-3.0-screenshot1.jpg)
 
 ![screen shot of project](/screenshots/us-presidents-3.0-screenshot2.jpg)
+
+![screen shot of project](/screenshots/us-presidents-3.0-screenshot3.jpg)
 
 ## Installation and Setup Instructions
 
@@ -19,7 +17,13 @@ This is a static component. All you need is a web browser. However, component us
 
 ## Reflection
 
-I wanted to build a component that allows users to sort Presidents by demographic traits such as birthplace, political party, age, marital status, previous work experience, length of term, and reason for departure. Challenges were building so users could filter by both categories and sub-categories while keeping the page as uncluttered as possible. This required building multiple sub-navigations that would display or disappear depending on which category was selected. The category and sub-category approach allows users to see, for example, the age of all Presidents and then filter out only those inaugurated in, say, their forties.
+My goal was to build a component that lets users compare all US Presidents by specific demographics such as birthplace, and then also filter these results by smaller groups, for example, only presidents born in the Southwest.
+
+I wanted to create elements dynamically, but also avoid looping through a detailed array of 45 (or more) presidents and building numerous elements each time a user clicked something. To accomplish this, I chose a practical middle ground: I loop through the detailed "presidents" array and build elements only when users click a category such as birthplace. When users filter that category, I use the existing elements and show/hide them as needed.
+
+While building, I discovered that one category/filter combination (birthplace and Rocky Mountain) produced no results. No presidents were born in the Rocky Mountain region. A blank result looked bad. I needed an "empty" message to display when needed so I created a function that counts the number of "president" divs with style.display === "none". If that number reaches 45, the "empty" message displays. Otherwise, it is hidden.
+
+Lastly, there was the challenge of how to display two "nav" lists and the details of 45 presidents on smaller screens. I drew a number of "box models" placing titles and text in different positions until I discovered one that worked well.
 
 ## Acknowledgments
 
