@@ -32,12 +32,12 @@ function checkEmpty() {
     //NOTE: adjust this number, when more presidents added to component.
     const emptyMsg = document.getElementById("empty-msg");
 
-    if (collection.length === 45) {
+    if (collection.length === 46) {
         emptyMsg.style.display = "block";
     }
 
     //If all presidents are not hidden, hide "empty" message.
-    if (collection.length !== 45) {
+    if (collection.length !== 46) {
         emptyMsg.style.display = "none";
     }
 }
