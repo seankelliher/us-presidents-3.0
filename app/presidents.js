@@ -944,6 +944,28 @@ const potus45 = {
     yearInaugurated: "January 20, 2017 – January 20, 2021"
 };
 
+const potus46 = {
+    id: 46,
+    birthplaceGroup: "mideast",
+    birthplace: "Pennsylvania",
+    partyGroup: "democratic",
+    party: "Democratic",
+    ageGroup: "seventies",
+    age: 78,
+    maritalGroup: "married",
+    marital: "Married",
+    previousGroup: "executive-office",
+    previous: "Vice President",
+    termsGroup: "",
+    terms: "now in office",
+    departureGroup: "",
+    departure: "now in office",
+    name: "Joe Biden",
+    photo: "images/joe-biden.png",
+    yearInaugurated: "January 20, 2021 – present"
+};
+//Adding presidents? Adjust collection.length in empty.js file.
+
 //Gather all presidents in array.
 const allPresidents = [
     potus01,
@@ -990,7 +1012,8 @@ const allPresidents = [
     potus42,
     potus43,
     potus44,
-    potus45
+    potus45,
+    potus46
 ];
 
 export {allPresidents};
