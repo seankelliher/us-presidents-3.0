@@ -304,7 +304,7 @@ const potus15 = {
     maritalGroup: "never-married",
     marital: "Never Married",
     previousGroup: "diplomatic",
-    previous: "Minister, Court of St James's",
+    previous: "Minister, UK",
     termsGroup: "one",
     terms: "4 years", //48 months
     departureGroup: "retired",
