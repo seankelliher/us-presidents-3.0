@@ -1,8 +1,7 @@
-//This module watches secondary list for clicks.
-//Shows and hides president divs in gallery.
-
 import {checkEmpty} from "./empty.js";
 
+//This module watches secondary list for clicks.
+//Shows and hides president divs in gallery.
 function filterGallery() {
     "use strict";
 
