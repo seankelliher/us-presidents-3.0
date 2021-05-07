@@ -40,6 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
         clearGallery();
         createGallery(event.target.id);
         highlightListItem(primaryList, event.target);
+        hideEmpty();
     });
 
     //Highlight clicked list item in secondary list.
