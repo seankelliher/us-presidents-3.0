@@ -33,7 +33,7 @@ function checkEmpty() {
     const emptyMsg = document.getElementById("empty-msg");
 
     if (collection.length === 46) {
-        emptyMsg.style.display = "block";
+        emptyMsg.style.display = "flex";
     }
 
     //If all presidents are not hidden, hide "empty" message.
