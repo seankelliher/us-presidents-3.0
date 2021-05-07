@@ -1,114 +1,122 @@
-html, body {
-    height: 100%;
-}
-
-body {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-}
-
 img {
     max-width: 100%;
     height: auto;
     display: block;
 }
 
+#container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;/*main axis*/
+    align-items: flex-start; /*cross axis*/
+}
+
 header {
-    width: 90%;
     margin: 0;
-    padding: 1em 5%;
-    position: relative;
-    border-bottom: 1px solid #EEE; /*grey 200*/
-    background: #FAFAFA; /*grey 50*/
+    flex: initial;
 }
 
-header::before {
-    content:  "";
-    position: absolute;
-    top: 0;
-    bottom: -1px;
-    width: 1200px;
-    left: 100%;
-    border-bottom: 1px solid #EEE; /*grey 200*/
-    background: #FAFAFA; /*grey 50*/
+@media all and (min-width: 300px) {
+    header{
+        width: 90%;
+        padding: 1em 5%;
+    }
 }
 
-header::after {
-    content:  "";
-    position: absolute;
-    top: 0;
-    bottom: -1px;
-    width: 1200px;
-    right: 100%;
-    border-bottom: 1px solid #EEE; /*grey 200*/
-    background: #FAFAFA; /*grey 50*/
+@media all and (min-width: 600px) {
+    header {
+        width: 90%;
+        padding: 1em 5%;
+    }
 }
 
-main {
-    width: 90%;
+@media all and (min-width: 700px) {
+    header {
+        width: 80%;
+        padding: 1em 15% 1em 5%;
+    }
+}
+
+@media all and (min-width: 800px) {
+    header {
+        width: 70%;
+        padding: 1em 25% 1em 5%;
+    }
+}
+
+@media all and (min-width: 900px) {
+    header {
+        width: 60%;
+        padding: 1em 25% 1em 5%;
+    }
+}
+
+nav {
     margin: 0;
-    padding: 1em 5%;
-    flex: 1 0 auto;
+    border-top: 1px solid #EEE; /*grey 200*/
+    flex: initial;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;/*main axis*/
     align-items: flex-start; /*cross axis*/
 }
 
-nav {
+@media all and (min-width: 300px) {
+    nav {
+        width: 90%;
+        padding: 1em 5%;
+    }
+}
+
+@media all and (min-width: 600px) {
+    nav {
+        width: 30%;
+        padding: 1em 0 1em 5%;
+    }
+}
+
+@media all and (min-width: 700px) {
+    nav {
+        width: 25%;
+    }
+}
+
+.primary, .secondary {
     margin: 0;
     padding: 0;
-    flex: initial; /*flex: 0 1 auto*/
+    flex: initial;
 }
 
-/*Keeps "Democratic Republican" single line on viewports, 320 - 359px*/
 @media all and (min-width: 300px) {
-    .primary {
-        width: 45%;
-    }
-
-    .secondary {
-        width: 55%;
-    }
-}
-
-@media all and (min-width: 360px) {
-    .primary {
-        width: 50%;
-    }
-
-    .secondary {
+    .primary, .secondary {
         width: 50%;
     }
 }
 
-@media all and (min-width: 900px) {
-    .primary {
-        width: 25%;
-    }
-
-    .secondary {
-        width: 25%;
+@media all and (min-width: 600px) {
+    .primary, .secondary {
+        width: 100%;
     }
 }
 
 ul {
-    margin: 0;
-    padding: 0;
     list-style: none;
+    margin-left: 0;
+    padding-left: 0;
 }
 
 .selected {
-    color: #F23005;
+    color: #007AC1; /*light blue 500 dark*/
 }
 
 section {
     margin: 0;
-    padding: 0;
+    padding: 1em 5%;
+    border-top: 1px solid #EEE; /*grey 200*/
     flex: initial; /*flex: 0 1 auto*/
     display: flex;
     flex-flow: row wrap;
@@ -118,21 +126,27 @@ section {
 
 @media all and (min-width: 300px) {
     section {
-        width: 100%;
+        width: 90%;
     }
 }
 
-@media all and (min-width: 900px) {
+@media all and (min-width: 600px) {
     section {
-        width: 50%;
+        width: 55%;
+    }
+}
+
+@media all and (min-width: 700px) {
+    section {
+        width: 60%;
     }
 }
 
 #empty-msg {
     width: 100%;
-    margin: 0;
-    padding: 0;
-    color: #757575;
+    margin: 0 2.5%;
+    padding: 0 2.5%;
+    color: #B4004E; /*pink 400 dark*/
     flex: initial; /*flex: 0 1 auto*/
 }
 
@@ -141,18 +155,23 @@ section {
     margin: 0;
     padding: 0;
     flex: initial; /*flex: 0 1 auto*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;/*main axis*/
+    align-items: flex-start; /*cross axis*/
 }
 
 .president {
     width: 100%;
-    margin: 1em 0;
-    padding: .5em 0 0 0;
+    margin: 1.2em 0;
+    padding: 0;
+    flex: initial; /*flex: 0 1 auto*/
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;/*main axis*/
+    justify-content: flex-start;/*main axis*/
     align-items: flex-start; /*cross axis*/
-    border: 1px solid #EEE; /*grey 200*/
-    background: #FAFAFA; /*grey 50*/
+    background: #F5F5F5; /*grey 100*/
+    position: relative;
 }
 
 figure {
@@ -168,10 +187,11 @@ figure {
 }
 
 .right {
-    margin: .5em 0;
+    margin: 0;
     padding: 0;
-    background: #001F99; /*dark magenta*/
-    flex: initial; /*flex: 0 1 auto*/
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 @media all and (min-width: 300px) {
@@ -223,40 +243,9 @@ figure {
     width: 90%;
     margin: 0;
     padding: .5em 5%;
-    background: #F2F2F2;
+    background: #B3E5FC; /*light blue 100*/
     flex: initial; /*flex: 0 1 auto*/
-}
-
-footer {
-    width: 90%;
-    margin: 0;
-    padding: .5em 5%;
-    flex: initial; /*flex: 0 1 auto*/
-    position: relative;
-    border-top: 1px solid #EEE; /*grey 200*/
-    background: #FAFAFA; /*grey 50*/
-}
-
-footer::before {
-    content:  "";
-    position: absolute;
-    top: -1px;
-    bottom: 0;
-    width: 1200px;
-    left: 100%;
-    border-top: 1px solid #EEE; /*grey 200*/
-    background: #FAFAFA; /*grey 50*/
-}
-
-footer::after {
-    content:  "";
-    position: absolute;
-    top: -1px;
-    bottom: 0;
-    width: 1200px;
-    right: 100%;
-    border-top: 1px solid #EEE; /*grey 200*/
-    background: #FAFAFA; /*grey 50*/
+    align-self: flex-end; /*pushes .note down if .left text runs long*/
 }
 
 /*Fonts*/
@@ -285,7 +274,8 @@ p {
 }
 
 .right p {
-    color: #FFF;
+    line-height: 1.2;
+    /*color: #FFF;*/
 }
 
 .note p {
@@ -299,7 +289,7 @@ li {
     font-family: 'Roboto', serif;
     line-height: 1.8;
     font-weight: 400;
-    color: #001F99; /*dark magenta*/
+    color: #707070; /*grey 500 dark*/
 }
 
 li:hover {
