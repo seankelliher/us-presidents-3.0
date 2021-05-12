@@ -110,7 +110,7 @@ ul {
 }
 
 .selected {
-    color: #007AC1; /*light blue 500 dark*/
+    color: #006DB3; /*light blue 600 dark*/
 }
 
 section {
@@ -275,7 +275,6 @@ p {
 
 .right p {
     line-height: 1.2;
-    /*color: #FFF;*/
 }
 
 .note p {
@@ -290,7 +289,6 @@ li {
     font-family: 'Roboto', serif;
     line-height: 1.8;
     font-weight: 400;
-    color: #707070; /*grey 500 dark*/
 }
 
 li:hover {
