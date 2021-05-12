@@ -170,7 +170,7 @@ section {
     flex-flow: row wrap;
     justify-content: flex-start;/*main axis*/
     align-items: flex-start; /*cross axis*/
-    background: #F5F5F5; /*grey 100*/
+    background: #E1F5FE; /*light blue 50*/
     position: relative;
 }
 
@@ -243,7 +243,7 @@ figure {
     width: 90%;
     margin: 0;
     padding: .5em 5%;
-    background: #B3E5FC; /*light blue 100*/
+    background: #006DB3; /*light blue 600 dark*/
     flex: initial; /*flex: 0 1 auto*/
     align-self: flex-end; /*pushes .note down if .left text runs long*/
 }
@@ -283,6 +283,7 @@ p {
     margin-top: .25em;
     margin-bottom: .25em;
     font-size: .875em; /*14 pixels*/
+    color: #FFF;
 }
 
 li {
