@@ -17,7 +17,7 @@ img {
 
 header {
     width: 90%;
-    margin-top: 1.5em;
+    margin:  1.5em 0 0 0;
     padding: 0 5%;
     flex: initial;
 }
@@ -76,7 +76,7 @@ ul {
 }
 
 .selected {
-    color: #006DB3; /*light blue 600 dark*/
+    color: #1976D2; /*blue 700*/
 }
 
 section {
@@ -111,7 +111,7 @@ section {
     width: 100%;
     margin: 0 2.5%;
     padding: 0 2.5%;
-    color: #B4004E; /*pink 400 dark*/
+    color: #C41C00; /*deep orange 500 dark*/
     flex: initial; /*flex: 0 1 auto*/
 }
 
