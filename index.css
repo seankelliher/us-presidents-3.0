@@ -135,13 +135,13 @@ section {
     flex-flow: row wrap;
     justify-content: flex-start;/*main axis*/
     align-items: flex-start; /*cross axis*/
-    background: #E1F5FE; /*light blue 50*/
+    background: #B3E5FC; /*light blue 100*/
     position: relative;
 }
 
 figure {
-    margin: .5em 0;
-    padding: 0 5%;
+    margin: 0;
+    padding: 1.5em 5% 0 5%;
     flex: initial; /*flex: 0 1 auto*/
 }
 
@@ -156,7 +156,7 @@ figure {
     padding: 0;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 5px;
 }
 
 @media all and (min-width: 300px) {
