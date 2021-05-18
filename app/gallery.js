@@ -36,10 +36,6 @@ function createGallery(etid) {
         const right = document.createElement("div");
         right.className = "right";
 
-        //Create note div.
-        const note = document.createElement("div");
-        note.className = "note";
-
         //Create "content" elements.
         const presPhoto = document.createElement("img");
         const presName = document.createElement("h3");
@@ -50,7 +46,7 @@ function createGallery(etid) {
         //Assign content to "content" elements.
         presPhoto.src = index.photo;
         presName.textContent = index.name;
-        presNumber.textContent = index.id;
+        presNumber.textContent = `#${index.id}`;
         presInaug.textContent = index.yearInaugurated;
 
         //Receive id from list item user clicked.
@@ -61,15 +57,14 @@ function createGallery(etid) {
         //Append elements.
         figure.appendChild(presPhoto);
         left.appendChild(presName);
+        left.appendChild(presInaug);
         left.appendChild(presTrait);
         right.appendChild(presNumber);
-        note.appendChild(presInaug);
 
         //Append more elements.
         president.appendChild(figure);
         president.appendChild(left);
         president.appendChild(right);
-        president.appendChild(note);
 
         //Append complete presidents div to gallery.
         gallery.appendChild(president);
