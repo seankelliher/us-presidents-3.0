@@ -204,15 +204,6 @@ figure {
     }
 }
 
-.note {
-    width: 90%;
-    margin: 0;
-    padding: .5em 5%;
-    background: #006DB3; /*light blue 600 dark*/
-    flex: initial; /*flex: 0 1 auto*/
-    align-self: flex-end; /*pushes .note down if .left text runs long*/
-}
-
 /*Fonts*/
 h1 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -239,20 +230,13 @@ p {
 }
 
 .right p {
-    line-height: 1.2;
-}
-
-.note p {
-    line-height: 1.2;
-    margin-top: .25em;
-    margin-bottom: .25em;
-    font-size: .875em; /*14 pixels*/
-    color: #FFF;
+    font-weight: 600;
+    color: #C41C00; /*deep orange 500 dark*/
 }
 
 li {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 1.8;
+    line-height: 2;
     font-weight: 400;
 }
 
@@ -272,14 +256,10 @@ li:hover {
     }
 
     h3 {
-        font-size: .8125em; /*13 pixels*/
+        font-size: 1em; /*16 pixels*/
     }
 
-    p {
-        font-size: .9375em; /*15 pixels*/
-    }
-
-    li {
+    p, li {
         font-size: .9375em; /*15 pixels*/
     }
 }
@@ -293,15 +273,13 @@ li:hover {
         font-size: 1.125em; /*18 pixels*/
     }
 
+    p, li {
+        font-size: 1em; /*16 pixels*/
+    }
+}
+
+@media all and (min-width: 900px) {
     h3 {
-        font-size: .875em; /*14 pixels*/
-    }
-
-    p {
-        font-size: 1em; /*16 pixels*/
-    }
-
-    li {
-        font-size: 1em; /*16 pixels*/
+        font-size: 1.125em; /*18 pixels*/
     }
 }
