@@ -219,7 +219,7 @@ h2 {
 
 h3 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 1;
+    line-height: 1.2;
     font-weight: 700;
 }
 
@@ -247,39 +247,69 @@ li:hover {
 
 /*Media queries*/
 @media all and (min-width: 300px) {
+    p, li {
+        font-size: .875em;
+    }
+
     h1 {
-        font-size: 1.4375em; /*23 pixels*/
+        font-size: 1.2em;
     }
 
     h2 {
-        font-size: 1.0625em; /*17 pixels*/
+        font-size: 1em;
     }
 
     h3 {
-        font-size: 1em; /*16 pixels*/
+        font-size: .9375em;
+    }
+}
+
+@media all and (min-width: 400px) {
+    p, li {
+        font-size: .9375em;
     }
 
-    p, li {
-        font-size: .9375em; /*15 pixels*/
+    h1 {
+        font-size: 1.4em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    h3 {
+        font-size: 1em;
     }
 }
 
 @media all and (min-width: 600px) {
+    p, li {
+        font-size: 1em;
+    }
+
     h1 {
-        font-size: 1.5em; /*24 pixels*/
+        font-size: 1.6em;
     }
 
     h2 {
-        font-size: 1.125em; /*18 pixels*/
+        font-size: 1.4em;
     }
 
-    p, li {
-        font-size: 1em; /*16 pixels*/
+    h3 {
+        font-size: 1.2em;
     }
 }
 
 @media all and (min-width: 900px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
     h3 {
-        font-size: 1.125em; /*18 pixels*/
+        font-size: 1.4em;
     }
 }
