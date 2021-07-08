@@ -46,7 +46,7 @@ function createGallery(etid) {
         //Assign content to "content" elements.
         presPhoto.src = index.photo;
         presName.textContent = index.name;
-        presNumber.textContent = `#${index.id}`;
+        presNumber.textContent = `${index.id}`;
         presInaug.textContent = index.yearInaugurated;
 
         //Receive id from list item user clicked.
