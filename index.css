@@ -76,7 +76,7 @@ ul {
 }
 
 .selected {
-    color: #1976D2; /*blue 700*/
+    background: #ECEFF1; /*blue grey 50*/
 }
 
 section {
