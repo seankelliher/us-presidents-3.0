@@ -135,7 +135,7 @@ section {
     flex-flow: row wrap;
     justify-content: flex-start;/*main axis*/
     align-items: flex-start; /*cross axis*/
-    background: #B3E5FC; /*light blue 100*/
+    background: #FAFAFA; /*grey 50*/
     position: relative;
 }
 
@@ -221,6 +221,7 @@ h3 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.2;
     font-weight: 700;
+    color: #1976D2; /*blue 700*/
 }
 
 p {
@@ -231,7 +232,7 @@ p {
 
 .right p {
     font-weight: 600;
-    color: #616161; /*grey 700*/
+    color: #8D6E63; /*brown 400*/
 }
 
 li {
