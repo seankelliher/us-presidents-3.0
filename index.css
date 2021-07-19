@@ -76,7 +76,7 @@ ul {
 }
 
 .selected {
-    background: #ECEFF1; /*blue grey 50*/
+    color: #C43E00; /*amber 900 dark*/
 }
 
 section {
@@ -136,6 +136,7 @@ section {
     justify-content: flex-start;/*main axis*/
     align-items: flex-start; /*cross axis*/
     background: #FAFAFA; /*grey 50*/
+    border: 1px solid #EEE; /*grey 200*/
     position: relative;
 }
 
@@ -239,6 +240,7 @@ li {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 2;
     font-weight: 400;
+    color: #616161; /*grey 700*/
 }
 
 li:hover {
